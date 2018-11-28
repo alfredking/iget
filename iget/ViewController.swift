@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let say="hello swift"
         print(say)
+        let nums=[1,2,3]
+        let nums1=[Int](repeating:0,count:5)
+        var nums2=[3,1,2]
         
     }
 
