@@ -33,9 +33,24 @@ class ViewController: UIViewController {
         
         let anotherNums=Array(nums2[0..<nums2.count-1])
         print(anotherNums)
+        let result=Dictionary("hello".map { ($0, 2) }, uniquingKeysWith: +)
+        print(result)
         
     }
 
 
 }
 
+func twoSum(nums: [Int], _ target: Int) -> [Int] {
+    var dict = [Int: Int]()
+    
+    for (i, num) in nums.enumerated() {
+        if let lastIndex = dict[target - num] {
+            return [lastIndex, i]
+        } else {
+            dict[num] = i
+        }
+    }
+    
+    fatalError("No valid output!")
+}
