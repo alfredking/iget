@@ -8,6 +8,42 @@
 
 import UIKit
 
+
+func twoSumSet(nums: [Int], target: Int) -> [Int]
+{
+    var dict = [Int: Int]()
+    
+    for (i, num) in nums.enumerated()
+    {
+        if let lastIndex = dict[target - num]
+        {
+            return [lastIndex, i]
+        }
+        else
+        {
+            dict[num] = i
+            print([i,num])
+        }
+    }
+    
+    fatalError("No valid output!")
+}
+
+func twoSum(nums: [Int], target: Int) -> Bool {
+    var set = Set<Int>()
+    
+    for num in nums {
+        if set.contains(target - num) {
+            return true
+        }
+        
+        set.insert(num)
+    }
+    
+    return false
+}
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -20,7 +56,7 @@ class ViewController: UIViewController {
         print(nums)
         let nums1=[Int](repeating:0,count:5)
         print(nums1)
-        var nums2=[3,1,2]
+        var nums2=[3,1,2,4,6,7,1,2,8,9]
         print(nums2)
         nums2.append(4)
         print(nums2)
@@ -36,21 +72,17 @@ class ViewController: UIViewController {
         let result=Dictionary("hello".map { ($0, 2) }, uniquingKeysWith: +)
         print(result)
         
+        
+
+        let test=twoSum(nums: [3,1,2,4,6,7,1,2,8,9],target:5)
+        print(test)
+        
+        
+        
+        
+        
     }
 
 
 }
 
-func twoSum(nums: [Int], _ target: Int) -> [Int] {
-    var dict = [Int: Int]()
-    
-    for (i, num) in nums.enumerated() {
-        if let lastIndex = dict[target - num] {
-            return [lastIndex, i]
-        } else {
-            dict[num] = i
-        }
-    }
-    
-    fatalError("No valid output!")
-}
