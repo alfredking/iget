@@ -133,6 +133,56 @@ class List
     }
     
 }
+
+func getLeftList(_ head:ListNode?,_ x:Int)->ListNode?
+{
+    let dummy=ListNode(0)
+    var pre=dummy
+    var node = head
+    
+    while node != nil
+    {
+        if node!.val<x
+        {
+            pre.next=node
+            pre=node!
+        }
+        node=node!.next
+    }
+    //node.next=nil
+    return dummy.next
+    
+}
+
+func partition(_ head:ListNode?,_ x:Int)->ListNode?
+{
+    let preDummy = ListNode(0)
+    var prev=preDummy
+    var postDummy=ListNode(0)
+    var post=postDummy
+    var node = head
+    
+    while node != nil
+    {
+        if node!.val<x
+        {
+            prev.next=node
+            prev=node!
+        }
+        else
+        {
+            post.next=node
+            post=node!
+        }
+        node=node!.next
+    }
+    
+    post.next=nil
+    prev.next=postDummy.next
+    return preDummy.next
+    
+    
+}
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
