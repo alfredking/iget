@@ -149,7 +149,10 @@ func getLeftList(_ head:ListNode?,_ x:Int)->ListNode?
         }
         node=node!.next
     }
+    
+    //防止构成环
     //node.next=nil
+    pre.next=nil
     return dummy.next
     
 }
@@ -180,6 +183,64 @@ func partition(_ head:ListNode?,_ x:Int)->ListNode?
     post.next=nil
     prev.next=postDummy.next
     return preDummy.next
+    
+    
+}
+
+func hasCycle(_ head : ListNode?)-> Bool
+{
+    var slow = head
+    var fast = head
+    while fast != nil && fast!.next != nil
+    {
+        slow=slow!.next
+        fast=fast!.next!.next
+        
+        if slow === fast
+        {
+            return true
+        }
+        
+    }
+    return false
+    
+}
+
+func removeNthFromEnd(_ head:ListNode?,_ n :Int)->ListNode?
+{
+    guard let head = head
+    else
+    {
+     return nil
+    }
+    
+    let dummy = ListNode(0)
+    dummy.next = head
+    var prev :ListNode? = dummy
+    var post :ListNode? = dummy
+    
+    //设置最后一个节点初始位置
+    for _ in 0 ..< n
+    {
+        if post == nil
+        {
+            break
+        }
+        post=post!.next
+    }
+    
+    //同时移动前后节点
+    while post != nil && post!.next != nil
+    {
+        prev=prev!.next
+        post=post!.next
+    }
+    
+    //删除节点
+    prev!.next=prev!.next!.next
+    
+    return dummy.next
+    
     
     
 }
@@ -245,6 +306,37 @@ class ViewController: UIViewController {
         
         let hello=_reverseWords("hello alfred king")
         print(hello!)
+        
+        
+        let testlist=ListNode(4)
+        let test_list=List()
+        test_list.head = testlist
+        test_list.appendToHead(3)
+        test_list.appendToHead(8)
+        test_list.appendToHead(12)
+        test_list.appendToHead(17)
+        test_list.appendToHead(6)
+        var print_list = test_list.head
+        while print_list != nil
+        {
+            print((print_list?.val)!)
+            print_list=print_list?.next
+        }
+        
+        var list_result=partition(test_list.head, 10)
+        print((list_result?.val))
+        
+        removeNthFromEnd(list_result, 2)
+        
+        while list_result != nil
+        {
+            print((list_result?.val)!)
+            list_result=list_result?.next
+        }
+        
+        
+        
+        
         
         
         
