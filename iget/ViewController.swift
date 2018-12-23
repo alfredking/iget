@@ -161,7 +161,7 @@ func partition(_ head:ListNode?,_ x:Int)->ListNode?
 {
     let preDummy = ListNode(0)
     var prev=preDummy
-    var postDummy=ListNode(0)
+    let postDummy=ListNode(0)
     var post=postDummy
     var node = head
     
@@ -244,6 +244,254 @@ func removeNthFromEnd(_ head:ListNode?,_ n :Int)->ListNode?
     
     
 }
+
+func printList(_ head : ListNode?)
+{
+    var list_head=head
+    while list_head != nil
+    {
+        print((list_head?.val)!)
+        list_head=list_head?.next
+    }
+}
+
+protocol Stack
+{
+    associatedtype Element
+    var isEmpty :Bool {get}
+    var size:Int {get}
+    var peak: Element? {get}
+    
+    mutating func push(_ newElement: Element)
+    mutating func pop()->Element?
+    
+}
+
+struct integerStack:Stack
+{
+    typealias Element = Int
+    var isEmpty: Bool { return stack.isEmpty }
+    var size: Int {return stack.count}
+    var peak: Element? {return stack.last}
+    private var stack = [Element]()
+    
+    mutating func push(_ newElement: Element)
+    {
+        stack.append(newElement)
+    }
+    
+    mutating func pop() -> Element?
+    {
+        return stack.popLast()
+    }
+    
+}
+
+protocol Queue
+{
+    associatedtype Element
+    var isEmpty : Bool {get}
+    var size : Int {get}
+    var peak : Element? {get}
+    
+    mutating func enqueue(_ newElement :Element)
+    mutating func dequeue()->Element?
+    
+}
+
+struct integerQueue:Queue
+{
+    typealias Element = Int
+    
+    private var left=[Element]()
+    private var right=[Element]()
+    
+    var isEmpty: Bool {return left.isEmpty&&right.isEmpty}
+    var size: Int {return left.count+right.count}
+    var  peak:  Element? {return left.isEmpty ? right.first : left.last}
+    
+    mutating func enqueue(_ newElement: Element)
+    {
+        right.append(newElement)
+    }
+    
+    mutating func dequeue() -> Element?
+    {
+        if left.isEmpty
+        {
+            left=right.reversed()
+            right.removeAll()
+        }
+        return left.popLast()
+    }
+    
+    
+    
+    
+    
+}
+
+func simplifyPath(_ path : String)->String
+{
+    var pathStack = [String]()
+    let paths = path.components(separatedBy: "/")
+    
+    for path in paths
+    {
+        guard path != "."
+        else
+        {
+            continue
+        }
+        
+        if path == ".."
+        {
+            if(pathStack.count>0)
+            {
+                pathStack.removeLast()
+            }
+        }
+        else if (path != "")
+        {
+            pathStack.append(path)
+        }
+    }
+    
+    
+    print(pathStack)
+    
+    //难道是闭包编程？
+    let res = pathStack.reduce(""){total,dir in "\(total)/\(dir)"}
+    
+    print(res)
+    
+    return res.isEmpty ? "/" : res
+    
+    
+}
+
+
+struct MyQueue
+{
+    var stackA :Stack
+    var stackB :Stack
+    
+    var isEmpty : Bool
+    {
+        return stackA.isEmpty && stackB.isEmpty
+    }
+    
+    var peak : Any ?
+    {
+       get
+    {
+       shift()
+       return stackB.peak
+    }
+    
+    }
+    
+    var size : Int
+    {
+        get
+        {
+            return stackA.size+stackB.size
+        }
+    }
+    
+    init()
+    {
+        stackA=Stack()
+        stackB=Stack()
+    }
+    
+    func enqueue (object : Any)
+    {
+        stackA.push(object)
+    }
+    
+    func dequeue() -> Any?
+    {
+        shift()
+        return stackB.pop()
+    }
+    
+    fileprivate func shift()
+    {
+        if stackB.isEmpty
+        {
+            while !stackA.isEmpty
+            {
+                stackB.push(stackA.pop()!)
+            }
+        }
+    }
+    
+    
+}
+
+struct MyStack
+{
+    var queueA : Queue
+    var queueB : Queue
+    
+    init()
+    {
+        queueA=Queue()
+        queueB=Queue()
+    }
+    
+    var isEmpty : Bool
+    {
+        return queueA.isEmpty && queueB.isEmpty
+    }
+    
+    var peak : Any?
+    {
+        get
+        {
+            shift()
+            let peakObj = queueA.peak
+            queueB.enqueue(queueA.dequeue()!)
+            swap()
+            return peakObj
+            
+        }
+    }
+    
+    var size :Int
+    {
+        return queueA.size
+    }
+    
+    func push(object : Any)
+    {
+        queueA.enqueue(object)
+    }
+    
+    func pop() -> Any?
+    {
+        shift()
+        let popObject = queueA.dequeue()
+        swap()
+        return popObject
+        
+    }
+    
+    private func shift()
+    {
+        while queueA.size != 1
+        {
+            queueB.enqueue(queueA.dequeue()!)
+        }
+    }
+    
+    private func swap()
+    {
+        (queueA,queueB) = (queueB,queueA) //swift元组
+    }
+    
+}
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -316,33 +564,17 @@ class ViewController: UIViewController {
         test_list.appendToHead(12)
         test_list.appendToHead(17)
         test_list.appendToHead(6)
-        var print_list = test_list.head
-        while print_list != nil
-        {
-            print((print_list?.val)!)
-            print_list=print_list?.next
-        }
+        printList(test_list.head)
         
-        var list_result=partition(test_list.head, 10)
-        print((list_result?.val))
+        let list_result=partition(test_list.head, 5)
+        print((list_result?.val)!)
         
         removeNthFromEnd(list_result, 2)
         
-        while list_result != nil
-        {
-            print((list_result?.val)!)
-            list_result=list_result?.next
-        }
+        printList(list_result)
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        simplifyPath("/a/./b/../../home/")
+        simplifyPath("/a/./b/c/123/home/")
         
         
     }

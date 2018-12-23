@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A507DD121CFF16A005CBF42 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A507DD021CFF16A005CBF42 /* BinaryTree.swift */; };
 		B4D68D0921AE85E000A5DDCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D68D0821AE85E000A5DDCB /* AppDelegate.swift */; };
 		B4D68D0B21AE85E000A5DDCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D68D0A21AE85E000A5DDCB /* ViewController.swift */; };
 		B4D68D0E21AE85E000A5DDCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D68D0C21AE85E000A5DDCB /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A507DD021CFF16A005CBF42 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		B4D68D0521AE85E000A5DDCB /* iget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D68D0821AE85E000A5DDCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4D68D0A21AE85E000A5DDCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				B4D68D1421AE85E100A5DDCB /* LaunchScreen.storyboard */,
 				B4D68D1721AE85E100A5DDCB /* Info.plist */,
 				B4D68D0F21AE85E000A5DDCB /* iget.xcdatamodeld */,
+				8A507DD021CFF16A005CBF42 /* BinaryTree.swift */,
 			);
 			path = iget;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A507DD121CFF16A005CBF42 /* BinaryTree.swift in Sources */,
 				B4D68D0B21AE85E000A5DDCB /* ViewController.swift in Sources */,
 				B4D68D0921AE85E000A5DDCB /* AppDelegate.swift in Sources */,
 				B4D68D1121AE85E000A5DDCB /* iget.xcdatamodeld in Sources */,
