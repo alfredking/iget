@@ -373,21 +373,21 @@ func simplifyPath(_ path : String)->String
 
 struct MyQueue
 {
-    var stackA :Stack
-    var stackB :Stack
+    var stackA : integerStack
+    var stackB : integerStack
     
     var isEmpty : Bool
     {
         return stackA.isEmpty && stackB.isEmpty
     }
     
-    var peak : Any ?
+    var peak : Any?
     {
-       get
-    {
-       shift()
-       return stackB.peak
-    }
+        mutating get
+        {
+           shift()
+           return stackB.peak
+        }
     
     }
     
@@ -401,22 +401,22 @@ struct MyQueue
     
     init()
     {
-        stackA=Stack()
-        stackB=Stack()
+        stackA=integerStack()
+        stackB=integerStack()
     }
     
-    func enqueue (object : Any)
+    mutating func enqueue (object : Any)
     {
-        stackA.push(object)
+        stackA.push(object as! integerStack.Element)
     }
     
-    func dequeue() -> Any?
+    mutating func dequeue() -> Any?
     {
         shift()
         return stackB.pop()
     }
     
-    fileprivate func shift()
+    fileprivate mutating func shift()
     {
         if stackB.isEmpty
         {
@@ -432,13 +432,13 @@ struct MyQueue
 
 struct MyStack
 {
-    var queueA : Queue
-    var queueB : Queue
+    var queueA : integerQueue
+    var queueB : integerQueue
     
     init()
     {
-        queueA=Queue()
-        queueB=Queue()
+        queueA=integerQueue()
+        queueB=integerQueue()
     }
     
     var isEmpty : Bool
@@ -448,7 +448,7 @@ struct MyStack
     
     var peak : Any?
     {
-        get
+        mutating get
         {
             shift()
             let peakObj = queueA.peak
@@ -464,12 +464,12 @@ struct MyStack
         return queueA.size
     }
     
-    func push(object : Any)
+    mutating func push(object : Any)
     {
-        queueA.enqueue(object)
+        queueA.enqueue(object as! integerQueue.Element)
     }
     
-    func pop() -> Any?
+    mutating func pop() -> Any?
     {
         shift()
         let popObject = queueA.dequeue()
@@ -478,7 +478,7 @@ struct MyStack
         
     }
     
-    private func shift()
+    private mutating func shift()
     {
         while queueA.size != 1
         {
@@ -486,7 +486,7 @@ struct MyStack
         }
     }
     
-    private func swap()
+    private mutating func swap()
     {
         (queueA,queueB) = (queueB,queueA) //swift元组
     }
@@ -575,6 +575,25 @@ class ViewController: UIViewController {
         
         simplifyPath("/a/./b/../../home/")
         simplifyPath("/a/./b/c/123/home/")
+        
+        //队列栈测试
+        var teststack=MyStack()
+        teststack.push(object: 3)
+        teststack.push(object: 5)
+        teststack.push(object: 7)
+        teststack.push(object: 10)
+        
+        print(teststack)
+        print(teststack.peak)
+        teststack.push(object: 34)
+        teststack.push(object: 10)
+        teststack.pop()
+        print(teststack)
+        print(teststack.peak)
+        
+        
+        
+        
         
         
     }
