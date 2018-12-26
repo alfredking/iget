@@ -569,27 +569,27 @@ class ViewController: UIViewController {
         let list_result=partition(test_list.head, 5)
         print((list_result?.val)!)
         
-        removeNthFromEnd(list_result, 2)
+        print(removeNthFromEnd(list_result, 2)!)
         
         printList(list_result)
         
-        simplifyPath("/a/./b/../../home/")
-        simplifyPath("/a/./b/c/123/home/")
+        print(simplifyPath("/a/./b/../../home/"))
+        print(simplifyPath("/a/./b/c/123/home/"))
         
         //队列栈测试
         var teststack=MyStack()
         teststack.push(object: 3)
         teststack.push(object: 5)
         teststack.push(object: 7)
-        teststack.push(object: 10)
+        teststack.push(object: 9)
         
         print(teststack)
-        print(teststack.peak)
+        print((teststack.peak)!)
         teststack.push(object: 34)
         teststack.push(object: 10)
-        teststack.pop()
+        print((teststack.pop())!)
         print(teststack)
-        print(teststack.peak)
+        print((teststack.peak)!)
         
         
         
