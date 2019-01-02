@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 func twoSumSet(nums: [Int], target: Int) -> [Int]
 {
     var dict = [Int: Int]()
@@ -492,6 +491,12 @@ struct MyStack
     }
     
 }
+
+func isStrNum(str:String)->Bool
+{
+    return Int(str) != nil
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -543,10 +548,7 @@ class ViewController: UIViewController {
         mstr+="hello WORLD"
         print(mstr)
         
-        func isStrNum(str:String)->Bool
-        {
-            return Int(str) != nil
-        }
+        
         
         let re=isStrNum(str:mstr)
         print(re)
@@ -576,7 +578,7 @@ class ViewController: UIViewController {
         print(simplifyPath("/a/./b/../../home/"))
         print(simplifyPath("/a/./b/c/123/home/"))
         
-        //队列栈测试
+        print("**************队列栈测试*********************")
         var teststack=MyStack()
         teststack.push(object: 3)
         teststack.push(object: 5)
@@ -590,6 +592,58 @@ class ViewController: UIViewController {
         print((teststack.pop())!)
         print(teststack)
         print((teststack.peak)!)
+        
+        
+        print("**************binary tree test*********************")
+        let  root = TreeNode(5)
+        root.left = TreeNode(3)
+        root.right=TreeNode(7)
+        root.left?.left=TreeNode(13)
+        root.left?.right=TreeNode(9)
+        root.right?.left=TreeNode(15)
+        root.right?.right=TreeNode(25)
+        
+        let depth=maxDepth(root)
+        print(depth)
+        
+        let pre = preorderTraversal(root)
+        print(pre)
+        
+        let level = levelOrder(root)
+        print(level)
+        
+        
+        
+        print("**************sorting test*********************")
+        
+        let merge = mergeSort([8,4,5,7,1,3,6,2])
+        print(merge)
+        var  meetings = [MeetingTime(1,3),MeetingTime(2,4),MeetingTime(5,7),MeetingTime(13,17),MeetingTime(9,10),MeetingTime(6,7),MeetingTime(6,8)]
+        let conf = mergeTime(&meetings)
+        print(conf)
+        
+        print(binarySearch([1,4,5,6,7,88,56],6))
+        print(binarySearch([1,4,5,6,7,88,56],12))
+        
+        print(search([7,8,9,1,2,3,4,5,6],4))
+        
+        print("**************news test*********************")
+        testnews()
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
         
         
         
