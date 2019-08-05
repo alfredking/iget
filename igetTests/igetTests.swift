@@ -7,6 +7,7 @@
 //
 
 import XCTest
+//import grammarTest
 @testable import iget
 
 class igetTests: XCTestCase {
@@ -22,6 +23,16 @@ class igetTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        test_copy_on_write()
+        
+        test_property_observer()
+        
+        testOr()
+        
+        testCurrying()
+        
+        testFunc()
     }
 
     func testPerformanceExample() {

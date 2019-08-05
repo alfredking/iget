@@ -499,10 +499,15 @@ func isStrNum(str:String)->Bool
 
 class ViewController: UIViewController {
 
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //在 Arrays.swift 中,主要定义了 Array, ContiguousArray 和ArraySlice 三种public 类型,它们具有相同的接口,而且结构和行为也很类似
+        
+        let  myLeakVC: myLeakViewController = myLeakViewController();
+        [self.navigationController?, pushViewController(myLeakVC, animated: YES)];
         let say="hello swift"
         print(say)
         let nums=[1,2,3]
@@ -631,23 +636,46 @@ class ViewController: UIViewController {
         testnews()
         
         
+        var matrix :[[Character]] = [["a","d","d","f","w"],["f","h","j","u","i"],["i","d","j","d","s"],["h","k","s","w","i"],["o","r","u","a","z"]]
+            print(matrix[0].count)
+            var xOffset = CGFloat(0)
+            var yOffset = CGFloat(0)
+            let cellWidth = UIScreen.main.bounds.size.width/CGFloat(matrix[0].count)
+            let cellHeight = UIScreen.main.bounds.size.height/CGFloat(matrix[0].count)
+            
+            for i in 0..<matrix.count
+            {
+            for j in 0..<matrix.count
+            {
+            let label = UILabel(frame: CGRect(x:xOffset,y:yOffset,width:cellWidth,height:cellHeight))
+            label.textAlignment = NSTextAlignment.center
+            label.text = String(matrix[i][j])
+            view.addSubview(label)
+            //labels.append(label)
+            xOffset+=cellWidth
+            
+            }
+            xOffset=0
+            yOffset+=cellHeight
+            }
+        print("**************trie findwords*********************")
+        let wordDict=["hdjds","test","hkru","dksu"]
+        let   resWords = findWords(matrix,wordDict)
+        print(resWords)
+        
+        print("**************dp test*********************")
+        
+        print(wordDistance("test", "dp"))
+        print(wordDistance("test", "te"))
+        print(wordDistance("test", "testa"))
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-        
-        
-        
-        
+        var arr=[0,0,0]
+        var newArr = arr
+        arr[0]=1
+        print(arr)
+        print(newArr)
         
         
     }

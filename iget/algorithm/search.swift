@@ -8,34 +8,144 @@
 
 import UIKit
 
-
-class testsearch : UIViewController
+class TrieNode<T : Hashable>
 {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-var matrix = [["a","d","d","f","w"],["f","h","j","u","i"],["i","d","j","d","s"],["h","k","s","w","i"],["o","r","u","a","z"]]
-    print(matrix[0].count)
-var xOffset = CGFloat(0)
-var yOffset = CGFloat(0)
-let cellWidth = UIScreen.main.bounds.size.width/CGFloat(matrix[0].count)
-let cellHeight = UIScreen.main.bounds.size.height/CGFloat(matrix[0].count)
-
-for i in 0...matrix.count
-{
-    for j in 0...matrix.count
+    var value: T?
+    weak var parent : TrieNode?
+    var children : [T: TrieNode]=[:]
+    var isTerminating = false
+    
+    init(value: T? = nil,parent:TrieNode?=nil)
     {
-        let label = UILabel(frame: CGRect(x:xOffset,y:yOffset,width:cellWidth,height:cellHeight))
-        label.text = String(matrix[i][j])
-        view.addSubview(label)
-        labels.append(label)
-        xOffset+=cellWidth
+        self.value = value
+        self.parent = parent
+    }
+    
+    func  add(child:T)
+    {
+        guard children[child]==nil
+        else
+        {
+            return
+        }
+        
+        children[child] = TrieNode(value : child,parent : self)
+    }
+    
+}
+
+class Trie
+{
+    typealias Node = TrieNode<Character>
+    fileprivate let root : Node
+    init()
+    {
+        root = Node()
+    }
+}
+
+extension Trie
+{
+    func insert(word:String)
+    {
+        guard !word.isEmpty
+        else
+        {
+            return
+        }
+        
+        //将从根节点开始执行迭代
+        var currentNode = root
+        let characters = Array(word.lowercased().characters)
+        var currentIndex = 0
+        
+        while currentIndex < characters.count
+        {
+            let character = characters[currentIndex]
+            if let child = currentNode.children[character]
+            {
+                currentNode = child
+            }
+            else
+            {
+                currentNode.add(child: character)
+                currentNode = currentNode.children[character]!
+            }
+            currentIndex += 1
+            
+            if currentIndex == characters.count
+            {
+                currentNode.isTerminating=true
+            }
+        }
         
     }
-    xOffset=0
-    yOffset+=cellHeight
+    
+    
+    
+    
+    func contains(_ word:String)->Bool
+    {
+        guard !word.isEmpty
+        else
+        {
+            return false
+        }
+        
+        var currentNode = root
+        var characters = Array(word.lowercased().characters)
+        var currentIndex = 0
+        
+        while currentIndex < characters.count,let child = currentNode.children[characters[currentIndex]]
+        {
+            currentIndex += 1
+            currentNode = child
+        }
+        
+        if currentIndex == characters.count && currentNode.isTerminating
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+        
+    }
+    
+    func prefixWith(_ prefix:String) -> Bool
+    {
+        var node = root
+        var prefix = [Character](prefix.characters)
+        
+        for i in 0..<prefix.count
+        {
+            let c = prefix[i]
+            
+            if node.children[c] == nil
+            {
+                return false
+            }
+            node = node.children[c]!
+        }
+        
+        return true
+    }
 }
+
+
+func _convertToTrie(_ words:[String])->Trie
+{
+    let trie = Trie()
+    for str in words
+    {
+        trie.insert(word: str)
+    }
+    
+    return trie
+    
 }
-}
+
 func searchWord(_ board: [[Character]])->Bool
 {
     guard board.count>0&&board[0].count>0
@@ -46,7 +156,7 @@ func searchWord(_ board: [[Character]])->Bool
     
     let (m,n) = (board.count,board[0].count)
     var visited = Array(repeating: Array(repeating: false, count: n), count: m)
-    var wordContent = [Character]("crowd")
+    let wordContent = [Character]("crowd")
     
     for i in 0...m
     {
@@ -88,30 +198,30 @@ func dfs(_ board:[[Character]],_ wordContent : [Character],_ m:Int,_ n :Int,_ i:
         return true
     }
     
-    visited[i][j]=false
+    visited[i][j]=false //下一步查找不到就要回溯
     return false
 }
 
-func findWords(_ board:[[Character]],_ dict:Set<String>)->[String]
+func findWords(_ board:[[Character]],_ dict:[String])->[String]
 {
     var  res = [String]()
     let (m,n) = (board.count,board[0].count)
     
-    let trie=_converseSetToTrie(dict)
+    let trie=_convertToTrie(dict)
     var visited = Array(repeating: Array(repeating: false, count: n), count: m)
     
     for i in 0..<m
     {
         for j in 0..<n
         {
-            _dfs(board, m, n, i, j, visited, &res, trie,"")
+            _dfs(board, m, n, i, j, &visited, &res, trie,"")
         }
     }
     return res
     
 }
 
-private func _dfs(_ board:[[Character]],_ m:Int,_ n : Int,_ i : Int,_ j : Int, visited : inout [[Bool]], res : inout [String],_ trie : Trie ,_ str : String)
+private func _dfs(_ board:[[Character]],_ m:Int,_ n : Int,_ i : Int,_ j : Int,_ visited : inout [[Bool]], _ res : inout [String],_ trie : Trie ,_ str : String)
 {
     guard i>=0&&i<m&&j>=0&&j<n
         else
@@ -125,7 +235,7 @@ private func _dfs(_ board:[[Character]],_ m:Int,_ n : Int,_ i : Int,_ j : Int, v
         return
     }
     
-    var str = str+"\(board[i][j])"
+    let str = str+"\(board[i][j])"
     guard trie.prefixWith(str)
     else
     {
@@ -133,7 +243,7 @@ private func _dfs(_ board:[[Character]],_ m:Int,_ n : Int,_ i : Int,_ j : Int, v
     }
     
     // 确认当前字母组合是否为单词
-    if trie.isWord(str) && !res.contains(str)
+    if trie.contains(str) && !res.contains(str)
     {
         res.append(str)
     }
@@ -144,7 +254,7 @@ private func _dfs(_ board:[[Character]],_ m:Int,_ n : Int,_ i : Int,_ j : Int, v
     _dfs(board, m, n, i - 1, j, &visited, &res, trie, str)
     _dfs(board, m, n, i, j + 1, &visited, &res, trie, str)
     _dfs(board, m, n, i, j - 1, &visited, &res, trie, str)
-    visited[i][j] = true
+    visited[i][j] = false
     
     
 }
