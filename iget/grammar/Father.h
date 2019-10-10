@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong,nonatomic) Son *son;
 
+-(void )testcopy;
+
 @end
 
 NS_ASSUME_NONNULL_END

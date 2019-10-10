@@ -10,21 +10,37 @@ import UIKit
 
 class myLeakViewController: UIViewController {
 
-    var label: UILabel! = UILabel(frame:CGRect(x:10, y:20, width:300, height:100))
+    var label: UILabel! = UILabel(frame:CGRect(x:100, y:200, width:300, height:100))
     
     var myView: MyView?
     func testMethod() {
+        label.textColor = UIColor.black
         label.text = "haha"
     }
+    
+//    var myView: MyView? = MyView(){ [unowned self] in
+//         self.label.text = "haha"
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.view.addSubview(label);
+        self.view.backgroundColor = UIColor.yellow
+        label.backgroundColor = UIColor.white
+        self.view.addSubview(label)
          myView = MyView(action: testMethod)
+        
+        let tapGestrue:UITapGestureRecognizer  = UITapGestureRecognizer(target: self, action: #selector(tapBack))
+        
+        self.view.addGestureRecognizer(tapGestrue)
     }
     
+    
+    @objc func tapBack()
+    {
+        self.navigationController?.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation
