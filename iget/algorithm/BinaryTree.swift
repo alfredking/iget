@@ -4,7 +4,7 @@
 //
 //  Created by alfredking－cmcc on 2018/12/24.
 //  Copyright © 2018 alfredking. All rights reserved.
-//
+//p47
 
 import UIKit
 
@@ -37,6 +37,8 @@ func isvalidBST(_ root : TreeNode?) -> Bool
     return _helper(root,nil,nil)
 }
 
+
+//二叉查找树，左子树节点小于根节点，右子树大于根节点
 private func _helper(_ node : TreeNode? , _ min : Int?,_ max : Int?)->Bool
 {
     guard let node = node
@@ -60,6 +62,8 @@ private func _helper(_ node : TreeNode? , _ min : Int?,_ max : Int?)->Bool
     
 }
 
+
+//用栈实现前序遍历
 func preorderTraversal(_ root : TreeNode?)-> [Int]
 {
     var res = [Int]()
@@ -121,8 +125,3 @@ func levelOrder(_ root : TreeNode?)-> [[Int]]
     
 }
 
-//class BinaryTree: NSObject
-//{
-//    
-//   
-//}

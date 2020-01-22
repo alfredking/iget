@@ -7,18 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Son.h"
 NS_ASSUME_NONNULL_BEGIN
 
 //Xcode的#import比#include的好处是解决多重包含的问题，遇到了相互包含头文件的问题property with 'retain(or strong)' attribute must be of object type”解决方案就是在出错头文件中实现@class 文件名;
 
 
-@class Son;
 @interface Father : NSObject
 
-@property (strong,nonatomic) Son *son;
 
 -(void )testcopy;
+-(void )testblock;
 
 @end
 

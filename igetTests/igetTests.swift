@@ -20,16 +20,88 @@ class igetTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    
+    func testArray()
+    {
+        let testArray = TestArray()
+        testArray.test()
+    }
+    
+    func testStackQueue()
+    {
+        let testStackQueue = TestStackQueue()
+        testStackQueue.test()
+    }
+    
+    func testDictionarySet()
+    {
+        let testDictionarySet = TestDictionarySet()
+        testDictionarySet.test()
+    }
+    
+    func testString()
+    {
+        let testString = TestString()
+        testString.test()
+    }
+    
+    
+    //p34
+    func testList()
+    {
+        let testList = TestList()
+        testList.test()
+    }
+    
+    //p47
+    func testBinaryTree()
+    {
+        let testBinaryTree = TestBinaryTree()
+        testBinaryTree.test()
+    }
+    
+    //p54
+    func testSorting()
+    {
+        let testSorting = TestSorting()
+        testSorting.test()
+    }
+    
+    
+    //p64
+    func testBinSearch()
+    {
+        let biSearch = binSearch()
+        biSearch.test()
+    }
+    
+    //p79动态规划
+    func testDynamicPlanning()
+    {
+        print("**************dp test*********************")
+        
+        print(wordDistance("test", "dp"))
+        print(wordDistance("test", "te"))
+        print(wordDistance("test", "testa"))
+        
+        print("**************many t*********************")
+        //首先会计算t到后一个字符串的最大距离是10
+        print(wordDistance("test", "testttttttt"))
+    }
+    
+    
+    
+        //p87
+        func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
+        //p87
         test_copy_on_write()
-        
+        //p87
         test_property_observer()
-        
+        //p89
         testOr()
-        
+        //p89
         testCurrying()
         
         
@@ -43,7 +115,7 @@ class igetTests: XCTestCase {
         testFunc()
     }
     
-    
+    //p92
     func testCopy() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -52,6 +124,20 @@ class igetTests: XCTestCase {
         
        
     }
+    
+    //p95 block与代理的区别
+    func testBlock() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let father = Father()
+        father.testblock()
+        
+        
+    }
+    
+    
+    
+    
     
     func testStatic() {
          testStaticLanguage()

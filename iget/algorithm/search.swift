@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+//前缀树实现https://www.jianshu.com/p/3be5cbb4cf9b
 class TrieNode<T : Hashable>
 {
     var value: T?
@@ -146,6 +148,9 @@ func _convertToTrie(_ words:[String])->Trie
     
 }
 
+
+
+//p71在二维矩阵中查找单词
 func searchWord(_ board: [[Character]])->Bool
 {
     guard board.count>0&&board[0].count>0
@@ -185,6 +190,8 @@ func dfs(_ board:[[Character]],_ wordContent : [Character],_ m:Int,_ n :Int,_ i:
         return false
     }
     
+    
+    //调用函数里面已经定义了搜索的起点
     guard !visited[i][j]&&board[i][j]==wordContent[index]
     else
     {
@@ -202,6 +209,8 @@ func dfs(_ board:[[Character]],_ wordContent : [Character],_ m:Int,_ n :Int,_ i:
     return false
 }
 
+
+//查找dict包含的单词，首先把dict构成一个前缀树trie
 func findWords(_ board:[[Character]],_ dict:[String])->[String]
 {
     var  res = [String]()

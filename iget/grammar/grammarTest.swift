@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+//p87
 func test_copy_on_write()
 {
     print("test_copy_on_write")
@@ -28,7 +30,7 @@ func test_copy_on_write()
 
 
 
-
+//p87
 func test_property_observer()
 {
     var title : String = "test"  //此处必须赋初始值，要不然会报错
@@ -48,7 +50,7 @@ func test_property_observer()
 }
 
 
-//MARK: - 在结构体中修改成员变量的方法
+//p88 MARK: - 在结构体中修改成员变量的方法
 protocol Pet
 {
     var name : String {get set}
@@ -65,8 +67,8 @@ struct MyDog : Pet
     }
 }
 
-//MARK: - @autoclosure 用swift实现或操作
-//_表示不需要显式指定参数
+//p88 MARK: - @autoclosure 用swift实现或操作
+//_表示不需要显式指定参数 https://www.jianshu.com/p/e78e9d12dba1
 func or1(_ value1: Bool, _ value2: Bool) -> Bool
 {
     if value1 {
@@ -136,7 +138,7 @@ func testOr()
 }
 
 
-//MARK: - swift 柯里化currying
+//p89 MARK: - swift 柯里化currying
 func add(_ num:Int)->(Int)->Int
 {
      print("num is \(num)")
@@ -154,7 +156,7 @@ let resultAddTwo = addTwo(3)
 print("addTwo result is \(resultAddTwo)")
 }
 
-//MARK: - 函数式编程
+//p90MARK: - 函数式编程
 func testFunc()
 {
 

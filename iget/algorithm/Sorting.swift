@@ -4,9 +4,12 @@
 //
 //  Created by alfredking－cmcc on 2018/12/30.
 //  Copyright © 2018 alfredking. All rights reserved.
-//
+//p54
 
 import UIKit
+
+//让左右两部分有序，然后合并，递归
+//https://www.cnblogs.com/agui521/p/6918229.html
 func mergeSort(_ array :[Int])->[Int]
 {
     var helper = Array(repeating : 0, count : array.count)
@@ -75,6 +78,24 @@ func merge(_ array :inout [Int], _ helper :inout [Int],_ low : Int,_ middle : In
     
 }
 
+//传统快速排序方法讲解https://www.runoob.com/w3cnote/quick-sort.html
+func quicksort(_ array:[Int])->[Int]{
+    guard array.count > 1 else {
+        return array
+    }
+    let pivot = array[array.count/2]
+    let left = array.filter{ $0 < pivot}
+    let middle = array.filter{ $0 == pivot }
+    let right = array.filter{ $0 > pivot}
+    
+    return quicksort(left) + middle + quicksort(right)
+    
+    
+}
+
+
+//解题思路https://www.jianshu.com/p/70e08f1a95c6
+//p59
 public class MeetingTime
 {
     public var start:Int
@@ -95,6 +116,7 @@ func mergeTime(_ meetingTimes: inout [MeetingTime])->[MeetingTime]
         return meetingTimes
     }
     
+    //先对开始时间进行升序排列，如果它们相同，就比较结束时间。
         meetingTimes.sort() {
         if $0.start != $1.start
         {
@@ -112,7 +134,8 @@ func mergeTime(_ meetingTimes: inout [MeetingTime])->[MeetingTime]
     print(res[0].end)
     print("first element")
     
-    //遍历排序之后的原数组，并与结果数组归并
+ //遍历排序之后的原数组，并与结果数组归并，每次比较原数组（排序后）当前会议时间与结果数组
+ //中当前的会议时间，假如它们有重叠，则归并；如果没有，则直接添加进结果数组之中
     for i in 1...meetingTimes.count-1
     {
         let last = res[res.count-1]

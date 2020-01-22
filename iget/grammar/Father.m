@@ -25,7 +25,7 @@
 
 @implementation Father
 
--(void )testcopy
+-(void)testcopy
 {
     
     NSMutableString *string = [NSMutableString stringWithFormat:@"name"];
@@ -71,6 +71,131 @@
     
     //self.title只有在strong属性的时候会变化
     NSLog(@"self.title is %@",self.title);
+    
+    
+}
+
+
+//__block关键字实现https://www.jianshu.com/p/404ff9d3cd42  https://www.jianshu.com/p/e5b56b883d54
+-(void) testblock
+{
+    
+    //1.基本数据类型(不被__block修饰)
+    int a = 100;                                //a在栈区
+    NSLog(@"栈中a的地址%p",&a);
+    
+    void (^intBlock)(void) = ^(void){
+        //a = 33;  //Block不允许修改外部变量的值
+        NSLog(@"a = %d",a);                     //a在堆区
+        NSLog(@"堆中a的地址%p",&a);
+    };
+    
+    a = 33;                                    //a在栈区
+    
+    NSLog(@"修改后栈中a的地址%p",&a);
+
+    intBlock();
+    
+    NSLog(@"执行block之后栈中a的地址%p",&a);
+    
+    //输出:
+    //栈中a的地址0x7fff5d5035ac
+    //a = 100
+    //堆中a的地址0x60c000256bb0
+    
+    
+    //2.oc对象(不被__block修饰)
+    NSString *str = @"zw";
+    NSLog(@"1--栈中str的地址%p,str指向堆中的地址%p",&str,str);
+    
+    void (^strBlock)(void) = ^(void){
+        //str = @"once";  Block不允许修改外部变量的值
+        NSLog(@"str = %@",str);
+        NSLog(@"3--堆中str的地址%p,str指向堆中的地址%p",&str,str);
+    };
+    NSLog(@"2--栈中str的地址%p,str指向堆中的地址%p",&str,str);
+    
+    strBlock();
+    
+    //番外的知识
+    str = @"once";
+    NSLog(@"4--栈中str的地址%p,str指向堆中的地址%p",&str,str);
+    
+    
+    /*输出：
+     1--栈中str的地址0x7fff5b9fa570,str指向堆中的地址0x1042051f0
+     2--栈中str的地址0x7fff5b9fa570,str指向堆中的地址0x1042051f0
+     str = zw
+     3--堆中str的地址0x60800024ad98,str指向堆中的地址0x1042051f0
+     4--栈中str的地址0x7fff5b9fa570,str指向堆中的地址0x108814290
+     */
+    
+    NSMutableString *mutableStr = [NSMutableString stringWithString:@"zw"];
+    
+    void (^mutableStrBlock)(void) = ^(void){
+        
+    //Block不允许修改外部变量的值，这里所说的外部变量的值，指的是栈中指针的地址。要想在Block内修改“外部变量”的值，必须被__block修饰。
+        mutableStr.string = @"once";
+        NSLog(@"mutableStr = %@",mutableStr);
+        //mutableStr = [NSMutableString stringWithString:@"once"];  //Block不允许修改外部变量的值
+    };
+    
+    mutableStrBlock();
+    
+    //输出 mutableStr = once
+    
+    
+    
+    //基本数据类型/oc对象(被__block修饰)
+    __block int b = 100;
+    __block NSString *strI = @"zw";
+    __block NSMutableString *strM = [NSMutableString stringWithString:@"zw"];
+    
+    NSLog(@"__block 1栈中b的地址%p",&b);
+    NSLog(@"__block 1栈中strI的地址%p,strI指向堆中的地址%p",&strI,strI);
+    NSLog(@"__block 1栈中strM的地址%p,strM指向堆中的地址%p",&strM,strM);
+    
+    b = 99;
+    strI = @"ONCE";
+    strM = [NSMutableString stringWithString:@"ONCE"];
+    NSLog(@"b = %d,strI = %@,strM = %@",b,strI,strM);
+    
+    NSLog(@"__block 5栈中b的地址%p",&b);
+    NSLog(@"__block 5栈中strI的地址%p,strI指向堆中的地址%p",&strI,strI);
+    NSLog(@"__block 5栈中strM的地址%p,strM指向堆中的地址%p",&strM,strM);
+    
+    void (^block)(void) = ^(void){
+        
+        NSLog(@"__block 3堆中b的地址%p",&b);
+        NSLog(@"__block 3堆中strI的地址%p,strI指向堆中的地址%p",&strI,strI);
+        NSLog(@"__block 3堆中strM的地址%p,strM指向堆中的地址%p",&strM,strM);
+        b = 66;
+        strI = @"once";
+        strM = [NSMutableString stringWithString:@"once"];
+        NSLog(@"b = %d,strI = %@,strM = %@",b,strI,strM);
+        
+        NSLog(@"__block 4堆中b的地址%p",&b);
+        NSLog(@"__block 4堆中strI的地址%p,strI指向堆中的地址%p",&strI,strI);
+        NSLog(@"__block 4堆中strM的地址%p,strM指向堆中的地址%p",&strM,strM);
+    };
+    
+    b = 99;
+    strI = @"ONCE";
+    strM = [NSMutableString stringWithString:@"ONCE"];
+    NSLog(@"b = %d,strI = %@,strM = %@",b,strI,strM);
+    
+    NSLog(@"__block 2栈中b的地址%p",&b);
+    NSLog(@"__block 2栈中strI的地址%p,strI指向堆中的地址%p",&strI,strI);
+    NSLog(@"__block 2栈中strM的地址%p,strM指向堆中的地址%p",&strM,strM);
+    
+    block();
+    
+    //输出 b = 99,strI = ONCE,strM = ONCE,
+    //输出 b == 66,strI = once,strM = once
+    
+    NSLog(@"__block 6栈中b的地址%p",&b);
+    NSLog(@"__block 6栈中strI的地址%p,strI指向堆中的地址%p",&strI,strI);
+    NSLog(@"__block 6栈中strM的地址%p,strM指向堆中的地址%p",&strM,strM);
     
     
 }
