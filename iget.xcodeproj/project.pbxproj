@@ -18,6 +18,7 @@
 		8A489D102340EFD700B988A1 /* POP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A489D0F2340EFD700B988A1 /* POP.swift */; };
 		8A489D132341F91700B988A1 /* TEST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A489D112341B78600B988A1 /* TEST.swift */; };
 		8A507DD121CFF16A005CBF42 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A507DD021CFF16A005CBF42 /* BinaryTree.swift */; };
+		8AA60809234F92870034C0CD /* TestArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA60808234F92870034C0CD /* TestArray.swift */; };
 		8AD01CC621D8777000950350 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD01CC521D8777000950350 /* Sorting.swift */; };
 		8AD01CC821D9E6B100950350 /* binSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD01CC721D9E6B100950350 /* binSearch.swift */; };
 		8AE07B2023045A8F00F8C510 /* SwiftProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE07B1F23045A8F00F8C510 /* SwiftProtocol.swift */; };
@@ -66,6 +67,7 @@
 		8A489D0F2340EFD700B988A1 /* POP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POP.swift; sourceTree = "<group>"; };
 		8A489D112341B78600B988A1 /* TEST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEST.swift; sourceTree = "<group>"; };
 		8A507DD021CFF16A005CBF42 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		8AA60808234F92870034C0CD /* TestArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArray.swift; sourceTree = "<group>"; };
 		8AD01CC521D8777000950350 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		8AD01CC721D9E6B100950350 /* binSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binSearch.swift; sourceTree = "<group>"; };
 		8AE07B1F23045A8F00F8C510 /* SwiftProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProtocol.swift; sourceTree = "<group>"; };
@@ -119,13 +121,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A15F9D523112F7D0084CE47 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		8AD01CC321D876BF00950350 /* supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,8 +149,6 @@
 		8AF1A79622F07B7F00E9E0C3 /* grammar */ = {
 			isa = PBXGroup;
 			children = (
-				8A15F9D523112F7D0084CE47 /* UI */,
-				8AF1A7DD22FEFE6E00E9E0C3 /* retain cycle */,
 				8AF1A79722F07BF400E9E0C3 /* grammarTest.swift */,
 				8A1CA384233D180600B81195 /* sharedInstance.swift */,
 				8AF1A7BD22F5DA1300E9E0C3 /* Father.h */,
@@ -174,15 +167,9 @@
 				8A489D0D2340B6F700B988A1 /* kvo.swift */,
 				8A489D0F2340EFD700B988A1 /* POP.swift */,
 				8A489D112341B78600B988A1 /* TEST.swift */,
+				8AA60808234F92870034C0CD /* TestArray.swift */,
 			);
 			path = grammar;
-			sourceTree = "<group>";
-		};
-		8AF1A7DD22FEFE6E00E9E0C3 /* retain cycle */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "retain cycle";
 			sourceTree = "<group>";
 		};
 		B4D68CFC21AE85E000A5DDCB = {
@@ -209,8 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				8AF1A79622F07B7F00E9E0C3 /* grammar */,
-				B4D68D0A21AE85E000A5DDCB /* ViewController.swift */,
 				8AD01CC421D876C900950350 /* algorithm */,
+				B4D68D0A21AE85E000A5DDCB /* ViewController.swift */,
 				8AD01CC321D876BF00950350 /* supporting */,
 			);
 			path = iget;
@@ -367,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AF1A7C222F5DA3300E9E0C3 /* Son.m in Sources */,
+				8AA60809234F92870034C0CD /* TestArray.swift in Sources */,
 				8AE07B2023045A8F00F8C510 /* SwiftProtocol.swift in Sources */,
 				8A15F9D4230920510084CE47 /* MethodSwizzling.swift in Sources */,
 				8A1CA385233D180600B81195 /* sharedInstance.swift in Sources */,
