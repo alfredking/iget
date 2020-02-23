@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>填写投保信息</title>
+<link rel="stylesheet" href="assets/css/style_insur.css" />
+	<link rel="stylesheet" href="assets/css/mobiscroll.css" />
+	<script src="assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="assets/js/insur.js"></script>
+	<script src="assets/js/mobiscroll.js"></script>
+</head>
+<body>
+
+<div class="head">
+	<a href="javascript:history.go(-1);" class="back"></a>
+	<p>安邦随e乐两全保险</p>
+</div>
+<div class="headbox"></div>
+
+<div class="pic"><a href=""><img src="assets/images/banner.jpg"></a></div>
+
+<div class="conbox mt05">
+	<dl class="insform">
+		<dt>购买金额(元)：</dt>
+		<dd><input type="number" class="inp" placeholder="100整数倍，最高500万" /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>保险期间：</dt>
+		<dd><div class="txt">10年</div></dd>
+	</dl>
+</div>
+
+<div class="instit">——<span>投保人信息</span>——</div>
+
+<div class="conbox">
+	<dl class="insform">
+		<dt>姓名：</dt>
+		<dd><input type="text" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>身份证号：</dt>
+		<dd><input type="text" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>证件有效起期：</dt>
+		<dd class="txtr"><time id="insDate" type="date" class="inp dat" ></time></dd>
+	</dl>
+	<dl class="insform">
+		<dt>证件有效止期：</dt>
+		<dd class="w4em"><div class="txt pl12 pr"><input type="checkbox" class="inprad l0 f_longterm" checked> 长期有效</div></dd>
+		<dd style="width:35%;margin-right:0.5rem"><time id="insEndDate" type="date" class="inp dat" style="padding-right:1.5rem;"></time></dd>
+	</dl>
+	<dl class="insform">
+		<dt>手机号码：</dt>
+		<dd><input type="number" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>电子邮箱：</dt>
+		<dd><input type="text" class="inp" placeholder="用于接收电子保单" /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>所在省：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在省</option>
+				<option>省</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>所在市：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在市</option>
+				<option>市</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>所在区县：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在区县</option>
+				<option>区县</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>详细地址：</dt>
+		<dd><input type="text" class="inp" placeholder="请精确到门牌号" /></dd>
+	</dl>
+</div>
+
+<div class="instit">——<span>被投保人信息</span>——</div>
+
+<div class="conbox">
+	<dl class="insform">
+		<dt>与投保人关系：</dt>
+		<dd><div class="txt insRelation">本人</div></dd>
+	</dl>
+	<dl class="insform">
+		<dt>健康告知内容：</dt>
+		<dd>
+		<div class="txt insRelation selpic" style="padding-right:1.0rem;" onclick="location='pro_clause_03.html'">请确认</div>
+		</dd>
+	</dl>
+</div>
+
+<div class="clause"><input type="checkbox" class="inprad" checked />本人已认真阅读并同意<br/><a href="pro_clause_01.html">《产品条款》</a><a href="pro_clause_04.html">《产品说明书》</a><a href="pro_clause_05.html">《风险保费表》</a><br /><a href="pro_clause_ts.html">《投保提示》</a><a href="">《人身投保提示书》</a><a href="pro_clause_02.html">《投保声明》</a></div>
+<!--div class="error mt05 mb1">提示：您尚未在安邦保险进行实名认证！<br /><a href="" class="bluelink" target="_blank">请点击此处进行实名认证</a></div-->
+
+<div class="error mt05 mb1">提示：身份证号必须为18位</div>
+
+<div class="insbtnbox"></div>
+<div class="insbtn clearfix">
+	<div class="price bs"><em>100.00</em>元</div>
+	<a href="pay.html" class="buybtn">下一步</a>
+</div>
+
+<!--弹出层-->
+<div class="mask"></div>
+
+<script type="text/javascript">
+    $(function(){
+        var now = new Date();
+        var optDate = {
+            preset: 'date', //日期
+            theme: 'android-ics light', //皮肤样式
+            display: 'modal', //显示方式
+            mode: 'scroller', //日期选择模式
+            lang:'zh',
+            showNow: false,
+            isCertificate: false,
+            headerText: '',
+            minDate: new Date(now.getFullYear()-50, now.getMonth(), now.getDate()),
+            maxDate: new Date(now.getFullYear()+50, now.getMonth(), now.getDate()),
+        };
+        $("#insuredDate").mobiscroll(optDate).text('请选择').addClass('fcgrey');
+        $("#insDate").mobiscroll(optDate).text('请选择').addClass('fcgrey');
+        $("#insEndDate").mobiscroll(optDate).text('9999-12-31').addClass('fcgrey');
+		$("#insuredDate, #insDate, #insEndDate").change(function(){
+			$(this).removeClass('fcgrey');
+		})
+		$('.f_longterm').click(function(){
+			if($(this).attr('checked')){
+				$("#insEndDate").mobiscroll('disable');
+				$("#insEndDate").text('9999-12-31')
+			}else{
+				$("#insEndDate").mobiscroll('enable');
+				$("#insEndDate").text('请选择')
+			}
+			
+		})
+
+    })
+</script>
+</body>
+</html>

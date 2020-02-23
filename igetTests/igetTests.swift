@@ -136,13 +136,59 @@ class igetTests: XCTestCase {
     }
     
     
-    
-    
-    
+    //p108 协议动态派发、扩展静态派发
     func testStatic() {
          testStaticLanguage()
     }
-
+    
+    //p150 编码解码
+    func testEncode() {
+        let testEncode = TestEncode()
+        testEncode.test()
+    }
+    
+    
+    //p154 串行并行
+    func testMultiThread() {
+        let testMultiThread = TestMultiThread()
+        testMultiThread.test()
+    }
+    
+    // p158 竞态条件
+    func testRaceCondition() {
+        let testRaceCondition = TestRaceCondition()
+        testRaceCondition.test()
+    }
+    
+    // p158 优先倒置
+    func testPriorityInversion() {
+        let testPriorityInversion = TestPriorityInversion()
+        testPriorityInversion.test()
+    }
+    
+    
+    // p164 operation
+    func testOperation() {
+        let testOperation = TestOperation()
+        testOperation.test()
+    }
+    
+    // p173 swift kvo测试
+    func testKvo() {
+        let swiftKvo : kvo = kvo.init()
+        swiftKvo.test()
+    }
+    
+    
+    // p187 POP
+    func testPOP() {
+        //protocol extension
+        let pop : POP = POP.init()
+        pop.test()
+    }
+    
+    
+    //p199性能测试
     func testPerformanceExample() {
         // This is an example of a performance test case.
         //测试方法执行时间
@@ -152,34 +198,34 @@ class igetTests: XCTestCase {
         }
     }
     
-    func loadContent(){
-        guard let url = URL(string: "https://app-info.rtf") else {
-            fatalError("URL can't be empty")
-        }
-        let session = URLSession.shared
-        let client = HttpClient(session :session)
-        
-        client.get(url:url){(data,error) in
-            if let error = error {
-                print("Error: \(error)")
-                return
-            }
-            
-            if let data = data{
-                print("data is successfully fetched from server")
-            }
-        }
-        
-        
-        
-    }
+    
     
     var dataLoaded : Data?
     
-    //mock http参考https://blog.csdn.net/weixin_34348111/article/details/87958746
+    //p197 单元测试代码实战 mock http参考https://blog.csdn.net/weixin_34348111/article/details/87958746
     func test_loadContent_shouldReturnData(){
-    
-    
+//对以下方法写出单元测试
+//        func loadContent(){
+//            guard let url = URL(string: "https://app-info.rtf") else {
+//                fatalError("URL can't be empty")
+//            }
+//            let session = URLSession.shared
+//            let client = HttpClient(session :session)
+//
+//            client.get(url:url){(data,error) in
+//                if let error = error {
+//                    print("Error: \(error)")
+//                    return
+//                }
+//
+//                if let data = data{
+//                    print("data is successfully fetched from server")
+//                }
+//            }
+//
+//
+//
+//        }
        
         guard let url = URL(string: "https://mockurl") else {
             fatalError("URL can't be empty")
@@ -193,6 +239,8 @@ class igetTests: XCTestCase {
         
         httpClient.get(url: url){[weak self](data, error) in
             self?.dataLoaded = data
+            print("*********")
+            print(String(data: data!, encoding: String.Encoding.utf8)!)
             //当异步成功结束时触法expectation
             exp.fulfill()
         }

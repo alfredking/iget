@@ -4,7 +4,7 @@
 //
 //  Created by alfredking－cmcc on 2019/8/3.
 //  Copyright © 2019 alfredking. All rights reserved.
-//
+//p96
 
 #import "Father.h"
 
@@ -17,19 +17,24 @@
 
 @property (nonatomic,strong)NSMutableString *testStringA;
 @property (nonatomic,strong)NSMutableString *testStringB;
-//@property (nonatomic,strong)NSString *title;
-//@property (nonatomic,weak)NSString *title;
-@property (nonatomic,copy)NSString *title;
+@property (nonatomic,strong)NSString *strongTitle;
+@property (nonatomic,weak)NSString *weakTitle;
+@property (nonatomic,copy)NSString *coTitle;
 
 @end
 
 @implementation Father
 
+
+//p96 https://www.jianshu.com/p/eda4957735ee
+//https://www.cnblogs.com/busylife/p/6073169.html
 -(void)testcopy
 {
     
     NSMutableString *string = [NSMutableString stringWithFormat:@"name"];
     NSLog(@"原始string的地址:%p",string);
+    
+    //下划线的意思是成员变量
     _testStringA = string;
     NSLog(@"A对象string的地址:%p",_testStringA);
     _testStringB = string ;
@@ -41,8 +46,8 @@
     NSLog(@"拷贝string的地址:%p",copyString);
 
     //[copyString appendString:@"test"];
-
-
+    
+    NSLog(@"copyString is :%@",copyString);
     
     NSString *stringb = [NSString stringWithFormat:@"test"];
     NSLog(@"原始string的地址:%p",stringb);
@@ -51,26 +56,28 @@
     //发生了浅拷贝，是不可变的，字符串是@"name"的时候，与copyString是同一个对象
     NSLog(@"拷贝string的地址:%p",copyStringb);
     
-    self.title = @"title"; //成员变量不能用.的方法
-    NSLog(@"self.title is %@",self.title);
+    
+    
     NSMutableString *mutableTitleA = [@"mutableTitleA" mutableCopy];
-    NSMutableString *mutableTitleB = [@"mutableTitleB" mutableCopy];
-    
-    NSMutableString *mutable =mutableTitleA;
-
     
     
+    self.strongTitle = mutableTitleA; //成员变量不能用.的方法
+    self.coTitle = mutableTitleA; //成员变量不能用.的方法
+    NSLog(@"self.strongTitle is %@",self.strongTitle);
+    NSLog(@"self.strongTitle is %@",self.coTitle);
     
-    self.title = mutable;
+    [mutableTitleA appendString:@" wawawa"];
     
-    NSLog(@"self.title is %@",self.title);
+    //self.title只有在strong属性的时候会变化
+    NSLog(@"self.strongTitle is %@",self.strongTitle);
+    NSLog(@"self.strongTitle is %@",self.coTitle);
     
-    mutable = mutableTitleB; //如果self.title是weak属性的时候，@"title"指向的内存在mutableTitle不再指向的时候会被销毁，值为null
+    
+  //如果self.title是weak属性的时候，@"title"指向的内存在mutableTitle不再指向的时候会被销毁，值为null
     //mutableTitle = [@"test" mutableCopy];
     //[mutableTitle appendString:@" wawawa"];
     
-    //self.title只有在strong属性的时候会变化
-    NSLog(@"self.title is %@",self.title);
+   
     
     
 }

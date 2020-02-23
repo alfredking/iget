@@ -4,7 +4,7 @@
 //
 //  Created by alfredking－cmcc on 2019/10/27.
 //  Copyright © 2019 alfredking. All rights reserved.
-//
+//p158 竞态条件
 
 import UIKit
 
@@ -18,18 +18,31 @@ class TestRaceCondition: NSObject {
         //raceCondition.someString("test")
         for i in 1...101
         {
-            let user = User(idin: "1",namein: "alfredking")
-            raceCondition.setUser(_user: user)
+            let user = User(idin: String(i) as String,namein: "alfredking")
+            raceCondition.setUser(_user: user) {
+                print("raceCondition.setUser")
+            }
+           
             if (i == 101)
             {
                 let user = User(idin: "1",namein: "alfredking100")
-                raceCondition.setUser(_user: user)
+                raceCondition.setUser(_user: user){
+                    print("raceCondition.setUser101")
+                }
             }
             
         }
         print("竞态条件")
-        print("\(raceCondition.getUser(id: "myModel").name!)")
-        raceCondition.test()
+        raceCondition.getUser(id: "1") { (usr: RaceCondition.Result<User>) in
+            
+            print("raceCondition.getUser***********************")
+            
+    
+            print(usr)
+            print("raceCondition.getUser***********************")
+        }
+        
+        //raceCondition.test()
     }
 
     

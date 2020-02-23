@@ -4,7 +4,7 @@
 //
 //  Created by alfredking－cmcc on 2019/10/27.
 //  Copyright © 2019 alfredking. All rights reserved.
-//
+//p164
 
 import UIKit
 
@@ -18,13 +18,9 @@ class TestOperation: NSObject {
         let operationTest : OperationTest = OperationTest.init()
         operationTest.testCancel()
         
-        //swift kvo测试
-        let swiftKvo : kvo = kvo.init()
-        swiftKvo.test()
         
-        //protocol extension
-        let pop : POP = POP.init()
-        pop.test()
+
+
         
     }
     

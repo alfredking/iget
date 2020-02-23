@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>健康问询</title>
+<link rel="stylesheet" media="screen" href="assets/css/style_insur.css" />
+<script src="assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="assets/js/insur.js"></script>
+</head>
+
+<body>
+
+<div class="conbox policy mt05">
+    <dl class="insform">
+        <dt>请仔细阅读并如实填写被保险人健康信息：</dt>
+    </dl>
+    <dl class="insform">
+        <dt>1、被保险人是否曾因健康原因被任何保险公司延期、拒保或者非标准体承保？是否有过因疾病（非意外事故）向任何保险公司索赔的经历？</dt>
+    </dl>
+    <dl class="insform">
+        <dt>2、被保险人在最近6个月内是否出现过以下症状：不明原因的发热、头晕、气喘、腹痛、紫癜、视力或听力障碍、身体包块或肿物、消瘦（体重下降超过2公斤）？</dt>
+    </dl>
+    <dl class="insform">
+        <dt>3、被保险人是否出现过以下一种或几种情况：出生时体重小于2.5公斤；出生时有早产、难产、产伤、窒息、缺氧、抢救史、颅内出血等异常情况；发育迟缓、惊厥、抽搐、脑瘫？</dt>
+    </dl>
+    <dl class="insform">
+        <dt>4、被保险人过去一年内的体检是否有异常、是否接受过医师的诊察、治疗、用药、住院或手术建议？</dt>
+    </dl>
+    <dl class="insform">
+        <dt>5、被保险人是否曾经患有或因下列疾病、残疾而接受治疗？</dt>
+        <dt>（1）残疾及功能障碍（聋哑、高度近视或失明、语言障碍、肢体残缺畸形或者功能障碍）</dt>
+        <dt>（2）心、脑血管疾病（各类心脏病、脑血管瘤及畸形、良性脑肿瘤、脑炎、脑膜炎）</dt>
+        <dt>（3）呼吸系统疾病（支气管炎、肺气肿、支气管扩张、肺结核、哮喘、胸膜炎、气胸、终末期肺病）</dt>
+        <dt>（4）神经及精神疾病（智障、癫痫、孤独症（自闭症）、多发性硬化、重症肌无力）</dt>
+        <dt>（5）其他（恶性肿瘤、糖尿病、白血病、爱滋病、贫血、幼年型类风湿关节炎、川崎病、先天性疾病、遗传性疾病或畸形）</dt>
+    </dl>
+    <dl class="insform">
+        <dt>6、投保人的每年固定收入是否小于4万元？</dt>
+    </dl>
+</div>
+
+<div class="btnline txtc" id="f_jkSituation">
+    <a href="upload.html" class="redbtn w40 dinb">以上情况全无</a>
+    <a href="javascript:void(0);" class="redbtn w40 dinb ml1" id="f_someHave">部分情况有</a>
+</div>
+
+<div class="btnline txtc" id="f_jkConfirm" style="display:none">
+    <a href="index.html" class="redbtn w40 dinb">确认</a>
+</div>
+
+<script type="text/javascript">
+$(function(){
+    $('#f_someHave').click(function(){
+        $('#f_jkSituation').hide();
+        $('#f_jkConfirm').show();
+    })
+})
+</script>
+
+</body>
+</html>

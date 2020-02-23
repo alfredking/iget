@@ -243,3 +243,45 @@ func search(_ nums:[Int],_ target:Int)->Int
     }
     return -1
 }
+
+//p192 swift实现二分搜索
+extension Array where Element:Comparable{
+    public var isSorted:Bool{
+        var previousIndex = startIndex
+        var currentIndex = startIndex+1
+        
+        while currentIndex != endIndex {
+            if(self[previousIndex]>self[currentIndex]){
+                return false
+            }
+            
+            previousIndex = currentIndex
+            currentIndex = currentIndex + 1
+            
+            
+        }
+        return true
+    }
+}
+
+func binarySearch<T: Comparable>(sortedElements: [T],for element: T)->Bool{
+    //确保输入数组是按序排列的
+    assert(sortedElements.isSorted)
+    
+    var lo = 0 ,hi = sortedElements.count - 1
+    
+    while lo <= hi {
+        let mid  = lo + (hi - lo)/2
+        
+        if sortedElements[mid] == element{
+            return true
+        }else if sortedElements[mid] < element{
+            lo = mid + 1
+        } else {
+            hi = mid - 1
+        }
+        
+        
+    }
+    return false
+}

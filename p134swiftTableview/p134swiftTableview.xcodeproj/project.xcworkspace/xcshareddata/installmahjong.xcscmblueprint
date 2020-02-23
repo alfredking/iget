@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "f7926264-1acb-4f08-af88-440099cf97a2++5698",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "f7926264-1acb-4f08-af88-440099cf97a2++5698" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "f7926264-1acb-4f08-af88-440099cf97a2++5698" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "68AC4FE5-3695-4681-BA26-DE5FA69AF9B5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "f7926264-1acb-4f08-af88-440099cf97a2++5698" : "mahjong\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "installmahjong",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "laboratory\/installmahjong\/installmahjong.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.oa.com:24399\/mobile",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f7926264-1acb-4f08-af88-440099cf97a2++5698"
+    }
+  ]
+}

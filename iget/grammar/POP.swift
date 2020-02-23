@@ -12,64 +12,23 @@ class POP: NSObject {
     
     func test()
     {
-//    struct MyStruct:SomethingHandleable {
-//
-//    }
-            struct MyStruct:SomethingHandleable {
-            func handleSomething() {
-            print("Called in struct")
-            }
-            }
-    let myStruct = MyStruct.init()   //输出： Called
+
+        //更加灵活，解决冗杂父类的问题
+        let myStruct = MyStruct.init()   //输出： Called
         myStruct.handleSomething()
-    
-
-//    MyStruct.handleSomething()    //输出： Called in struct
+        
     }
     
     
 
 }
 
-extension Array where Element:Comparable{
-    public var isSorted:Bool{
-        var previousIndex = startIndex
-        var currentIndex = startIndex+1
-        
-        while currentIndex != endIndex {
-            if(self[previousIndex]>self[currentIndex]){
-            return false
-        }
-        
-        previousIndex = currentIndex
-        currentIndex = currentIndex + 1
-        
-        
+struct MyStruct:SomethingHandleable
+{
+    func handleSomething()
+    {
+        print("Called in struct")
     }
-    return true
-}
-}
-
-func binarySearch<T: Comparable>(sortedElements: [T],for element: T)->Bool{
-    //确保输入数组是按序排列的
-    assert(sortedElements.isSorted)
-    
-    var lo = 0 ,hi = sortedElements.count - 1
-    
-    while lo <= hi {
-        let mid  = lo + (hi - lo)/2
-        
-        if sortedElements[mid] == element{
-            return true
-        }else if sortedElements[mid] < element{
-            lo = mid + 1
-        } else {
-            hi = mid - 1
-        }
-        
-        
-    }
-    return false
 }
 
 protocol SomethingHandleable {
@@ -85,7 +44,7 @@ extension SomethingHandleable{
 }
 
 
-//POP相比OOP可以减少依赖
+//POP相比OOP可以减少依赖，可以传入protocol实现多态
 protocol Request {
     func send(request:Info)
 }
@@ -120,7 +79,7 @@ func testUserRequest() {
 //POP相比OOP可以消除动态派发的风险 swift必须实现所有方法，否则报错
 
 
-//pop优化代码
+//p190 pop优化代码
 protocol Animal {
     
     //associatedtype就是关联类型，实际上是一个类型的占位符，可以让dog和cat来指定foodtype到底是什么类型

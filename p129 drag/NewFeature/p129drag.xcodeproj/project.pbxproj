@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		353E1D081FA07F6C00B8C291 /* WPFDragCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1D071FA07F6C00B8C291 /* WPFDragCollectionViewController.m */; };
+		353E1D0B1FA085AE00B8C291 /* WPFImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 353E1D0A1FA085AE00B8C291 /* WPFImageCollectionViewCell.m */; };
+		35A131E01FB4623A00B2F64C /* WPFStoreReviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A131DF1FB4623A00B2F64C /* WPFStoreReviewController.m */; };
+		35A131FB1FB4852700B2F64C /* WPFFeatureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A131FA1FB4852700B2F64C /* WPFFeatureModel.m */; };
+		35A131FF1FB5569B00B2F64C /* WPFChangeAppIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A131FE1FB5569B00B2F64C /* WPFChangeAppIconViewController.m */; };
+		35A132051FB56D3F00B2F64C /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A132041FB56D3E00B2F64C /* icon2.png */; };
+		35A132091FB5768900B2F64C /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A132081FB5768900B2F64C /* icon3.png */; };
+		35D187711F8F9C2B000F571B /* WPFImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D187701F8F9C2B000F571B /* WPFImageTableViewCell.m */; };
+		35D187741F90598D000F571B /* WPFNormalDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D187731F90598D000F571B /* WPFNormalDragViewController.m */; };
+		35DAC3B51F8B5C8500D724CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DAC3B41F8B5C8500D724CF /* AppDelegate.m */; };
+		35DAC3B81F8B5C8500D724CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DAC3B71F8B5C8500D724CF /* ViewController.m */; };
+		35DAC3BB1F8B5C8500D724CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC3B91F8B5C8500D724CF /* Main.storyboard */; };
+		35DAC3BD1F8B5C8500D724CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC3BC1F8B5C8500D724CF /* Assets.xcassets */; };
+		35DAC3C01F8B5C8500D724CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC3BE1F8B5C8500D724CF /* LaunchScreen.storyboard */; };
+		35DAC3C31F8B5C8500D724CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DAC3C21F8B5C8500D724CF /* main.m */; };
+		35DAC3CD1F8B6B5F00D724CF /* WPFDragTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DAC3CC1F8B6B5F00D724CF /* WPFDragTableViewController.m */; };
+		35DAC3D01F8B756700D724CF /* WPFSwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DAC3CF1F8B756700D724CF /* WPFSwipeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		353E1D061FA07F6C00B8C291 /* WPFDragCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFDragCollectionViewController.h; sourceTree = "<group>"; };
+		353E1D071FA07F6C00B8C291 /* WPFDragCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFDragCollectionViewController.m; sourceTree = "<group>"; };
+		353E1D091FA085AE00B8C291 /* WPFImageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFImageCollectionViewCell.h; sourceTree = "<group>"; };
+		353E1D0A1FA085AE00B8C291 /* WPFImageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFImageCollectionViewCell.m; sourceTree = "<group>"; };
+		35A131DE1FB4623A00B2F64C /* WPFStoreReviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFStoreReviewController.h; sourceTree = "<group>"; };
+		35A131DF1FB4623A00B2F64C /* WPFStoreReviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFStoreReviewController.m; sourceTree = "<group>"; };
+		35A131F91FB4852700B2F64C /* WPFFeatureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFFeatureModel.h; sourceTree = "<group>"; };
+		35A131FA1FB4852700B2F64C /* WPFFeatureModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFFeatureModel.m; sourceTree = "<group>"; };
+		35A131FD1FB5569B00B2F64C /* WPFChangeAppIconViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFChangeAppIconViewController.h; sourceTree = "<group>"; };
+		35A131FE1FB5569B00B2F64C /* WPFChangeAppIconViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFChangeAppIconViewController.m; sourceTree = "<group>"; };
+		35A132041FB56D3E00B2F64C /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
+		35A132081FB5768900B2F64C /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
+		35D1876F1F8F9C2B000F571B /* WPFImageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFImageTableViewCell.h; sourceTree = "<group>"; };
+		35D187701F8F9C2B000F571B /* WPFImageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFImageTableViewCell.m; sourceTree = "<group>"; };
+		35D187721F90598D000F571B /* WPFNormalDragViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFNormalDragViewController.h; sourceTree = "<group>"; };
+		35D187731F90598D000F571B /* WPFNormalDragViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFNormalDragViewController.m; sourceTree = "<group>"; };
+		35DAC3B01F8B5C8500D724CF /* p129drag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = p129drag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DAC3B31F8B5C8500D724CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35DAC3B41F8B5C8500D724CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35DAC3B61F8B5C8500D724CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		35DAC3B71F8B5C8500D724CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		35DAC3BA1F8B5C8500D724CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35DAC3BC1F8B5C8500D724CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35DAC3BF1F8B5C8500D724CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35DAC3C11F8B5C8500D724CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35DAC3C21F8B5C8500D724CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35DAC3CB1F8B6B5F00D724CF /* WPFDragTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFDragTableViewController.h; sourceTree = "<group>"; };
+		35DAC3CC1F8B6B5F00D724CF /* WPFDragTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFDragTableViewController.m; sourceTree = "<group>"; };
+		35DAC3CE1F8B756700D724CF /* WPFSwipeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFSwipeViewController.h; sourceTree = "<group>"; };
+		35DAC3CF1F8B756700D724CF /* WPFSwipeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFSwipeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35DAC3AD1F8B5C8500D724CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		353E1D051FA07F1300B8C291 /* UICollectionView-Drag&Drop */ = {
+			isa = PBXGroup;
+			children = (
+				353E1D061FA07F6C00B8C291 /* WPFDragCollectionViewController.h */,
+				353E1D071FA07F6C00B8C291 /* WPFDragCollectionViewController.m */,
+				353E1D091FA085AE00B8C291 /* WPFImageCollectionViewCell.h */,
+				353E1D0A1FA085AE00B8C291 /* WPFImageCollectionViewCell.m */,
+			);
+			path = "UICollectionView-Drag&Drop";
+			sourceTree = "<group>";
+		};
+		353E1D0C1FA085D900B8C291 /* UITableView-Drag&Drop */ = {
+			isa = PBXGroup;
+			children = (
+				35DAC3CB1F8B6B5F00D724CF /* WPFDragTableViewController.h */,
+				35DAC3CC1F8B6B5F00D724CF /* WPFDragTableViewController.m */,
+				35D1876F1F8F9C2B000F571B /* WPFImageTableViewCell.h */,
+				35D187701F8F9C2B000F571B /* WPFImageTableViewCell.m */,
+			);
+			path = "UITableView-Drag&Drop";
+			sourceTree = "<group>";
+		};
+		35A131DD1FB4621800B2F64C /* StoreReview */ = {
+			isa = PBXGroup;
+			children = (
+				35A131DE1FB4623A00B2F64C /* WPFStoreReviewController.h */,
+				35A131DF1FB4623A00B2F64C /* WPFStoreReviewController.m */,
+			);
+			path = StoreReview;
+			sourceTree = "<group>";
+		};
+		35A131F81FB4850900B2F64C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				35DAC3B61F8B5C8500D724CF /* ViewController.h */,
+				35DAC3B71F8B5C8500D724CF /* ViewController.m */,
+				35A131F91FB4852700B2F64C /* WPFFeatureModel.h */,
+				35A131FA1FB4852700B2F64C /* WPFFeatureModel.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		35A131FC1FB5567700B2F64C /* ChangeAppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				35A131FD1FB5569B00B2F64C /* WPFChangeAppIconViewController.h */,
+				35A131FE1FB5569B00B2F64C /* WPFChangeAppIconViewController.m */,
+			);
+			path = ChangeAppIcon;
+			sourceTree = "<group>";
+		};
+		35D187751F906CBC000F571B /* UIView-Drag&Drop */ = {
+			isa = PBXGroup;
+			children = (
+				35D187721F90598D000F571B /* WPFNormalDragViewController.h */,
+				35D187731F90598D000F571B /* WPFNormalDragViewController.m */,
+			);
+			path = "UIView-Drag&Drop";
+			sourceTree = "<group>";
+		};
+		35DAC3A71F8B5C8500D724CF = {
+			isa = PBXGroup;
+			children = (
+				35DAC3B21F8B5C8500D724CF /* NewFeature */,
+				35DAC3B11F8B5C8500D724CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35DAC3B11F8B5C8500D724CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DAC3B01F8B5C8500D724CF /* p129drag.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DAC3B21F8B5C8500D724CF /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				35A131F81FB4850900B2F64C /* Main */,
+				353E1D051FA07F1300B8C291 /* UICollectionView-Drag&Drop */,
+				353E1D0C1FA085D900B8C291 /* UITableView-Drag&Drop */,
+				35D187751F906CBC000F571B /* UIView-Drag&Drop */,
+				35DAC3CA1F8B6B2F00D724CF /* Swipe */,
+				35A131DD1FB4621800B2F64C /* StoreReview */,
+				35A131FC1FB5567700B2F64C /* ChangeAppIcon */,
+				35DAC3B31F8B5C8500D724CF /* AppDelegate.h */,
+				35DAC3B41F8B5C8500D724CF /* AppDelegate.m */,
+				35DAC3B91F8B5C8500D724CF /* Main.storyboard */,
+				35A132041FB56D3E00B2F64C /* icon2.png */,
+				35A132081FB5768900B2F64C /* icon3.png */,
+				35DAC3BC1F8B5C8500D724CF /* Assets.xcassets */,
+				35DAC3BE1F8B5C8500D724CF /* LaunchScreen.storyboard */,
+				35DAC3C11F8B5C8500D724CF /* Info.plist */,
+				35DAC3C21F8B5C8500D724CF /* main.m */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		35DAC3CA1F8B6B2F00D724CF /* Swipe */ = {
+			isa = PBXGroup;
+			children = (
+				35DAC3CE1F8B756700D724CF /* WPFSwipeViewController.h */,
+				35DAC3CF1F8B756700D724CF /* WPFSwipeViewController.m */,
+			);
+			path = Swipe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35DAC3AF1F8B5C8500D724CF /* p129drag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35DAC3C61F8B5C8500D724CF /* Build configuration list for PBXNativeTarget "p129drag" */;
+			buildPhases = (
+				35DAC3AC1F8B5C8500D724CF /* Sources */,
+				35DAC3AD1F8B5C8500D724CF /* Frameworks */,
+				35DAC3AE1F8B5C8500D724CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = p129drag;
+			productName = NewFeature;
+			productReference = 35DAC3B01F8B5C8500D724CF /* p129drag.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35DAC3A81F8B5C8500D724CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WPF;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Leon;
+				TargetAttributes = {
+					35DAC3AF1F8B5C8500D724CF = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 35DAC3AB1F8B5C8500D724CF /* Build configuration list for PBXProject "p129drag" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35DAC3A71F8B5C8500D724CF;
+			productRefGroup = 35DAC3B11F8B5C8500D724CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35DAC3AF1F8B5C8500D724CF /* p129drag */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35DAC3AE1F8B5C8500D724CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DAC3C01F8B5C8500D724CF /* LaunchScreen.storyboard in Resources */,
+				35DAC3BD1F8B5C8500D724CF /* Assets.xcassets in Resources */,
+				35A132091FB5768900B2F64C /* icon3.png in Resources */,
+				35A132051FB56D3F00B2F64C /* icon2.png in Resources */,
+				35DAC3BB1F8B5C8500D724CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35DAC3AC1F8B5C8500D724CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A131FB1FB4852700B2F64C /* WPFFeatureModel.m in Sources */,
+				35DAC3CD1F8B6B5F00D724CF /* WPFDragTableViewController.m in Sources */,
+				35DAC3B81F8B5C8500D724CF /* ViewController.m in Sources */,
+				35DAC3C31F8B5C8500D724CF /* main.m in Sources */,
+				353E1D0B1FA085AE00B8C291 /* WPFImageCollectionViewCell.m in Sources */,
+				35D187711F8F9C2B000F571B /* WPFImageTableViewCell.m in Sources */,
+				35A131E01FB4623A00B2F64C /* WPFStoreReviewController.m in Sources */,
+				35DAC3B51F8B5C8500D724CF /* AppDelegate.m in Sources */,
+				35D187741F90598D000F571B /* WPFNormalDragViewController.m in Sources */,
+				35DAC3D01F8B756700D724CF /* WPFSwipeViewController.m in Sources */,
+				35A131FF1FB5569B00B2F64C /* WPFChangeAppIconViewController.m in Sources */,
+				353E1D081FA07F6C00B8C291 /* WPFDragCollectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		35DAC3B91F8B5C8500D724CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35DAC3BA1F8B5C8500D724CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35DAC3BE1F8B5C8500D724CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35DAC3BF1F8B5C8500D724CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35DAC3C41F8B5C8500D724CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		35DAC3C51F8B5C8500D724CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35DAC3C71F8B5C8500D724CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST685X75RG;
+				INFOPLIST_FILE = NewFeature/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wpf.apple.NewFeature;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35DAC3C81F8B5C8500D724CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST685X75RG;
+				INFOPLIST_FILE = NewFeature/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wpf.apple.NewFeature;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35DAC3AB1F8B5C8500D724CF /* Build configuration list for PBXProject "p129drag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DAC3C41F8B5C8500D724CF /* Debug */,
+				35DAC3C51F8B5C8500D724CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35DAC3C61F8B5C8500D724CF /* Build configuration list for PBXNativeTarget "p129drag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DAC3C71F8B5C8500D724CF /* Debug */,
+				35DAC3C81F8B5C8500D724CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35DAC3A81F8B5C8500D724CF /* Project object */;
+}

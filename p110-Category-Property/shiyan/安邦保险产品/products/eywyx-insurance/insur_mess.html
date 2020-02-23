@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>填写投保信息</title>
+<link rel="stylesheet" href="assets/css/style_insur.css" />
+	<link rel="stylesheet" href="assets/css/mobiscroll.css" />
+	<script src="assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="assets/js/insur.js"></script>
+	<script src="assets/js/mobiscroll.js"></script>
+</head>
+<body>
+
+<div class="head">
+	<a href="javascript:history.go(-1);" class="back"></a>
+	<p>安邦e元无忧行交通工具意外险</p>
+</div>
+<div class="headbox"></div>
+
+<div class="pic"><a href=""><img src="assets/images/banner.jpg"></a></div>
+
+<div class="conbox mt05">
+	<dl class="insform f_age">
+		<dt>被保险人年龄：</dt>
+		<dd class="txtr">
+			<input type="hidden" value="18-70周岁" />
+			<div class="cbox" value="18周岁以下">18周岁以下</div>
+			<div class="cbox active" value="18-70周岁">18-70周岁</div>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt class="w100 mb05">选择交通工具：</dt>
+		<dd class="w100 ofxs">
+			<ul class="instrans clearfix">
+				<li class="">
+					<div class="tra appcar"></div>
+					<div class="tratxt">网约车<br /><span class="insmoney"></span><input type="hidden" /></div>
+				</li>
+				<li>
+					<div class="tra plane"></div>
+					<div class="tratxt">飞机<br /><span class="insmoney"></span><input type="hidden" /></div>
+				</li>
+				<li>
+					<div class="tra bus"></div>
+					<div class="tratxt">汽车<br /><span class="insmoney"></span><input type="hidden" /></div>
+				</li>
+				<li>
+					<div class="tra tran"></div>
+					<div class="tratxt">火车<br /><span class="insmoney"></span><input type="hidden" /></div>
+				</li>
+				<li>
+					<div class="tra ship"></div>
+					<div class="tratxt">轮船<br /><span class="insmoney"></span><input type="hidden" /></div>
+				</li>
+			</ul>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt class="w100 mb05">选择保险期间：</dt>
+		<dd class="w100 d5">
+			<input type="hidden" />
+			<div class="cbox" value="一天">一天</div>
+			<div class="cbox" value="一周">一周</div>
+			<div class="cbox" value="一月">一月</div>
+			<div class="cbox" value="半年">半年</div>
+			<div class="cbox" value="一年">一年</div>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>保险起期：</dt>
+		<dd><input type="date" class="inp dat" /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>保险止期：</dt>
+		<dd><div class="txt"></div></dd>
+	</dl>
+</div>
+
+<div class="instit">——<span>投保人信息</span>——</div>
+
+<div class="conbox">
+	<dl class="insform">
+		<dt>姓名：</dt>
+		<dd><input type="text" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>身份证号：</dt>
+		<dd><input type="text" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>证件有效期：</dt>
+		<dd class="w4em"><div class="txt pl12 pr"><input type="checkbox" class="inprad l0" checked /> 长期有效</div></dd>
+		<dd class="w40"><input type="date" class="inp pr05"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>手机号码：</dt>
+		<dd><input type="number" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>电子邮箱：</dt>
+		<dd><input type="text" class="inp" placeholder="用于接收电子保单" /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>所在省：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在省</option>
+				<option>省</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>所在市：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在市</option>
+				<option>市</option>
+			</select>
+		</dd>
+	</dl>
+		<dl class="insform">
+		<dt>所在区县：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在区县</option>
+				<option>区县</option>
+			</select>
+		</dd>
+	</dl>
+<dl class="insform">
+		<dt>详细地址：</dt>
+		<dd><input type="text" class="inp" placeholder="请精确到门牌号" /></dd>
+	</dl>
+</div>
+
+<div class="instit">——<span>被投保人信息</span>——</div>
+
+<div class="conbox">
+	<dl class="insform">
+		<dt>与投保人关系：</dt>
+		<dd><div class="txt insRelation">本人</div></dd>
+	</dl>
+	<div class="f_relation borb1" style="display:none">
+		<dl class="insform">
+			<dt>姓名：</dt>
+			<dd><input type="text" class="inp"  /></dd>
+		</dl>
+		<dl class="insform">
+			<dt>身份证号：</dt>
+			<dd><input type="text" class="inp"  /></dd>
+		</dl>
+	</div>
+	<div class="f_relation borb1">
+		<dl class="insform">
+			<dt>职业大类：</dt>
+			<dd>
+				<select class="sel selpic fcgrey">
+					<option>请选择职业大类</option>
+					<option>职业</option>
+				</select>
+			</dd>
+		</dl>
+		<dl class="insform">
+			<dt>职业小类：</dt>
+			<dd>
+				<select class="sel selpic fcgrey">
+					<option>请选择职业小类</option>
+					<option>职业</option>
+				</select>
+			</dd>
+		</dl>
+		<dl class="insform">
+			<dt>健康告知内容：</dt>
+			<dd class="txtr">
+				<a href="pro_clause_03.html" class="sel selpic fcgrey">请确认</a>
+			</dd>
+		</dl>
+	</div>
+	<dl class="insform">
+		<dt>受益人：</dt>
+		<dd><div class="txt">法定</div></dd>
+	</dl>
+</div>
+
+<div class="clause" style="width:93%"><input type="checkbox" class="inprad" checked />本人已认真阅读并同意<br /><a href="pro_clause_01.html">《安邦e元无忧行交通工具意外险》</a><br /><a href="pro_clause_04.html">《安邦e元无忧行交通工具意外伤害保险费率表》</a><a href="pro_clause_02.html">《投保声明》</a><br /></div>
+
+<div class="error mt05 mb1">提示：身份证号必须为18位</div>
+
+<div class="insbtnbox"></div>
+<div class="insbtn clearfix">
+	<div class="price bs"><em>500.00</em>元</div>
+	<a href="pay.html" class="buybtn">下一步</a>
+</div>
+
+<!--弹出层-->
+<div class="mask"></div>
+<div class="openBox w80" id="insMoneyChoice">
+	<div class="insmsum">
+		<h2>选择保障金额<a href="javascript:void(0);" class="close" onclick="closeNewbox('insMoneyChoice')"></a></h2>
+		<ul class="sumul" style="display:none">
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="不投保" checked />不投保</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="10万" />10万</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="20万" />20万</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="30万" />30万</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="50万" />40万</label></li>
+		</ul>
+		<ul class="sumul" style="display:none">
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="不投保" checked />不投保</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="50万" />50万</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="100万" />100万</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="200万" />200万</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="300万" />300万</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="500万" />500万</label></li>
+		</ul>
+		<ul class="sumul" style="display:none">
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="不投保" checked />不投保</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="10万" />10万</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="20万" />20万</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="50万" />50万</label></li>
+			<li><label><input type="radio" class="inprad f_im" name="insuremoney" value="100万" />100万</label></li>
+		</ul>
+		<div class="btnline"><a href="javascript:void(0);" class="redbtn w60 f_insMoneyConfirm">确定</a></div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>填写投保信息</title>
+<link rel="stylesheet" href="assets/css/style_insur.css" />
+	<link rel="stylesheet" href="assets/css/mobiscroll.css" />
+	<script src="assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="assets/js/insur.js"></script>
+	<script src="assets/js/mobiscroll.js"></script>
+</head>
+<body>
+
+<div class="head">
+	<a href="javascript:history.go(-1);" class="back"></a>
+	<p>安邦"父母安"老年人意外伤害险</p>
+</div>
+<div class="headbox"></div>
+
+<div class="pic"><a href=""><img src="assets/images/banner.jpg"></a></div>
+
+<div class="instype mt05 clearfix">
+	<a href="javascript:void(0);" class="active"><h2><em>20</em>元起</h2><span>经典版</span></a>
+	<a href="javascript:void(0);" class=""><h2><em>90</em>元起</h2><span>尊贵版</span></a>
+	<a href="javascript:void(0);" class=""><h2><em>120</em>元起</h2><span>豪华版</span></a>
+</div>
+
+<div class="conbox nbt">
+	<dl class="insform f_age">
+		<dt class="w40">被保险人年龄段：</dt>
+		<dd class="w60 txtr">
+            <span class="cbox active" value="55-60">55-65周岁</span>
+            <span class="cbox" value="66-75">66-75周岁</span>
+            <input type="hidden" value="55-60" />
+        </dd>
+
+	</dl>
+	<dl class="insform">
+		<dt>保险期间：</dt>
+		<dd><div class="txt">1年</div></dd>
+	</dl>
+	<dl class="insform">
+		<dt>保险起期：</dt>
+		<dd><time id="insuredDate" type="date" class="inp dat" >请选择</time></dd>
+	</dl>
+	<dl class="insform">
+		<dt>保险止期：</dt>
+		<dd><div class="txt">2018年05月11日 24时</div></dd>
+	</dl>
+	<dl class="insform pb0 nbor">
+        <dt class="w100">保险责任：</dt>
+    </dl>
+    <dl class="insform pt0 f_insplan">
+		<dt class="w70">意外身故、残疾保险</dt>
+		<dd class="w30"><div class="txt">5万元</div></dd>
+		<dt class="w70">意外伤害医疗保险</dt>
+		<dd class="w30"><div class="txt">5000元</div></dd>
+		<dt class="w70">骨折津贴保险</dt>
+		<dd class="w30"><div class="txt">20元/天</div></dd>
+		<dt class="w70">救护车费用保险</dt>
+		<dd class="w30"><div class="txt">1000元</div></dd>
+	</dl>
+	<dl class="insform pt0 f_insplan" style="display:none">
+		<dt class="w70">意外身故、残疾保险</dt>
+		<dd class="w30"><div class="txt">10万元</div></dd>
+		<dt class="w70">意外伤害医疗保险</dt>
+		<dd class="w30"><div class="txt">1万元</div></dd>
+		<dt class="w70">骨折津贴保险</dt>
+		<dd class="w30"><div class="txt">30元/天</div></dd>
+		<dt class="w70">救护车费用保险</dt>
+		<dd class="w30"><div class="txt">1500元</div></dd>
+	</dl>
+	<dl class="insform pt0 f_insplan" style="display:none">
+		<dt class="w70">意外身故、残疾保险</dt>
+		<dd class="w30"><div class="txt">20万元</div></dd>
+		<dt class="w70">意外伤害医疗保险</dt>
+		<dd class="w30"><div class="txt">1.5万元</div></dd>
+		<dt class="w70">骨折津贴保险</dt>
+		<dd class="w30"><div class="txt">50元/天</div></dd>
+		<dt class="w70">救护车费用保险</dt>
+		<dd class="w30"><div class="txt">2000元</div></dd>
+	</dl>
+</div>
+
+<div class="instit">——<span>投保人信息</span>——</div>
+
+<div class="conbox">
+	<dl class="insform">
+		<dt>姓名：</dt>
+		<dd><input type="text" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>证件类型：</dt>
+		<dd class="txtr">
+			<select class="sel selpic">
+				<option>身份证</option>
+				<option>护照</option>
+				<option>军官证</option>
+				<option>外国人永久居留身份证</option>
+				<option>其他</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>证件号码：</dt>
+		<dd><input type="text" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>性别：</dt>
+		<dd class="txtr">
+			<div class="txt dinb pr pl12"><input type="radio" name="insex" class="inprad l0" checked /> 男</div>
+			<div class="txt dinb pr pl12 ml1"><input type="radio" name="insex" class="inprad l0" /> 女</div>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>出生日期：</dt>
+		<dd><time id="insDate" type="date" class="inp dat" >请选择</time></dd>
+	</dl>
+	<dl class="insform">
+		<dt>手机号码：</dt>
+		<dd><input type="number" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>电子邮箱：</dt>
+		<dd><input type="text" class="inp" placeholder="用于接收电子保单" /></dd>
+	</dl>
+    <dl class="insform">
+		<dt>国籍：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择</option>
+				<option>国</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>所在省：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在省</option>
+				<option>省</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>所在市：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在市</option>
+				<option>市</option>
+			</select>
+		</dd>
+	</dl>
+</div>
+
+<div class="instit">——<span>被保险人信息</span>——</div>
+
+<div class="conbox">
+	<dl class="insform">
+		<dt>是投保人的：</dt>
+		<dd class="txtr">
+			<select class="sel selpic f_insRelation">
+				<option>本人</option>
+				<option>父母</option>
+				<option>配偶</option>
+				<option>子女</option>
+				<option>其他</option>
+			</select>
+		</dd>
+	</dl>
+	<div class="f_insRelationBox" style="display:none">
+	<dl class="insform">
+		<dt>姓名：</dt>
+		<dd><input type="text" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>证件类型：</dt>
+		<dd class="txtr">
+			<select class="sel selpic">
+				<option>身份证</option>
+				<option>护照</option>
+				<option>军官证</option>
+				<option>其他</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>证件号码：</dt>
+		<dd><input type="text" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>性别：</dt>
+		<dd class="txtr">
+			<div class="txt dinb pr pl12"><input type="radio" name="insex" class="inprad l0" checked /> 男</div>
+			<div class="txt dinb pr pl12 ml1"><input type="radio" name="insex" class="inprad l0" /> 女</div>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>出生日期：</dt>
+		<dd><time id="" type="date" class="inp dat f_date" >请选择</time></dd>
+	</dl>
+    <dl class="insform">
+		<dt>国籍：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择</option>
+				<option>国</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>所在省：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在省</option>
+				<option>省</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform borb1">
+		<dt>所在市：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在市</option>
+				<option>市</option>
+			</select>
+		</dd>
+	</dl>
+	</div>
+	<dl class="insform">
+		<dt>受益人：</dt>
+		<dd><div class="txt">法定</div></dd>
+	</dl>
+</div>
+
+<div class="clause"><input type="checkbox" class="inprad" checked />本人已认真阅读并同意<br />
+<a href="pro_clause_01.html">《保险条款》</a><a href="pro_clause_02.html">《投保声明》</a></div>
+
+<div class="error mt05 mb1">提示：身份证号必须为18位</div>
+
+<div class="insbtnbox"></div>
+<div class="insbtn clearfix">
+	<div class="price bs"><em>500.00</em>元</div>
+	<a href="pay.html" class="buybtn">下一步</a>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	var now = new Date(); 
+    var optDate = {   
+		preset: 'date', //日期   
+        theme: 'android-ics light', //皮肤样式   
+        display: 'modal', //显示方式    
+        mode: 'scroller', //日期选择模式   
+        lang:'zh',   
+        showNow: false,
+        isCertificate: false,
+        headerText: '',
+        minDate: new Date(now.getFullYear()-50, now.getMonth(), now.getDate()), 
+        maxDate: new Date(now.getFullYear()+50, now.getMonth(), now.getDate()),
+	};  
+	$("#insuredDate").mobiscroll(optDate).text('请选择').addClass('fcgrey');
+	$("#insDate").mobiscroll(optDate).text('请选择').addClass('fcgrey');
+	$(".f_date").mobiscroll(optDate).text('请选择').addClass('fcgrey');
+	$("#insuredDate, #insDate, .f_date").change(function(){
+		$(this).removeClass('fcgrey');
+	})
+
+	$(".f_insRelation").change(function(){
+		valR = $(this).find("option:selected").text();
+		if(valR == '本人'){
+			$('.f_insRelationBox').hide();
+		}else{
+			$('.f_insRelationBox').show();
+		}
+	})
+
+	$(".instype a").click(function(){
+		$(".instype a").removeClass("active");
+		$(this).addClass("active");
+		$(".f_insplan").hide();
+		$(".f_insplan").eq($(this).index()).show();
+	})
+
+})
+</script>
+</body>
+</html>

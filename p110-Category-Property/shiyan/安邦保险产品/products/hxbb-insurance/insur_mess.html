@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>填写投保信息</title>
+<link rel="stylesheet" href="assets/css/style_insur.css" />
+	<link rel="stylesheet" href="assets/css/mobiscroll.css" />
+	<script src="assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="assets/js/insur.js"></script>
+	<script src="assets/js/mobiscroll.js"></script>
+</head>
+<body>
+
+<div class="head">
+	<a href="javascript:history.go(-1);" class="back"></a>
+	<p>安邦和谐宝贝健康成长计划</p>
+</div>
+<div class="headbox"></div>
+
+<div class="pic"><a href=""><img src="assets/images/banner.jpg"></a></div>
+
+<div class="instype mt05 clearfix">
+	<a href="javascript:void(0);" class="active"><h2>基础版</h2></a>
+	<a href="javascript:void(0);" class=""><h2>优选版</h2></a>
+	<a href="javascript:void(0);" class=""><h2>精选版</h2></a>
+</div>
+
+<div class="conbox nbt">
+	<dl class="insform f_age">
+		<dt>保费：</dt>
+		<dd><div class="txt" id="inspremium">4000.00元</div></dd>
+	</dl>
+	<dl class="insform f_age">
+		<dt>缴费方式：</dt>
+		<dd><div class="txt">年缴</div></dd>
+	</dl>
+	<dl class="insform">
+		<dt>缴费年期：</dt>
+		<dd><div class="txt">至20周岁</div></dd>
+	</dl>
+	<dl class="insform">
+		<dt>保险期限：</dt>
+		<dd><div class="txt">至25周岁保单周年日</div></dd>
+	</dl>
+	<dl class="insform">
+		<dt>追加保费：</dt>
+		<dd><input type="number" class="inp" placeholder="追加金额为1000整数倍" /></dd>
+	</dl>
+</div>
+
+<div class="conbox mt05">
+	<dl class="insform insfcontit">
+		<dt>重大疾病保险金</dt>
+		<dd><div class="txt" id="insdetail1">15万</div></dd>
+		<dd class="contxt">被保险人于本附加险合同生效（或最后复效）之日起90日后，经医院的专科医生明确诊断，初次罹患本附加险合同所指的重大疾病（无论一种或多种）并生存满30日后，本公司按本附加险合同约定的保险金额给付重大疾病保险金，本附加险合同终止，主险合同仍然有效。</dd>
+	</dl>
+	<dl class="insform insfcontit">
+		<dt>意外身故</dt>
+		<dd><div class="txt" id="insdetail2">8万+账户价值</div></dd>
+		<dd class="contxt">被保险人在保险期间内因遭受意外伤害事故，并自该意外伤害事故发生之日起180天内因该事故身故的，本公司将给付意外身故保险金；同时，本附加险合同及主险合同效力同时终止。意外身故保险金由以下两部分组成：(1) 被保险人身故当日二十四时的主险合同个人账户价值；(2) 风险保额。</dd>
+	</dl>
+	<dl class="insform insfcontit">
+		<dt>疾病身故</dt>
+		<dd><div class="txt" id="insdetail3">8万+账户价值</div></dd>
+		<dd class="contxt">因意外伤害之外的其它原因导致被保险人身故，我们将给付疾病身故保险金；同时，本合同效力终止。疾病身故保险金由以下两部分组成：（1）被保险人身故当日二十四时的个人账户价值；（2）保险金额。</dd>
+	</dl>
+	<dl class="insform insfcontit">
+		<dt>住院医疗费用</dt>
+		<dd><div class="txt" id="insdetail4">1万/年</div></dd>
+		<dd class="contxt">在本附加险合同保险期间内，被保险人在等待期（合同生效之日起90天）后罹患疾病或因遭受意外伤害，并经医院的专科医生诊断必须住院治疗。对于每次住院，我们根据被保险人发生保险事故时是否享有社会医疗保险或公费医疗保障，按如下方式进行赔付：发生保险事故时，若被保险人不享有社会医疗保险或公费医疗保障，我们按已实际支出的、必需且合理的医疗费用的80%给付住院医疗费用保险金；发生保险事故时，若被保险人享有社会医疗保险或公费医疗保障，我们按已实际支出的、必需且合理的医疗费用的100%给付住院医疗费用保险金。被保险人在本附加险合同到期日前住院且延续至保险期间届满时仍未出院，对于我们同意续保的，本公司将根据被保险人实际住院天数在原保单与续保保单中的占比分别承担住院费用保险金给付责任；若您未交纳续保风险保险费或本公司不同意续保，我们将对被保险人该次住院在本附加险合同保险期间届满次日起30日内的住院治疗承担住院费用保险金给付责任。每一保单年度内，住院医疗费用保险金的给付以本附加险合同约定的保险金额为限；每个保证续保期间内，我们累计给付金额均以本附加险合同约定的保险金额×300%为限。</dd>
+	</dl>
+	<dl class="insform insfcontit">
+		<dt>住院津贴</dt>
+		<dd><div class="txt" id="insdetail5">100元/天</div></dd>
+		<dd class="contxt">在本附加险合同保险期间内（合同生效之日起90天后），我们承担下列保险责任：（1） 被保险人在等待期后经医院的专科医生 诊断，罹患疾病必须住院治疗。我们从被保险人每次住院的第四日开始按本附加险合同的约定住院日额给付保险金，即：被保险人每次住院获得的住院日额保险金＝（实际住院天数-3）×住院日额（2） 被保险人遭受意外伤害且接受住院治疗，我们按被保险人每次住院的实际住院天数及本附加险合同约定的住院日额给付保险金，即：被保险人每次住院获得的住院日额保险金＝实际住院天数×住院日额被保险人在本附加险合同到期日前住院且延续至保险期间届满时仍未出院，对于我们同意续保的，本公司将根据被保险人实际住院天数在原保单与续保保单中的占比分别承担住院日额保险金给付责任；若您未交纳续保风险保险费或本公司不同意续保，我们将对被保险人该次住院在本附加险合同保险期间届满次日起30日内的住院治疗承担住院日额保险金给付责任。对于每次住院治疗，给付天数最高以90天为限。对于多次住院治疗，一年内累计给付天数最高以180天为限；一个保证续保期间累计给付天数最高以500天为限。</dd>
+	</dl>
+	<dl class="insform insfcontit">
+		<dt>护理保险金</dt>
+		<dd><div class="txt" id="insdetail6">8万+账户价值</div></dd>
+		<dd class="contxt">被保险人进入符合本合同约定的长期护理状态并在观察期结束后仍处于长期护理状态的，我们将给付护理保险金，可用于支付被保险人所需的护理服务与费用；同时，本合同效力终止。护理保险金由以下两部分组成：（1）观察期结束当日二十四时的个人账户价值；（2）保险金额。（约定）</dd>
+	</dl>
+</div>
+
+<div class="instit">——<span>投保人信息</span>——</div>
+
+<div class="conbox">
+	<dl class="insform">
+		<dt>姓名：</dt>
+		<dd><input type="text" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>身份证号：</dt>
+		<dd><input type="number" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>证件有效期：</dt>
+		<dd class="w4em"><div class="txt pl12 pr"><input type="checkbox" class="inprad l0" checked /> 长期有效</div></dd>
+		<dd class="w40"><input type="date" class="inp pr05" placeholder="请输入有效止期" /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>手机号码：</dt>
+		<dd><input type="number" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>电子邮箱：</dt>
+		<dd><input type="text" class="inp" placeholder="用于接收电子保单" /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>所在省：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在省</option>
+				<option>省</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>所在市：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在市</option>
+				<option>市</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>所在地区：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在地区</option>
+				<option>市</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>详细地址：</dt>
+		<dd><input type="text" class="inp" placeholder="请精确到门牌号" /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>邮编：</dt>
+		<dd><input type="number" class="inp" placeholder="" /></dd>
+	</dl>
+</div>
+
+<div class="instit">——<span>被保人信息</span>——</div>
+
+<div class="conbox">
+	<dl class="insform">
+		<dt>为谁投保：</dt>
+		<dd class="txtr">
+			<select class="sel selpic">
+				<option>子女</option>
+				<option>其他</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>被保人姓名：</dt>
+		<dd><input type="text" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>证件类型：</dt>
+		<dd class="txtr">
+			<select class="sel selpic">
+				<option>身份证</option>
+				<option>护照</option>
+				<option>军官证</option>
+				<option>其他</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>证件号码：</dt>
+		<dd><input type="text" class="inp"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>证件有效期：</dt>
+		<dd><input type="date" class="inp dat"  /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>职业类别：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择职业类别</option>
+				<option>职业</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>身高：</dt>
+		<dd class="kg"><input type="text" class="inp" /><span>CM</span></dd>
+	</dl>
+	<dl class="insform">
+		<dt>体重：</dt>
+		<dd class="kg"><input type="text" class="inp" /><span>KG</span></dd>
+	</dl>
+
+</div>
+
+<div class="instit">——<span>续期缴费信息</span>——</div>
+
+<div class="conbox mt05">
+	<dl class="insform">
+		<dt>账户名：</dt>
+		<dd><div class="txt">张三</div></dd>
+	</dl>
+	<dl class="insform">
+		<dt>账户号：</dt>
+		<dd><input type="number" class="inp" placeholder="请输入银行卡号" /></dd>
+	</dl>
+	<dl class="insform">
+		<dt>开户银行：</dt>
+		<dd>
+			<select class="sel selpic fcgrey">
+				<option>请选择开户银行</option>
+				<option>开户银行</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>开户省：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在省</option>
+				<option>省</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>开户市：</dt>
+		<dd class="txtr">
+			<select class="sel selpic fcgrey">
+				<option>请选择所在市</option>
+				<option>市</option>
+			</select>
+		</dd>
+	</dl>
+	<dl class="insform">
+		<dt>开户支行：</dt>
+		<dd>
+			<select class="sel selpic fcgrey">
+				<option>请选择开户支行</option>
+				<option>开户支行</option>
+			</select>
+		</dd>
+	</dl>
+</div>
+
+<div class="instit">——<span>受益人信息</span>——</div>
+
+<div class="conbox">
+	<dl class="insform">
+		<dt>保险受益人：</dt>
+		<dd><div class="txt">法定</div></dd>
+	</dl>
+</div>
+
+<div class="clause"><input type="checkbox" class="inprad" checked />本人已认真阅读并同意<br /><a href="pro_clause_01.html">《产品条款》</a><a href="">《人身投保提示书》</a><a href="pro_clause_02.html">《投保声明》</a><br /><a href="pro_clause_03.html">《支付协议》</a></div>
+
+<div class="error mt05 mb1">提示：身份证号必须为18位</div>
+
+<div class="insbtnbox"></div>
+<div class="insbtn clearfix">
+	<div class="price bs"><em>500.00</em>元</div>
+	<a href="insurance_policy.html" class="buybtn">下一步</a>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	var now = new Date(); 
+    var optDate = {   
+		preset: 'date', //日期   
+        theme: 'android-ics light', //皮肤样式   
+        display: 'modal', //显示方式    
+        mode: 'scroller', //日期选择模式   
+        lang:'zh',   
+        showNow: false,
+        isCertificate: false,
+        headerText: '',
+        minDate: new Date(now.getFullYear()-50, now.getMonth(), now.getDate()), 
+        maxDate: new Date(now.getFullYear()+50, now.getMonth(), now.getDate()),
+	};  
+	$("#insuredDate").mobiscroll(optDate).text('请选择').addClass('fcgrey');
+	$("#insDate").mobiscroll(optDate).text('请选择').addClass('fcgrey');
+	$("#insuredDate, #insDate").change(function(){
+		$(this).removeClass('fcgrey');
+	})
+
+})
+</script>
+</body>
+</html>

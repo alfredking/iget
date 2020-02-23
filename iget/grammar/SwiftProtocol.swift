@@ -4,7 +4,7 @@
 //
 //  Created by alfredking－cmcc on 2019/8/14.
 //  Copyright © 2019 alfredking. All rights reserved.
-//
+//p102
 
 import UIKit
 
@@ -16,7 +16,7 @@ import UIKit
 }
 
 
-//该协议只能由class实现，不能由struct和enum实现
+//p103该协议只能由class实现，不能由struct和enum实现
 protocol anotherProtocol:class
 {
     func requiredFunc()
@@ -33,15 +33,23 @@ protocol anotherProtocol:class
 //    }
 //}
 
+class SwiftProtocol: SomeProtocol {
+    
+    
+    func requiredFunc() {
+        print("Only need to implement the required")
+    }
+    
+}
 
 
-// 演示swift初始化方法
+// p105演示swift初始化方法 https://www.jianshu.com/p/95ba207b729e
 class Person {
     var name:String
     var age:Int
     var sex:Bool
     
-    //Designated Initializers
+    //Designated Initializers参数最多的那个初始化方法一般就是指定初始化方法
     init(name:String, age:Int, sex:Bool) {
         self.name = name
         self.age = age
@@ -70,7 +78,7 @@ class Person {
 class Student: Person {
     
     var score:CGFloat
-    
+    //指定初始化方法必须调用父类的指定初始化方法（如果有父类的话）
     init(name:String, age:Int, sex:Bool, score:CGFloat) {
         self.score = score
         super.init(name: name, age: age, sex: sex)
@@ -93,11 +101,4 @@ func testinit()
     stu.sayHello()
 }
 
-class SwiftProtocol: SomeProtocol {
-    
-    
-    func requiredFunc() {
-        print("Only need to implement the required")
-    }
 
-}

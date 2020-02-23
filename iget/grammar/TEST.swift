@@ -4,7 +4,7 @@
 //
 //  Created by alfredking－cmcc on 2019/9/30.
 //  Copyright © 2019 alfredking. All rights reserved.
-//
+//p198 单元测试mock网络请求
 
 //MARK: HttpClient Implementation
 class HttpClient {
@@ -55,7 +55,7 @@ extension URLSessionDataTask: URLSessionDataTaskProtocol {}
 class MockURLSession: URLSessionProtocol {
     
     var nextDataTask = MockURLSessionDataTask()
-    var nextData: Data? = "alfredking".data(using: String.Encoding.utf8)
+    var nextData: Data? = "alfredking111".data(using: String.Encoding.utf8)
     var nextError: Error?
     
     private (set) var lastURL: URL?

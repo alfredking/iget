@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<title>选择支付方式</title>
+<link rel="stylesheet" href="assets/css/style_insur.css" />
+<script src="assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="assets/js/insur.js"></script>
+</head>
+<body>
+
+<div class="head">
+	<a href="javascript:history.go(-1);" class="back"></a>
+	<p>安邦长青树重大疾病保险</p>
+</div>
+<div class="headbox"></div>
+
+<div class="conbox mt05">
+	<dl class="insform">
+		<dt class="w30">购买产品：</dt>
+		<dd class="w70"><div class="txt fw lh12">安邦长青树重大疾病保险</div></dd>
+	</dl>
+	<dl class="insform">
+		<dt>支付金额：</dt>
+		<dd><div class="txt fw fcred">123.45元</div></dd>
+	</dl>
+</div>
+
+<div class="conbox mt05">
+	<div class="payment">
+		<h2>选择支付方式</h2>
+	</div>
+	<div class="payment">
+		<p class="wx">微信支付<input type="radio" name="payment" class="inprad" /></p>
+	</div>
+	<div class="payment">
+		<p class="zfb">微信支付<input type="radio" name="payment" class="inprad" /></p>
+	</div>
+	<div class="payment">
+		<p class="card">储蓄卡支付<input type="radio" name="payment" class="inprad" /></p>
+	</div>
+	<div class="payment">
+		<p class="card">信用卡支付<input type="radio" name="payment" class="inprad" /></p>
+	</div>
+</div>
+
+<div class="error mt05">提示：错误信息</div>
+
+<div class="btnline">
+	<a href="pay_card.html" class="redbtn">我要支付</a>
+</div>
+
+<!--开发时请删除-->
+<div class="btnline txtc" style="font-size:0.8rem">
+	<a href="pay_credit.html">信用卡支付</a><br /><br />
+	<a href="pay_ongoing.html">支付进行中</a><br /><br />
+	<a href="pay_fail.html">支付失败</a>
+</div>
+<!--开发时请删除结束-->
+
+</body>
+</html>
