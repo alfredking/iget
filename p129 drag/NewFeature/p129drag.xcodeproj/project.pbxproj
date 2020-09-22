@@ -17,7 +17,7 @@
 		35D187711F8F9C2B000F571B /* WPFImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D187701F8F9C2B000F571B /* WPFImageTableViewCell.m */; };
 		35D187741F90598D000F571B /* WPFNormalDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D187731F90598D000F571B /* WPFNormalDragViewController.m */; };
 		35DAC3B51F8B5C8500D724CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DAC3B41F8B5C8500D724CF /* AppDelegate.m */; };
-		35DAC3B81F8B5C8500D724CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DAC3B71F8B5C8500D724CF /* ViewController.m */; };
+		35DAC3B81F8B5C8500D724CF /* WeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DAC3B71F8B5C8500D724CF /* WeiboViewController.m */; };
 		35DAC3BB1F8B5C8500D724CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC3B91F8B5C8500D724CF /* Main.storyboard */; };
 		35DAC3BD1F8B5C8500D724CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC3BC1F8B5C8500D724CF /* Assets.xcassets */; };
 		35DAC3C01F8B5C8500D724CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DAC3BE1F8B5C8500D724CF /* LaunchScreen.storyboard */; };
@@ -46,8 +46,8 @@
 		35DAC3B01F8B5C8500D724CF /* p129drag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = p129drag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DAC3B31F8B5C8500D724CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35DAC3B41F8B5C8500D724CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		35DAC3B61F8B5C8500D724CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		35DAC3B71F8B5C8500D724CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		35DAC3B61F8B5C8500D724CF /* WeiboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboViewController.h; sourceTree = "<group>"; };
+		35DAC3B71F8B5C8500D724CF /* WeiboViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboViewController.m; sourceTree = "<group>"; };
 		35DAC3BA1F8B5C8500D724CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35DAC3BC1F8B5C8500D724CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35DAC3BF1F8B5C8500D724CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,8 +104,8 @@
 		35A131F81FB4850900B2F64C /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				35DAC3B61F8B5C8500D724CF /* ViewController.h */,
-				35DAC3B71F8B5C8500D724CF /* ViewController.m */,
+				35DAC3B61F8B5C8500D724CF /* WeiboViewController.h */,
+				35DAC3B71F8B5C8500D724CF /* WeiboViewController.m */,
 				35A131F91FB4852700B2F64C /* WPFFeatureModel.h */,
 				35A131FA1FB4852700B2F64C /* WPFFeatureModel.m */,
 			);
@@ -254,7 +254,7 @@
 			files = (
 				35A131FB1FB4852700B2F64C /* WPFFeatureModel.m in Sources */,
 				35DAC3CD1F8B6B5F00D724CF /* WPFDragTableViewController.m in Sources */,
-				35DAC3B81F8B5C8500D724CF /* ViewController.m in Sources */,
+				35DAC3B81F8B5C8500D724CF /* WeiboViewController.m in Sources */,
 				35DAC3C31F8B5C8500D724CF /* main.m in Sources */,
 				353E1D0B1FA085AE00B8C291 /* WPFImageCollectionViewCell.m in Sources */,
 				35D187711F8F9C2B000F571B /* WPFImageTableViewCell.m in Sources */,

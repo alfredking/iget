@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		710A209A20EF544300025F83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A209920EF544300025F83 /* AppDelegate.m */; };
-		710A209D20EF544300025F83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A209C20EF544300025F83 /* ViewController.m */; };
+		710A209D20EF544300025F83 /* WeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A209C20EF544300025F83 /* WeiboViewController.m */; };
 		710A20A020EF544300025F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710A209E20EF544300025F83 /* Main.storyboard */; };
 		710A20A220EF544600025F83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 710A20A120EF544600025F83 /* Assets.xcassets */; };
 		710A20A520EF544600025F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710A20A320EF544600025F83 /* LaunchScreen.storyboard */; };
@@ -20,8 +20,8 @@
 		710A209520EF544300025F83 /* p140flowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = p140flowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		710A209820EF544300025F83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		710A209920EF544300025F83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		710A209B20EF544300025F83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		710A209C20EF544300025F83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		710A209B20EF544300025F83 /* WeiboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboViewController.h; sourceTree = "<group>"; };
+		710A209C20EF544300025F83 /* WeiboViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboViewController.m; sourceTree = "<group>"; };
 		710A209F20EF544300025F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		710A20A120EF544600025F83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		710A20A420EF544600025F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 				710A20AF20EF549600025F83 /* EWWaterFallLayout.m */,
 				710A209820EF544300025F83 /* AppDelegate.h */,
 				710A209920EF544300025F83 /* AppDelegate.m */,
-				710A209B20EF544300025F83 /* ViewController.h */,
-				710A209C20EF544300025F83 /* ViewController.m */,
+				710A209B20EF544300025F83 /* WeiboViewController.h */,
+				710A209C20EF544300025F83 /* WeiboViewController.m */,
 				710A209E20EF544300025F83 /* Main.storyboard */,
 				710A20A120EF544600025F83 /* Assets.xcassets */,
 				710A20A320EF544600025F83 /* LaunchScreen.storyboard */,
@@ -146,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				710A209D20EF544300025F83 /* ViewController.m in Sources */,
+				710A209D20EF544300025F83 /* WeiboViewController.m in Sources */,
 				710A20A820EF544600025F83 /* main.m in Sources */,
 				710A20B020EF549600025F83 /* EWWaterFallLayout.m in Sources */,
 				710A209A20EF544300025F83 /* AppDelegate.m in Sources */,

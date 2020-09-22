@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3C1E87DF-F78A-45B4-9678-434B91F6049F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IDMPSDK-AlfredKing-CMCC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>89f45924-22a3-424a-a17f-2e314deb6dbf++9781</key>
+		<string>https://192.168.80.62/sso/cmri/Code/trunk/IOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IDMPSDK-AlfredKing-CMCC/IDMPSDK-AlfredKing-CMCC.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>89f45924-22a3-424a-a17f-2e314deb6dbf++9781</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>89f45924-22a3-424a-a17f-2e314deb6dbf++9781</key>
+		<string>https://192.168.80.62/sso</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.80.62/sso/cmri/Code/trunk/IOS/IDMPSDK-AlfredKing-CMCC/IDMPSDK-AlfredKing-CMCC.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>89f45924-22a3-424a-a17f-2e314deb6dbf++9781</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>89f45924-22a3-424a-a17f-2e314deb6dbf++9781</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IDMPSDK</string>
+		</dict>
+	</array>
+</dict>
+</plist>

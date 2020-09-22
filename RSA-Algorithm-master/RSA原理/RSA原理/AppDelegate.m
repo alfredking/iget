@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "WeiboViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,8 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[ViewController alloc] init];
+    UINavigationController *navCtrl = [[UINavigationController alloc]initWithRootViewController:[[WeiboViewController alloc] init]];
+    self.window.rootViewController = navCtrl;
     
     [self.window makeKeyAndVisible];
     

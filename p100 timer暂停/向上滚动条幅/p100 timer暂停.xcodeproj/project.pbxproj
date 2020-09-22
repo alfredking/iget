@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8AF1A7E02301BE1F00E9E0C3 /* testTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A7DF2301BE1F00E9E0C3 /* testTableViewController.m */; };
 		C7EA76741F13560E0070DAF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EA76731F13560E0070DAF2 /* main.m */; };
 		C7EA76771F13560E0070DAF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EA76761F13560E0070DAF2 /* AppDelegate.m */; };
-		C7EA767A1F13560E0070DAF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EA76791F13560E0070DAF2 /* ViewController.m */; };
+		C7EA767A1F13560E0070DAF2 /* WeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EA76791F13560E0070DAF2 /* WeiboViewController.m */; };
 		C7EA767D1F13560E0070DAF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7EA767B1F13560E0070DAF2 /* Main.storyboard */; };
 		C7EA767F1F13560E0070DAF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EA767E1F13560E0070DAF2 /* Assets.xcassets */; };
 		C7EA76821F13560E0070DAF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7EA76801F13560E0070DAF2 /* LaunchScreen.storyboard */; };
@@ -36,14 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8AF1A7DE2301BE1F00E9E0C3 /* testTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testTableViewController.h; sourceTree = "<group>"; };
-		8AF1A7DF2301BE1F00E9E0C3 /* testTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTableViewController.m; sourceTree = "<group>"; };
 		C7EA766F1F13560E0070DAF2 /* 上下滚动.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "上下滚动.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EA76731F13560E0070DAF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7EA76751F13560E0070DAF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7EA76761F13560E0070DAF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C7EA76781F13560E0070DAF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C7EA76791F13560E0070DAF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C7EA76781F13560E0070DAF2 /* WeiboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboViewController.h; sourceTree = "<group>"; };
+		C7EA76791F13560E0070DAF2 /* WeiboViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboViewController.m; sourceTree = "<group>"; };
 		C7EA767C1F13560E0070DAF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7EA767E1F13560E0070DAF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7EA76811F13560E0070DAF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,10 +103,8 @@
 			children = (
 				C7EA76751F13560E0070DAF2 /* AppDelegate.h */,
 				C7EA76761F13560E0070DAF2 /* AppDelegate.m */,
-				C7EA76781F13560E0070DAF2 /* ViewController.h */,
-				C7EA76791F13560E0070DAF2 /* ViewController.m */,
-				8AF1A7DE2301BE1F00E9E0C3 /* testTableViewController.h */,
-				8AF1A7DF2301BE1F00E9E0C3 /* testTableViewController.m */,
+				C7EA76781F13560E0070DAF2 /* WeiboViewController.h */,
+				C7EA76791F13560E0070DAF2 /* WeiboViewController.m */,
 				C7EA767B1F13560E0070DAF2 /* Main.storyboard */,
 				C7EA767E1F13560E0070DAF2 /* Assets.xcassets */,
 				C7EA76801F13560E0070DAF2 /* LaunchScreen.storyboard */,
@@ -279,10 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7EA767A1F13560E0070DAF2 /* ViewController.m in Sources */,
+				C7EA767A1F13560E0070DAF2 /* WeiboViewController.m in Sources */,
 				C7EA76771F13560E0070DAF2 /* AppDelegate.m in Sources */,
 				C7EA76741F13560E0070DAF2 /* main.m in Sources */,
-				8AF1A7E02301BE1F00E9E0C3 /* testTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

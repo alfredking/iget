@@ -1,0 +1,10 @@
+dependencies: \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel/Log.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC-Prefix.pch \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel/secFileStorage.m \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel/secFileStorage.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPDataProcess/IDMPAES128.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPResource/IDMPConst.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPResource/IDMPConfigure.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPDataProcess/IDMPKDF.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPDataProcess/IDMPFormatTransform.h

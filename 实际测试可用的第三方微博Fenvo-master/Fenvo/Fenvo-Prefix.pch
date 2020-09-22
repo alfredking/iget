@@ -1,0 +1,122 @@
+//
+//  Fenvo-Prefix.pch
+//  Fenvo
+//
+//  Created by Caesar on 15/4/1.
+//  Copyright (c) 2015年 Caesar. All rights reserved.
+//
+
+#ifndef Fenvo_Fenvo_Prefix_pch
+#define Fenvo_Fenvo_Prefix_pch
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+#pragma mark - iPhone设备 参数宏定义
+
+#ifndef IPHONE_SCREEN_WIDTH
+#define IS_IPHONE_5                 (fabs((double)[[UIScreen mainScreen]bounds].size.height - (double)568) < DBL_EPSILON)
+#define IPHONE_SCREEN_WIDTH         [[UIScreen mainScreen]bounds].size.width
+#define IPHONE_SCREEN_HEIGHT        [[UIScreen mainScreen]bounds].size.height
+#define IPHONE_NAVIGATIONHEIGHT     44
+#endif
+
+
+#pragma mark - Interface 全局样式宏定义
+
+#ifndef TEXT_COLOR
+#define RGBACOLOR(r,g,b,a)  [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define TEXT_COLOR          RGBACOLOR(87.0, 108.0, 137.0, 1.0)
+#endif
+
+
+#pragma mark - Weibo Original Cell样式宏定义
+//颜色
+#define WBColor(r,g,b)          [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0f]
+#define WBStatusGrayColor       WBColor(240, 240, 240)
+#define WBStatusLightGrayColor  WBColor(120,120,180)
+//间距
+#define WBStatusCellControlSpacing          12//控件间距
+#define WBStatusCellImageViewSpacing        3
+#define WBStatusCellBackgroundColor         WBColor(255,255,255)
+//头像、会员标识长宽
+#define WBStatusCellAvatarWidth             30
+#define WBStatusCellAvatarHeight            30
+#define WBStatusCellMBTypeWidth             13
+#define WBStatusCellMBTypeHeight            13
+//字体
+#define WBStatusCellUserNameFont            [UIFont fontWithName:@ "HYQiHei-BEJ" size:12.0]
+#define WBStatusCellSourceFont              [UIFont fontWithName:@ "HYQiHei-BEJ" size:10.0]
+#define WBStatusCellCreatTimeFont           [UIFont fontWithName:@ "HYQiHei-BEJ" size:10.0]
+#define WBStatusCellCountFont               [UIFont fontWithName:@ "HYQiHei-BEJ" size:14.0]
+#define WBStatusCellDetailFont              [UIFont fontWithName:@ "TimesNewRomanPSMT" size:13.0]
+#define WBStatusCellForwardFont             [UIFont fontWithName:@ "TimesNewRomanPSMT" size:13.0]
+#define WBStatusHUDTextFont                 [UIFont fontWithName:@ "STHeitiJ-Light" size:12.0]
+#define WBStatusButtonFont                  [UIFont fontWithName:@ "HYQiHei-BEJ" size:15.0]
+#define SystemFont                          [UIFont systemFontOfSize:14.0]
+
+
+#pragma mark - 通知宏定义
+
+#ifndef WBNOTIFICATION_LOGINCHANGE
+#define WEIBOEVENT_DELETE                   @"deleteWeibo"
+#define WBNOTIFICATION_LOGINCHANGE          @"loginStateChange"
+#define WBNOTIFICATION_DOWNLOADDATA         @"DownloadDataNow"
+#endif
+
+
+#pragma mark - WeiboSDK Authorize常量宏定义
+
+#ifndef WeiboAppKey
+#define WeiboAppKey                         @"387894130"
+#define kRedirectURI                        @"https://api.weibo.com/oauth2/default.html"
+#endif
+
+
+#pragma mark - WeiboSDKRequest URL宏定义
+
+#define WeiboSDKHttpRequestURLType_Statuses_HomeTimeline @"https://api.weibo.com/2/statuses/home_timeline.json"
+#define WeiboSDKHttpRequestURLType_Statuses_PublicTimeline @"https://api.weibo.com/2/statuses/public_timeline.json"
+#define WeiboSDKHttpRequestURLTypeRequestForFriendsListOfUser
+#define WeiboSDKHttpRequestURLTypeRequestForFriendsUserIDListOfUser
+#define WeiboSDKHttpRequestURLTypeRequestForCommonFriendsListBetweenTwoUser
+#define WeiboSDKHttpRequestURLTypeRequestForBilateralFriendsListOfUser
+#define WeiboSDKHttpRequestURLTypeRequestForFollowersListOfUser
+#define WeiboSDKHttpRequestURLTypeRequestForFollowersUserIDListOfUser
+#define WeiboSDKHttpRequestURLTypeRequestForActiveFollowersListOfUser
+#define WeiboSDKHttpRequestURLTypeRequestForBilateralFollowersListOfUser
+#define WeiboSDKHttpRequestURLTypeRequestForFriendshipDetailBetweenTwoUser
+#define WeiboSDKHttpRequestURLTypeRequestForFollowAUser
+#define WeiboSDKHttpRequestURLTypeRequestForCancelFollowingAUser
+#define WeiboSDKHttpRequestURLTypeRequestForRemoveFollowerUser
+#define WeiboSDKHttpRequestTypeRequestForInviteBilateralFriend
+#define WeiboSDKHttpRequestTypeRequestForUserProfile
+#define WeiboSDKHttpRequestTypeRequestForStatusIDs
+#define WeiboSDKHttpRequestTypeRequestForRepostAStatus
+#define WeiboSDKHttpRequestTypeRequestForPostAStatus
+#define WeiboSDKHttpRequestTypeRequestForPostAStatusAndPic
+#define WeiboSDKHttpRequestTypeRequestForPostAStatusAndPicurl
+#define WeiboSDKHttpRequestTypeRequestForRenewAccessToken
+#define WeiboSDKHttpRequestTypeAddGameObject
+#define WeiboSDKHttpRequestTypeAddGameAchievementObject
+#define WeiboSDKHttpRequestTypeAddGameAchievementGain
+#define WeiboSDKHttpRequestTypeAddGameScoreGain
+#define WeiboSDKHttpRequestTypeRequestForGameScore
+#define WeiboSDKHttpRequestTypeRequestForFriendsGameScore
+#define WeiboSDKHttpRequestTypeRequestForGameAchievementGain
+
+
+#define WBAPIURL_FRIENDS   @"https://api.weibo.com/2/statuses/home_timeline.json"
+#define WBAPIURL_USERPROFILE @"https://api.weibo.com/2/users/show.json"
+#define WBAPIURL_MYWEIBOS @"https://api.weibo.com/2/statuses/user_timeline.json"
+#endif
+/*
+#ifdef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...){}
+#endif
+*/

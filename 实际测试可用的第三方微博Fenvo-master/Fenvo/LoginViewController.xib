@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="loginButton" destination="BHi-30-SO4" id="wri-b1-RCK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHi-30-SO4">
+                    <rect key="frame" x="247" y="285" width="106" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.61186780427631571" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="106" id="Oce-0H-agD"/>
+                        <constraint firstAttribute="height" constant="30" id="rVI-zE-fy8"/>
+                    </constraints>
+                    <state key="normal" title="Log In"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Must Use Your Weibo Account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUQ-aC-sOM">
+                    <rect key="frame" x="80" y="100" width="440" height="103"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click it!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hs-YM-sor">
+                    <rect key="frame" x="247" y="211" width="106" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9J4-dy-an4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="BHi-30-SO4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Fn-Rf-ZMO"/>
+                <constraint firstItem="1hs-YM-sor" firstAttribute="trailing" secondItem="BHi-30-SO4" secondAttribute="trailing" id="DDa-M4-hm3"/>
+                <constraint firstItem="BHi-30-SO4" firstAttribute="top" secondItem="1hs-YM-sor" secondAttribute="bottom" constant="34" id="OYh-O4-hQ4"/>
+                <constraint firstItem="1hs-YM-sor" firstAttribute="leading" secondItem="BHi-30-SO4" secondAttribute="leading" id="Qht-X3-5Bm"/>
+                <constraint firstItem="yUQ-aC-sOM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="TEh-jP-P08"/>
+                <constraint firstAttribute="trailing" secondItem="yUQ-aC-sOM" secondAttribute="trailing" constant="80" id="Wbt-hz-Khc"/>
+                <constraint firstItem="BHi-30-SO4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hcp-3O-bNQ"/>
+                <constraint firstItem="yUQ-aC-sOM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="sFL-EL-qpi"/>
+                <constraint firstItem="1hs-YM-sor" firstAttribute="top" secondItem="yUQ-aC-sOM" secondAttribute="bottom" constant="8" id="vdr-I0-8V5"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

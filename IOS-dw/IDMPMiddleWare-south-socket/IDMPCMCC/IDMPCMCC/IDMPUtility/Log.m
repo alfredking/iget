@@ -1,0 +1,145 @@
+//
+//  Log.m
+//  IDMPCMCC
+//
+//  Created by zeng yingpei on 15/8/6.
+//  Copyright (c) 2015年 zwk. All rights reserved.
+//  Redirect NSLog and printf in this project into a file.
+//  http://stackoverflow.com/questions/7271528/how-to-nslog-into-a-file
+//  Add the replacement of printf as well.
+//  Fix encoding problem (avoid using %s).
+//
+
+#import "Log.h"
+
+static NSString *IDMPCacheWriteFileNum = @"IDMPCaheToWriteFileNum";
+
+@implementation Log
+
+void append(NSString *msg){
+    // get path to Documents/somefile.txt
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSFileManager* manager = [NSFileManager defaultManager];
+    NSString* lLogDir = [documentsDirectory stringByAppendingPathComponent:@"log/UAlog"];
+    if(![manager fileExistsAtPath:lLogDir isDirectory:NULL])
+    {
+        NSError* lError = nil;
+        [manager createDirectoryAtPath:lLogDir withIntermediateDirectories:YES attributes:NULL error:&lError];
+    }
+    
+    NSURL* lLogDirUrl = [NSURL fileURLWithPath: lLogDir];
+    NSError *error = nil;
+    NSNumber *backupValue = nil;
+    [lLogDirUrl getResourceValue:&backupValue forKey:NSURLIsExcludedFromBackupKey error:&error];
+    if (![backupValue boolValue]) {
+        BOOL success = [lLogDirUrl setResourceValue: [NSNumber numberWithBool: YES]
+                                             forKey: NSURLIsExcludedFromBackupKey error: &error];
+        if(!success){
+            NSLog(@"Error excluding %@ from backup %@", [lLogDirUrl lastPathComponent], error);
+        }
+    }
+
+    
+    //删除老版本的日志文件
+    NSString *oldPath = [lLogDir stringByAppendingPathComponent:@"IDMPLogFile.txt"];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:oldPath]) {
+        NSError *removeError = nil;
+        [manager removeItemAtPath:oldPath error:&removeError];
+    }
+    
+    NSNumber *cacheWriteFileNum = (NSNumber *)[[NSUserDefaults standardUserDefaults]  objectForKey:IDMPCacheWriteFileNum];  //缓存的准备写的文件序列号
+    if (cacheWriteFileNum == nil) {
+        cacheWriteFileNum = @(0);
+    }
+    
+    NSString *cacheWriteFilePath = [lLogDir stringByAppendingPathComponent:[NSString stringWithFormat:@"IDMPLogFile%@.txt",cacheWriteFileNum]];      //缓存的准备写的文件路径
+    
+    NSInteger cacheWriteFileSize = (NSUInteger)[[manager attributesOfItemAtPath:cacheWriteFilePath error:nil] fileSize]; //缓存的准备写的文件大小
+    
+    //如果准备写的数据大于2M，则直接丢弃
+    if (cacheWriteFileSize > 2 * 1024 * 1024) {
+        return;
+    }
+    
+    NSData *realWriteMsgData = [msg dataUsingEncoding:NSUTF8StringEncoding];  //实际准备写入的数据
+    NSInteger realWriteMsgDataSize = realWriteMsgData.length;        //实际准备写入的数据大小
+    
+    NSNumber *realWriteFileNum = nil;        //实际准备写入的文件序列号
+    
+    //单个文件最大2M，如果即将写入的数据量大于这个文件的剩余数据量，则写入下一个文件；否则写入当前文件
+    BOOL isWriteToNextFile = ((cacheWriteFileSize + realWriteMsgDataSize) - 2 * 1024 * 1024) > 0;
+    if (isWriteToNextFile) {
+        realWriteFileNum =  ([cacheWriteFileNum integerValue] + 1) > 9 ? @([cacheWriteFileNum integerValue] + 1 - 10) : @([cacheWriteFileNum integerValue] + 1);
+    } else {
+        realWriteFileNum = cacheWriteFileNum;
+    }
+    [[NSUserDefaults standardUserDefaults] setObject:realWriteFileNum forKey:IDMPCacheWriteFileNum];
+    
+    NSString *realWriteFilePath = [lLogDir stringByAppendingPathComponent:[NSString stringWithFormat:@"IDMPLogFile%@.txt",realWriteFileNum]];     //实际准备写的文件路径
+    
+    //如果这个路径不存在文件，则创建文件
+    if (![[NSFileManager defaultManager] fileExistsAtPath:realWriteFilePath]) {
+        fprintf(stderr,"Creating file at %s",[realWriteFilePath UTF8String]);
+        [[NSData data] writeToFile:realWriteFilePath atomically:YES];
+    }
+    
+    //写入数据
+    NSFileHandle *handle = [NSFileHandle fileHandleForWritingAtPath:realWriteFilePath];
+    @try {
+        if (isWriteToNextFile) {
+            [handle truncateFileAtOffset:0];        //清空文件的历史数据
+        }
+        [handle seekToEndOfFile];
+        [handle writeData:[msg dataUsingEncoding:NSUTF8StringEncoding]];
+    } @catch (NSException* e) {
+        fprintf(stderr,"Catch exception in Log.m's append: %s",[[e description] UTF8String]);
+    } @finally {
+        [handle closeFile];
+    }
+}
+
+
+/*
+ * Add a function with va_list parameter for handoff
+ * http://c-faq.com/varargs/handoff.html
+ */
+void _Logv(NSString *prefix, const char *file, int lineNumber, const char *funcName, NSString *format, va_list ap)
+{
+    format = [format stringByAppendingString:@"\n"];
+    NSDate* lDate = [NSDate date];
+    NSDateFormatter * formatter = [[NSDateFormatter alloc ] init];
+    [formatter setDateFormat:@"YYYY-MM-dd hh:mm:ss:SSS"];
+    NSString* date = [formatter stringFromDate:lDate];
+    NSString *msg = [[NSString alloc] initWithFormat:[NSString stringWithFormat:@"%@",format] arguments:ap];
+    fprintf(stdout,"%s %s%50s:%3d - %s",[date UTF8String],[prefix UTF8String], funcName, lineNumber, [msg UTF8String]);
+    NSString* lFullMsg = [NSString stringWithFormat:@"%@ %@%50s:%3d - %@", date, prefix, funcName, lineNumber, msg];
+    if ([NSThread isMainThread])
+    {
+        append(lFullMsg);
+    }else{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            append(lFullMsg);
+        });
+    }
+}
+
+void _Log(NSString *prefix, const char *file, int lineNumber, const char *funcName, NSString *format,...)
+{
+    
+
+    va_list ap;
+    va_start (ap, format);
+    _Logv(prefix, file, lineNumber, funcName, format, ap);
+    va_end (ap);
+}
+
+void _Log_printf(NSString *prefix, const char *file, int lineNumber, const char *funcName, char* format,...)
+{
+    
+    va_list ap;
+    va_start (ap, format);
+    _Logv(prefix, file, lineNumber, funcName, [NSString stringWithCString:format encoding:NSUTF8StringEncoding], ap);
+    va_end (ap);
+}
+@end

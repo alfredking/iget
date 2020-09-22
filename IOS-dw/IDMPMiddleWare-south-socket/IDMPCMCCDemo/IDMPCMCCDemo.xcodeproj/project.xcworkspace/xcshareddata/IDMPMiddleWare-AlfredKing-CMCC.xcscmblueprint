@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8344c6eb-43f3-4c33-bd05-85d909ed98dc++9169",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "8344c6eb-43f3-4c33-bd05-85d909ed98dc++9169" : {
+
+    },
+    "89f45924-22a3-424a-a17f-2e314deb6dbf++8235" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8344c6eb-43f3-4c33-bd05-85d909ed98dc++9169" : 9223372036854775807,
+    "89f45924-22a3-424a-a17f-2e314deb6dbf++8235" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7F47A833-3C39-4A2D-B0D1-8A07D554748C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8344c6eb-43f3-4c33-bd05-85d909ed98dc++9169" : "IOS-SEC\/",
+    "89f45924-22a3-424a-a17f-2e314deb6dbf++8235" : "andIDMP\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IDMPMiddleWare-AlfredKing-CMCC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IDMPMiddleWare-south-socket\/IDMPMiddleWare-AlfredKing-CMCC.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.komect.net\/aqb\/TYIDMP",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8344c6eb-43f3-4c33-bd05-85d909ed98dc++9169"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.23.12.231\/aqb\/andIDMP",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "89f45924-22a3-424a-a17f-2e314deb6dbf++8235"
+    }
+  ]
+}

@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A6CED8A24F2785900A1EFDF /* TestBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CED8924F2785900A1EFDF /* TestBezierPathViewController.m */; };
+		8A6CED8C24F2814600A1EFDF /* dwq.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A6CED8B24F2814600A1EFDF /* dwq.png */; };
+		8A8024C3247D60D3003580E4 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8024C2247D60D3003580E4 /* CTDisplayView.m */; };
+		8AA049F82438825500E89AA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA049F72438825500E89AA9 /* QuartzCore.framework */; };
+		8AA049FB2438C80900E89AA9 /* testTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA049FA2438C80900E89AA9 /* testTableViewController.m */; };
 		C2E09B9519C7DAA10074FACB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E09B9419C7DAA10074FACB /* main.m */; };
 		C2E09B9819C7DAA10074FACB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E09B9719C7DAA10074FACB /* AppDelegate.m */; };
-		C2E09B9B19C7DAA10074FACB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E09B9A19C7DAA10074FACB /* ViewController.m */; };
+		C2E09B9B19C7DAA10074FACB /* WeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E09B9A19C7DAA10074FACB /* WeiboViewController.m */; };
 		C2E09BA019C7DAA10074FACB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E09B9F19C7DAA10074FACB /* Images.xcassets */; };
 		C2E09BAF19C7DAA10074FACB /* RSA__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E09BAE19C7DAA10074FACB /* RSA__Tests.m */; };
 		C2E09BBB19C7DAF70074FACB /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E09BBA19C7DAF70074FACB /* RSA.m */; };
@@ -26,13 +31,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A6CED8824F2785900A1EFDF /* TestBezierPathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBezierPathViewController.h; sourceTree = "<group>"; };
+		8A6CED8924F2785900A1EFDF /* TestBezierPathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBezierPathViewController.m; sourceTree = "<group>"; };
+		8A6CED8B24F2814600A1EFDF /* dwq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dwq.png; sourceTree = "<group>"; };
+		8A8024C1247D60D3003580E4 /* CTDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
+		8A8024C2247D60D3003580E4 /* CTDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
+		8AA049F72438825500E89AA9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8AA049F92438C80300E89AA9 /* testTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testTableViewController.h; sourceTree = "<group>"; };
+		8AA049FA2438C80900E89AA9 /* testTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTableViewController.m; sourceTree = "<group>"; };
 		C2E09B8F19C7DAA00074FACB /* RSA原理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSA原理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E09B9319C7DAA10074FACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2E09B9419C7DAA10074FACB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2E09B9619C7DAA10074FACB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2E09B9719C7DAA10074FACB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C2E09B9919C7DAA10074FACB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C2E09B9A19C7DAA10074FACB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C2E09B9919C7DAA10074FACB /* WeiboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboViewController.h; sourceTree = "<group>"; };
+		C2E09B9A19C7DAA10074FACB /* WeiboViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboViewController.m; sourceTree = "<group>"; };
 		C2E09B9F19C7DAA10074FACB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C2E09BA819C7DAA10074FACB /* RSA原理Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RSA原理Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E09BAD19C7DAA10074FACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AA049F82438825500E89AA9 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,12 +73,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AA049F62438825500E89AA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AA049F72438825500E89AA9 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C2E09B8619C7DAA00074FACB = {
 			isa = PBXGroup;
 			children = (
 				C2E09B9119C7DAA00074FACB /* RSA原理 */,
 				C2E09BAB19C7DAA10074FACB /* RSA原理Tests */,
 				C2E09B9019C7DAA00074FACB /* Products */,
+				8AA049F62438825500E89AA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,8 +106,12 @@
 				C2E09BB819C7DAEE0074FACB /* RSA */,
 				C2E09B9619C7DAA10074FACB /* AppDelegate.h */,
 				C2E09B9719C7DAA10074FACB /* AppDelegate.m */,
-				C2E09B9919C7DAA10074FACB /* ViewController.h */,
-				C2E09B9A19C7DAA10074FACB /* ViewController.m */,
+				C2E09B9919C7DAA10074FACB /* WeiboViewController.h */,
+				C2E09B9A19C7DAA10074FACB /* WeiboViewController.m */,
+				8A8024C1247D60D3003580E4 /* CTDisplayView.h */,
+				8A8024C2247D60D3003580E4 /* CTDisplayView.m */,
+				8AA049F92438C80300E89AA9 /* testTableViewController.h */,
+				8AA049FA2438C80900E89AA9 /* testTableViewController.m */,
 				C2E09B9F19C7DAA10074FACB /* Images.xcassets */,
 				C2E09B9219C7DAA00074FACB /* Supporting Files */,
 			);
@@ -120,8 +147,11 @@
 		C2E09BB819C7DAEE0074FACB /* RSA */ = {
 			isa = PBXGroup;
 			children = (
+				8A6CED8B24F2814600A1EFDF /* dwq.png */,
 				C2E09BB919C7DAF70074FACB /* RSA.h */,
 				C2E09BBA19C7DAF70074FACB /* RSA.m */,
+				8A6CED8824F2785900A1EFDF /* TestBezierPathViewController.h */,
+				8A6CED8924F2785900A1EFDF /* TestBezierPathViewController.m */,
 			);
 			path = RSA;
 			sourceTree = "<group>";
@@ -187,6 +217,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -206,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A6CED8C24F2814600A1EFDF /* dwq.png in Resources */,
 				C2E09BA019C7DAA10074FACB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,9 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E09B9B19C7DAA10074FACB /* ViewController.m in Sources */,
+				8A6CED8A24F2785900A1EFDF /* TestBezierPathViewController.m in Sources */,
+				C2E09B9B19C7DAA10074FACB /* WeiboViewController.m in Sources */,
 				C2E09B9819C7DAA10074FACB /* AppDelegate.m in Sources */,
 				C2E09BBB19C7DAF70074FACB /* RSA.m in Sources */,
+				8AA049FB2438C80900E89AA9 /* testTableViewController.m in Sources */,
+				8A8024C3247D60D3003580E4 /* CTDisplayView.m in Sources */,
 				C2E09B9519C7DAA10074FACB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

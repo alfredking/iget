@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_0" orientation="landscape">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Weibo View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="WeiboViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1406773913750.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YmB-i0-rBd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="1406773913750.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YmB-i0-rBd">
                                 <rect key="frame" x="0.0" y="0.0" width="327.5" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YmB-i0-rBd" secondAttribute="height" multiplier="12:11" id="tz7-m0-n2I"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bizhi-0606-3278.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MaN-b8-kfh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bizhi-0606-3278.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MaN-b8-kfh">
                                 <rect key="frame" x="191" y="36" width="49" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="Ezc-zA-3aC"/>
@@ -50,7 +46,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="humingtao" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gp-il-HJe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="humingtao" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gp-il-HJe">
                                 <rect key="frame" x="423" y="0.0" width="111" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="gkq-II-7oe"/>
@@ -69,13 +65,13 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6w-LZ-ZwN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="24 year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6w-LZ-ZwN">
                                 <rect key="frame" x="423" y="22" width="57" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="呵呵哈哈哈嘿嘿呵呵哈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXN-iK-gYt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="呵呵哈哈哈嘿嘿呵呵哈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXN-iK-gYt">
                                 <rect key="frame" x="342" y="69" width="173" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -122,6 +118,7 @@
                                 <exclude reference="RcG-FF-h3b"/>
                                 <exclude reference="dWV-vB-FJS"/>
                                 <exclude reference="mly-kc-mTI"/>
+                                <exclude reference="go2-JK-8cT"/>
                                 <exclude reference="IID-By-NfB"/>
                                 <exclude reference="WoE-Vd-hiE"/>
                                 <exclude reference="hp6-I6-j3H"/>
@@ -130,7 +127,6 @@
                                 <exclude reference="COR-zm-70N"/>
                                 <exclude reference="MEt-yH-D7E"/>
                                 <exclude reference="G7D-Qf-0Z7"/>
-                                <exclude reference="go2-JK-8cT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -142,6 +138,7 @@
                                 <include reference="A9f-Iu-S6z"/>
                                 <exclude reference="NIa-qo-Gl6"/>
                                 <include reference="RcG-FF-h3b"/>
+                                <include reference="go2-JK-8cT"/>
                                 <include reference="IID-By-NfB"/>
                                 <include reference="WoE-Vd-hiE"/>
                                 <include reference="0Lf-pu-Ky8"/>
@@ -150,7 +147,6 @@
                                 <exclude reference="jan-fq-KmU"/>
                                 <include reference="G7D-Qf-0Z7"/>
                                 <exclude reference="gZH-lp-65h"/>
-                                <include reference="go2-JK-8cT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">

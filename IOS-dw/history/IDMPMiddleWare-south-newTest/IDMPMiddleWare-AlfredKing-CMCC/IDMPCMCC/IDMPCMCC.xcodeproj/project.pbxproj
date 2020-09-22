@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20573C9B1B3103C50054B099 /* IDMPFormatTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573C161B3103C50054B099 /* IDMPFormatTransform.m */; };
+		20573C9D1B3103C50054B099 /* IDMPMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573C1A1B3103C50054B099 /* IDMPMD5.m */; };
+		20573C9E1B3103C50054B099 /* IDMPNonce.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573C1C1B3103C50054B099 /* IDMPNonce.m */; };
+		20573C9F1B3103C50054B099 /* IDMPOpensslDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573C1E1B3103C50054B099 /* IDMPOpensslDigest.m */; };
+		20573CA01B3103C50054B099 /* IDMPParseParament.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573C201B3103C50054B099 /* IDMPParseParament.m */; };
+		20573CA31B3103C50054B099 /* IDMPHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573C281B3103C50054B099 /* IDMPHttpRequest.m */; };
+		20573CA61B3103C50054B099 /* IDMPTempSmsMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573C2F1B3103C50054B099 /* IDMPTempSmsMode.m */; };
+		20573CA71B3103C50054B099 /* IDMPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573C311B3103C50054B099 /* IDMPToken.m */; };
+		20573CA91B3103C50054B099 /* IDMPWapMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573C351B3103C50054B099 /* IDMPWapMode.m */; };
+		20573CAA1B3103C50054B099 /* hmac_sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 20573C381B3103C50054B099 /* hmac_sha256.c */; };
+		20573CAB1B3103C50054B099 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 20573C3A1B3103C50054B099 /* sha256.c */; };
+		20573CAC1B3103C50054B099 /* IDMPMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573C3D1B3103C50054B099 /* IDMPMatch.m */; };
+		20573CAE1B3103C50054B099 /* IDMPReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573C431B3103C50054B099 /* IDMPReachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		20573CB11B3103C50054B099 /* IDMPDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573C981B3103C50054B099 /* IDMPDevice.m */; };
+		20573CB41B3105230054B099 /* IDMPAutoLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573CB31B3105230054B099 /* IDMPAutoLoginViewController.m */; };
+		20573CDA1B3121290054B099 /* IDMPLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573CD91B3121290054B099 /* IDMPLoadingView.m */; };
+		20573CDD1B3121340054B099 /* IDMPListUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573CDC1B3121340054B099 /* IDMPListUserView.m */; };
+		87774BCD1D40C0F200E8638E /* IDMPRSA_Encrypt_Decrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 87774BCA1D40C0F200E8638E /* IDMPRSA_Encrypt_Decrypt.m */; };
+		87774BCE1D40C0F200E8638E /* IDMPRSA_Encrypt_Decrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 87774BCA1D40C0F200E8638E /* IDMPRSA_Encrypt_Decrypt.m */; };
+		87774BCF1D40C0F200E8638E /* IDMPRSA_Sign_Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 87774BCC1D40C0F200E8638E /* IDMPRSA_Sign_Verify.m */; };
+		87774BD01D40C0F200E8638E /* IDMPRSA_Sign_Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 87774BCC1D40C0F200E8638E /* IDMPRSA_Sign_Verify.m */; };
+		87774BD51D40C21C00E8638E /* IDMPAES128.m in Sources */ = {isa = PBXBuildFile; fileRef = 87774BD41D40C21C00E8638E /* IDMPAES128.m */; };
+		87774BD61D40C21C00E8638E /* IDMPAES128.m in Sources */ = {isa = PBXBuildFile; fileRef = 87774BD41D40C21C00E8638E /* IDMPAES128.m */; };
+		879E1BC71CC4AAF100306080 /* IDMPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 879E1BC61CC4AAF100306080 /* IDMPTool.m */; };
+		87B78D0D1E1E3CD40058E993 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B78D0A1E1E3CD40058E993 /* GCDAsyncSocket.m */; };
+		87B78D0E1E1E3CD40058E993 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B78D0C1E1E3CD40058E993 /* GCDAsyncUdpSocket.m */; };
+		87C291611CAB7704004A097A /* IDMPKsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C291601CAB7704004A097A /* IDMPKsModel.m */; };
+		87C2C75F1C084C3E0055BB73 /* IDMPTempSmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C2C75E1C084C3E0055BB73 /* IDMPTempSmsViewController.m */; };
+		87FCAE141CC70EED0020C1CE /* IDMPKDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FCAE131CC70EED0020C1CE /* IDMPKDF.m */; };
+		B4364BC01B554F6500D8B529 /* IDMPDataSms.m in Sources */ = {isa = PBXBuildFile; fileRef = B4364BBD1B554F6500D8B529 /* IDMPDataSms.m */; };
+		B4364BC11B554F6500D8B529 /* IDMPDataSMSMode.m in Sources */ = {isa = PBXBuildFile; fileRef = B4364BBF1B554F6500D8B529 /* IDMPDataSMSMode.m */; };
+		E3C4DA371B7455F800356C1D /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C4DA361B7455F800356C1D /* Log.m */; };
+		F35F76F61A2D83500097F40E /* libIDMPCMCC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F35F76EA1A2D83500097F40E /* libIDMPCMCC.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F35F76F71A2D83500097F40E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F35F76E21A2D83500097F40E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F35F76E91A2D83500097F40E;
+			remoteInfo = IDMPCMCC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F35F76E81A2D83500097F40E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		20573C151B3103C50054B099 /* IDMPFormatTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPFormatTransform.h; sourceTree = "<group>"; };
+		20573C161B3103C50054B099 /* IDMPFormatTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPFormatTransform.m; sourceTree = "<group>"; };
+		20573C171B3103C50054B099 /* IDMPKDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPKDF.h; sourceTree = "<group>"; };
+		20573C191B3103C50054B099 /* IDMPMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPMD5.h; sourceTree = "<group>"; };
+		20573C1A1B3103C50054B099 /* IDMPMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPMD5.m; sourceTree = "<group>"; };
+		20573C1B1B3103C50054B099 /* IDMPNonce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPNonce.h; sourceTree = "<group>"; };
+		20573C1C1B3103C50054B099 /* IDMPNonce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPNonce.m; sourceTree = "<group>"; };
+		20573C1D1B3103C50054B099 /* IDMPOpensslDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPOpensslDigest.h; sourceTree = "<group>"; };
+		20573C1E1B3103C50054B099 /* IDMPOpensslDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPOpensslDigest.m; sourceTree = "<group>"; };
+		20573C1F1B3103C50054B099 /* IDMPParseParament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPParseParament.h; sourceTree = "<group>"; };
+		20573C201B3103C50054B099 /* IDMPParseParament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPParseParament.m; sourceTree = "<group>"; };
+		20573C271B3103C50054B099 /* IDMPHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPHttpRequest.h; sourceTree = "<group>"; };
+		20573C281B3103C50054B099 /* IDMPHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPHttpRequest.m; sourceTree = "<group>"; };
+		20573C2E1B3103C50054B099 /* IDMPTempSmsMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPTempSmsMode.h; sourceTree = "<group>"; };
+		20573C2F1B3103C50054B099 /* IDMPTempSmsMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPTempSmsMode.m; sourceTree = "<group>"; };
+		20573C301B3103C50054B099 /* IDMPToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPToken.h; sourceTree = "<group>"; };
+		20573C311B3103C50054B099 /* IDMPToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPToken.m; sourceTree = "<group>"; };
+		20573C341B3103C50054B099 /* IDMPWapMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPWapMode.h; sourceTree = "<group>"; };
+		20573C351B3103C50054B099 /* IDMPWapMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPWapMode.m; sourceTree = "<group>"; };
+		20573C381B3103C50054B099 /* hmac_sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac_sha256.c; sourceTree = "<group>"; };
+		20573C391B3103C50054B099 /* hmac_sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac_sha256.h; sourceTree = "<group>"; };
+		20573C3A1B3103C50054B099 /* sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha256.c; sourceTree = "<group>"; };
+		20573C3B1B3103C50054B099 /* sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
+		20573C3C1B3103C50054B099 /* IDMPMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPMatch.h; sourceTree = "<group>"; };
+		20573C3D1B3103C50054B099 /* IDMPMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPMatch.m; sourceTree = "<group>"; };
+		20573C421B3103C50054B099 /* IDMPReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPReachability.h; sourceTree = "<group>"; };
+		20573C431B3103C50054B099 /* IDMPReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPReachability.m; sourceTree = "<group>"; };
+		20573C961B3103C50054B099 /* IDMPConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPConst.h; sourceTree = "<group>"; };
+		20573C971B3103C50054B099 /* IDMPDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPDevice.h; sourceTree = "<group>"; };
+		20573C981B3103C50054B099 /* IDMPDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPDevice.m; sourceTree = "<group>"; };
+		20573CB21B3105230054B099 /* IDMPAutoLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPAutoLoginViewController.h; sourceTree = "<group>"; };
+		20573CB31B3105230054B099 /* IDMPAutoLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPAutoLoginViewController.m; sourceTree = "<group>"; };
+		20573CD81B3121290054B099 /* IDMPLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPLoadingView.h; sourceTree = "<group>"; };
+		20573CD91B3121290054B099 /* IDMPLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPLoadingView.m; sourceTree = "<group>"; };
+		20573CDB1B3121340054B099 /* IDMPListUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPListUserView.h; sourceTree = "<group>"; };
+		20573CDC1B3121340054B099 /* IDMPListUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPListUserView.m; sourceTree = "<group>"; };
+		87774BC91D40C0F200E8638E /* IDMPRSA_Encrypt_Decrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPRSA_Encrypt_Decrypt.h; sourceTree = "<group>"; };
+		87774BCA1D40C0F200E8638E /* IDMPRSA_Encrypt_Decrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPRSA_Encrypt_Decrypt.m; sourceTree = "<group>"; };
+		87774BCB1D40C0F200E8638E /* IDMPRSA_Sign_Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPRSA_Sign_Verify.h; sourceTree = "<group>"; };
+		87774BCC1D40C0F200E8638E /* IDMPRSA_Sign_Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPRSA_Sign_Verify.m; sourceTree = "<group>"; };
+		87774BD31D40C21C00E8638E /* IDMPAES128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPAES128.h; sourceTree = "<group>"; };
+		87774BD41D40C21C00E8638E /* IDMPAES128.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPAES128.m; sourceTree = "<group>"; };
+		879E1BC51CC4AAF100306080 /* IDMPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPTool.h; sourceTree = "<group>"; };
+		879E1BC61CC4AAF100306080 /* IDMPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPTool.m; sourceTree = "<group>"; };
+		87B78D091E1E3CD40058E993 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		87B78D0A1E1E3CD40058E993 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		87B78D0B1E1E3CD40058E993 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		87B78D0C1E1E3CD40058E993 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		87C2915F1CAB7704004A097A /* IDMPKsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPKsModel.h; sourceTree = "<group>"; };
+		87C291601CAB7704004A097A /* IDMPKsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPKsModel.m; sourceTree = "<group>"; };
+		87C2C75D1C084C3E0055BB73 /* IDMPTempSmsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPTempSmsViewController.h; sourceTree = "<group>"; };
+		87C2C75E1C084C3E0055BB73 /* IDMPTempSmsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPTempSmsViewController.m; sourceTree = "<group>"; };
+		87FCAE131CC70EED0020C1CE /* IDMPKDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPKDF.m; sourceTree = "<group>"; };
+		B4364BBC1B554F6500D8B529 /* IDMPDataSms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPDataSms.h; sourceTree = "<group>"; };
+		B4364BBD1B554F6500D8B529 /* IDMPDataSms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPDataSms.m; sourceTree = "<group>"; };
+		B4364BBE1B554F6500D8B529 /* IDMPDataSMSMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPDataSMSMode.h; sourceTree = "<group>"; };
+		B4364BBF1B554F6500D8B529 /* IDMPDataSMSMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPDataSMSMode.m; sourceTree = "<group>"; };
+		E3C4DA351B7455F800356C1D /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		E3C4DA361B7455F800356C1D /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		E3C4DA391B74563000356C1D /* IDMPCMCC-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDMPCMCC-Prefix.pch"; sourceTree = "<group>"; };
+		F35F76EA1A2D83500097F40E /* libIDMPCMCC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIDMPCMCC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35F76F51A2D83500097F40E /* IDMPCMCCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDMPCMCCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35F76FB1A2D83500097F40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F35F778C1A2D839D0097F40E /* sim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sim.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F35F76E71A2D83500097F40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F76F21A2D83500097F40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35F76F61A2D83500097F40E /* libIDMPCMCC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20573C0F1B3103C50054B099 /* IDMPController */ = {
+			isa = PBXGroup;
+			children = (
+				20573CB21B3105230054B099 /* IDMPAutoLoginViewController.h */,
+				20573CB31B3105230054B099 /* IDMPAutoLoginViewController.m */,
+			);
+			path = IDMPController;
+			sourceTree = "<group>";
+		};
+		20573C121B3103C50054B099 /* IDMPDataProcess */ = {
+			isa = PBXGroup;
+			children = (
+				87774BD31D40C21C00E8638E /* IDMPAES128.h */,
+				87774BD41D40C21C00E8638E /* IDMPAES128.m */,
+				20573C151B3103C50054B099 /* IDMPFormatTransform.h */,
+				20573C161B3103C50054B099 /* IDMPFormatTransform.m */,
+				20573C171B3103C50054B099 /* IDMPKDF.h */,
+				87FCAE131CC70EED0020C1CE /* IDMPKDF.m */,
+				20573C191B3103C50054B099 /* IDMPMD5.h */,
+				20573C1A1B3103C50054B099 /* IDMPMD5.m */,
+				20573C1B1B3103C50054B099 /* IDMPNonce.h */,
+				20573C1C1B3103C50054B099 /* IDMPNonce.m */,
+				20573C1D1B3103C50054B099 /* IDMPOpensslDigest.h */,
+				20573C1E1B3103C50054B099 /* IDMPOpensslDigest.m */,
+				20573C1F1B3103C50054B099 /* IDMPParseParament.h */,
+				20573C201B3103C50054B099 /* IDMPParseParament.m */,
+				87774BC91D40C0F200E8638E /* IDMPRSA_Encrypt_Decrypt.h */,
+				87774BCA1D40C0F200E8638E /* IDMPRSA_Encrypt_Decrypt.m */,
+				87774BCB1D40C0F200E8638E /* IDMPRSA_Sign_Verify.h */,
+				87774BCC1D40C0F200E8638E /* IDMPRSA_Sign_Verify.m */,
+			);
+			path = IDMPDataProcess;
+			sourceTree = "<group>";
+		};
+		20573C251B3103C50054B099 /* IDMPModel */ = {
+			isa = PBXGroup;
+			children = (
+				E3C4DA351B7455F800356C1D /* Log.h */,
+				E3C4DA361B7455F800356C1D /* Log.m */,
+				20573C261B3103C50054B099 /* httpRequest */,
+				20573C291B3103C50054B099 /* loginOperate */,
+			);
+			path = IDMPModel;
+			sourceTree = "<group>";
+		};
+		20573C261B3103C50054B099 /* httpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				20573C271B3103C50054B099 /* IDMPHttpRequest.h */,
+				20573C281B3103C50054B099 /* IDMPHttpRequest.m */,
+			);
+			path = httpRequest;
+			sourceTree = "<group>";
+		};
+		20573C291B3103C50054B099 /* loginOperate */ = {
+			isa = PBXGroup;
+			children = (
+				20573C341B3103C50054B099 /* IDMPWapMode.h */,
+				20573C351B3103C50054B099 /* IDMPWapMode.m */,
+				B4364BBE1B554F6500D8B529 /* IDMPDataSMSMode.h */,
+				B4364BBF1B554F6500D8B529 /* IDMPDataSMSMode.m */,
+				B4364BBC1B554F6500D8B529 /* IDMPDataSms.h */,
+				B4364BBD1B554F6500D8B529 /* IDMPDataSms.m */,
+				20573C2E1B3103C50054B099 /* IDMPTempSmsMode.h */,
+				20573C2F1B3103C50054B099 /* IDMPTempSmsMode.m */,
+				20573C301B3103C50054B099 /* IDMPToken.h */,
+				20573C311B3103C50054B099 /* IDMPToken.m */,
+				87C2915F1CAB7704004A097A /* IDMPKsModel.h */,
+				87C291601CAB7704004A097A /* IDMPKsModel.m */,
+				879E1BC51CC4AAF100306080 /* IDMPTool.h */,
+				879E1BC61CC4AAF100306080 /* IDMPTool.m */,
+			);
+			path = loginOperate;
+			sourceTree = "<group>";
+		};
+		20573C361B3103C50054B099 /* IDMPReference */ = {
+			isa = PBXGroup;
+			children = (
+				20573C371B3103C50054B099 /* hmac */,
+				20573C3C1B3103C50054B099 /* IDMPMatch.h */,
+				20573C3D1B3103C50054B099 /* IDMPMatch.m */,
+				20573C411B3103C50054B099 /* Reachability */,
+				87B78D081E1E3CD40058E993 /* GCDSocket */,
+			);
+			path = IDMPReference;
+			sourceTree = "<group>";
+		};
+		20573C371B3103C50054B099 /* hmac */ = {
+			isa = PBXGroup;
+			children = (
+				20573C381B3103C50054B099 /* hmac_sha256.c */,
+				20573C391B3103C50054B099 /* hmac_sha256.h */,
+				20573C3A1B3103C50054B099 /* sha256.c */,
+				20573C3B1B3103C50054B099 /* sha256.h */,
+			);
+			path = hmac;
+			sourceTree = "<group>";
+		};
+		20573C411B3103C50054B099 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				20573C421B3103C50054B099 /* IDMPReachability.h */,
+				20573C431B3103C50054B099 /* IDMPReachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		20573C951B3103C50054B099 /* IDMPResource */ = {
+			isa = PBXGroup;
+			children = (
+				20573C961B3103C50054B099 /* IDMPConst.h */,
+				20573C971B3103C50054B099 /* IDMPDevice.h */,
+				20573C981B3103C50054B099 /* IDMPDevice.m */,
+			);
+			path = IDMPResource;
+			sourceTree = "<group>";
+		};
+		20573CBB1B31059C0054B099 /* IDMPView */ = {
+			isa = PBXGroup;
+			children = (
+				20573CDB1B3121340054B099 /* IDMPListUserView.h */,
+				20573CDC1B3121340054B099 /* IDMPListUserView.m */,
+				20573CD81B3121290054B099 /* IDMPLoadingView.h */,
+				20573CD91B3121290054B099 /* IDMPLoadingView.m */,
+				87C2C75D1C084C3E0055BB73 /* IDMPTempSmsViewController.h */,
+				87C2C75E1C084C3E0055BB73 /* IDMPTempSmsViewController.m */,
+			);
+			path = IDMPView;
+			sourceTree = "<group>";
+		};
+		87B78D081E1E3CD40058E993 /* GCDSocket */ = {
+			isa = PBXGroup;
+			children = (
+				87B78D091E1E3CD40058E993 /* GCDAsyncSocket.h */,
+				87B78D0A1E1E3CD40058E993 /* GCDAsyncSocket.m */,
+				87B78D0B1E1E3CD40058E993 /* GCDAsyncUdpSocket.h */,
+				87B78D0C1E1E3CD40058E993 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCDSocket;
+			sourceTree = "<group>";
+		};
+		F35F76E11A2D83500097F40E = {
+			isa = PBXGroup;
+			children = (
+				E3C4DA391B74563000356C1D /* IDMPCMCC-Prefix.pch */,
+				F35F76EC1A2D83500097F40E /* IDMPCMCC */,
+				F35F76F91A2D83500097F40E /* IDMPCMCCTests */,
+				F35F76EB1A2D83500097F40E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F35F76EB1A2D83500097F40E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F35F76EA1A2D83500097F40E /* libIDMPCMCC.a */,
+				F35F76F51A2D83500097F40E /* IDMPCMCCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F35F76EC1A2D83500097F40E /* IDMPCMCC */ = {
+			isa = PBXGroup;
+			children = (
+				20573CBB1B31059C0054B099 /* IDMPView */,
+				20573C0F1B3103C50054B099 /* IDMPController */,
+				20573C121B3103C50054B099 /* IDMPDataProcess */,
+				20573C251B3103C50054B099 /* IDMPModel */,
+				20573C361B3103C50054B099 /* IDMPReference */,
+				20573C951B3103C50054B099 /* IDMPResource */,
+				F35F778C1A2D839D0097F40E /* sim.h */,
+			);
+			path = IDMPCMCC;
+			sourceTree = "<group>";
+		};
+		F35F76F91A2D83500097F40E /* IDMPCMCCTests */ = {
+			isa = PBXGroup;
+			children = (
+				F35F76FA1A2D83500097F40E /* Supporting Files */,
+			);
+			path = IDMPCMCCTests;
+			sourceTree = "<group>";
+		};
+		F35F76FA1A2D83500097F40E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F35F76FB1A2D83500097F40E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F35F76E91A2D83500097F40E /* IDMPCMCC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F35F76FE1A2D83500097F40E /* Build configuration list for PBXNativeTarget "IDMPCMCC" */;
+			buildPhases = (
+				F35F76E61A2D83500097F40E /* Sources */,
+				F35F76E71A2D83500097F40E /* Frameworks */,
+				F35F76E81A2D83500097F40E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IDMPCMCC;
+			productName = IDMPCMCC;
+			productReference = F35F76EA1A2D83500097F40E /* libIDMPCMCC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F35F76F41A2D83500097F40E /* IDMPCMCCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F35F77011A2D83500097F40E /* Build configuration list for PBXNativeTarget "IDMPCMCCTests" */;
+			buildPhases = (
+				F35F76F11A2D83500097F40E /* Sources */,
+				F35F76F21A2D83500097F40E /* Frameworks */,
+				F35F76F31A2D83500097F40E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F35F76F81A2D83500097F40E /* PBXTargetDependency */,
+			);
+			name = IDMPCMCCTests;
+			productName = IDMPCMCCTests;
+			productReference = F35F76F51A2D83500097F40E /* IDMPCMCCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F35F76E21A2D83500097F40E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = zwk;
+				TargetAttributes = {
+					F35F76E91A2D83500097F40E = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					F35F76F41A2D83500097F40E = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = F35F76E51A2D83500097F40E /* Build configuration list for PBXProject "IDMPCMCC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F35F76E11A2D83500097F40E;
+			productRefGroup = F35F76EB1A2D83500097F40E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F35F76E91A2D83500097F40E /* IDMPCMCC */,
+				F35F76F41A2D83500097F40E /* IDMPCMCCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F35F76F31A2D83500097F40E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F35F76E61A2D83500097F40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87FCAE141CC70EED0020C1CE /* IDMPKDF.m in Sources */,
+				20573C9B1B3103C50054B099 /* IDMPFormatTransform.m in Sources */,
+				87B78D0E1E1E3CD40058E993 /* GCDAsyncUdpSocket.m in Sources */,
+				20573CA01B3103C50054B099 /* IDMPParseParament.m in Sources */,
+				20573CDD1B3121340054B099 /* IDMPListUserView.m in Sources */,
+				87774BCF1D40C0F200E8638E /* IDMPRSA_Sign_Verify.m in Sources */,
+				20573CAB1B3103C50054B099 /* sha256.c in Sources */,
+				20573CA71B3103C50054B099 /* IDMPToken.m in Sources */,
+				20573C9F1B3103C50054B099 /* IDMPOpensslDigest.m in Sources */,
+				87C291611CAB7704004A097A /* IDMPKsModel.m in Sources */,
+				20573CAA1B3103C50054B099 /* hmac_sha256.c in Sources */,
+				B4364BC11B554F6500D8B529 /* IDMPDataSMSMode.m in Sources */,
+				20573CB11B3103C50054B099 /* IDMPDevice.m in Sources */,
+				87B78D0D1E1E3CD40058E993 /* GCDAsyncSocket.m in Sources */,
+				20573C9D1B3103C50054B099 /* IDMPMD5.m in Sources */,
+				B4364BC01B554F6500D8B529 /* IDMPDataSms.m in Sources */,
+				20573CA31B3103C50054B099 /* IDMPHttpRequest.m in Sources */,
+				20573CDA1B3121290054B099 /* IDMPLoadingView.m in Sources */,
+				E3C4DA371B7455F800356C1D /* Log.m in Sources */,
+				87C2C75F1C084C3E0055BB73 /* IDMPTempSmsViewController.m in Sources */,
+				20573CAE1B3103C50054B099 /* IDMPReachability.m in Sources */,
+				20573CA61B3103C50054B099 /* IDMPTempSmsMode.m in Sources */,
+				879E1BC71CC4AAF100306080 /* IDMPTool.m in Sources */,
+				20573CAC1B3103C50054B099 /* IDMPMatch.m in Sources */,
+				20573CA91B3103C50054B099 /* IDMPWapMode.m in Sources */,
+				20573CB41B3105230054B099 /* IDMPAutoLoginViewController.m in Sources */,
+				20573C9E1B3103C50054B099 /* IDMPNonce.m in Sources */,
+				87774BCD1D40C0F200E8638E /* IDMPRSA_Encrypt_Decrypt.m in Sources */,
+				87774BD51D40C21C00E8638E /* IDMPAES128.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F76F11A2D83500097F40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87774BD01D40C0F200E8638E /* IDMPRSA_Sign_Verify.m in Sources */,
+				87774BCE1D40C0F200E8638E /* IDMPRSA_Encrypt_Decrypt.m in Sources */,
+				87774BD61D40C21C00E8638E /* IDMPAES128.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F35F76F81A2D83500097F40E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F35F76E91A2D83500097F40E /* IDMPCMCC */;
+			targetProxy = F35F76F71A2D83500097F40E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F35F76FC1A2D83500097F40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: qibing jin (QBQKGP4FCB)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "f7c1d5bc-2044-406c-b840-744121a3ccd4";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F35F76FD1A2D83500097F40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: qibing jin (QBQKGP4FCB)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "f7c1d5bc-2044-406c-b840-744121a3ccd4";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F35F76FF1A2D83500097F40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: yuqi6713@qq.com (22QYUFH36Z)";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDMPCMCC-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/IDMPCMCC/IDMPReference/RSA/include",
+					"$(PROJECT_DIR)/IDMPCMCC/IDMPController",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IDMPCMCC/RSA/libs",
+					"$(PROJECT_DIR)/IDMPCMCC/IDMPReference/RSA/libs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f7c1d5bc-2044-406c-b840-744121a3ccd4";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F35F77001A2D83500097F40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: yuqi6713@qq.com (22QYUFH36Z)";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDMPCMCC-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/IDMPCMCC/IDMPReference/RSA/include",
+					"$(PROJECT_DIR)/IDMPCMCC/IDMPController",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IDMPCMCC/RSA/libs",
+					"$(PROJECT_DIR)/IDMPCMCC/IDMPReference/RSA/libs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f7c1d5bc-2044-406c-b840-744121a3ccd4";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F35F77021A2D83500097F40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: China Mobile (Hangzhou) Information Technology Co., Ltd.";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IDMPCMCCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8d15882e-bfa2-4975-af6d-b7150a022c44";
+			};
+			name = Debug;
+		};
+		F35F77031A2D83500097F40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: China Mobile (Hangzhou) Information Technology Co., Ltd.";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IDMPCMCCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8d15882e-bfa2-4975-af6d-b7150a022c44";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F35F76E51A2D83500097F40E /* Build configuration list for PBXProject "IDMPCMCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35F76FC1A2D83500097F40E /* Debug */,
+				F35F76FD1A2D83500097F40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F35F76FE1A2D83500097F40E /* Build configuration list for PBXNativeTarget "IDMPCMCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35F76FF1A2D83500097F40E /* Debug */,
+				F35F77001A2D83500097F40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F35F77011A2D83500097F40E /* Build configuration list for PBXNativeTarget "IDMPCMCCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35F77021A2D83500097F40E /* Debug */,
+				F35F77031A2D83500097F40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F35F76E21A2D83500097F40E /* Project object */;
+}

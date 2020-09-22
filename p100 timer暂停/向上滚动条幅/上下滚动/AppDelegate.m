@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "WeiboViewController.h"
 #import "testTableViewController.h"
 @interface AppDelegate ()
 
@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
-    ViewController *viewController =[[ViewController alloc]init];
+    WeiboViewController *viewController =[[WeiboViewController alloc]init];
     //testTableViewController *viewController =[[testTableViewController alloc]init];
     
     self.window.rootViewController =viewController;

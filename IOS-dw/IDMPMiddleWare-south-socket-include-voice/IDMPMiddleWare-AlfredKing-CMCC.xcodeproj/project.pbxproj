@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20573C091B3100FF0054B099 /* IDMPRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573BE11B3100FE0054B099 /* IDMPRegisterViewController.m */; };
+		20573C0C1B3100FF0054B099 /* IDMPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20573BE61B3100FE0054B099 /* IDMPTestViewController.m */; };
+		20573CE71B3149FB0054B099 /* libIDMPCMCC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20573CE41B3148410054B099 /* libIDMPCMCC.a */; };
+		20573CE91B31628F0054B099 /* libIDMPCMCC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20573CE41B3148410054B099 /* libIDMPCMCC.a */; };
+		3719FD001F25ED5F00A039AC /* IDMPCMCC.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37F96D711F25DAB9001CE3D6 /* IDMPCMCC.bundle */; };
+		3784357D1F04914B00EC4456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3784357C1F04914B00EC4456 /* Main.storyboard */; };
+		37D06E321FAAB99C00191889 /* IDMPVUPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D06E311FAAB99C00191889 /* IDMPVUPViewController.m */; };
+		87A460331C06EDD600B0EBF3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87A460301C06EDD600B0EBF3 /* Default-568h@2x.png */; };
+		87A460341C06EDD600B0EBF3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 87A460311C06EDD600B0EBF3 /* Default.png */; };
+		87A460351C06EDD600B0EBF3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87A460321C06EDD600B0EBF3 /* Default@2x.png */; };
+		87A4604D1C070C6900B0EBF3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A4604C1C070C6900B0EBF3 /* CoreLocation.framework */; };
+		8A1F23B1199B3F5400453215 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1F23B0199B3F5400453215 /* CoreGraphics.framework */; };
+		8A1F23B9199B3F5400453215 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A1F23B7199B3F5400453215 /* InfoPlist.strings */; };
+		8A1F23BB199B3F5400453215 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F23BA199B3F5400453215 /* main.m */; };
+		8A1F23BF199B3F5400453215 /* IDMPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F23BE199B3F5400453215 /* IDMPAppDelegate.m */; };
+		8A1F23C7199B3F5400453215 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1F23C6199B3F5400453215 /* Images.xcassets */; };
+		8A1F23D8199B3F5400453215 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A1F23D6199B3F5400453215 /* InfoPlist.strings */; };
+		8A1F23DA199B3F5400453215 /* IDMPMiddleWare_AlfredKing_CMCCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F23D9199B3F5400453215 /* IDMPMiddleWare_AlfredKing_CMCCTests.m */; };
+		8A2B865019AC7E5C0045F00A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2B864F19AC7E5C0045F00A /* SystemConfiguration.framework */; };
+		8A521A1A19F3E7E900FDB04D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A521A1919F3E7E900FDB04D /* UIKit.framework */; };
+		8A521A1C19F3E7F700FDB04D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A521A1B19F3E7F700FDB04D /* Foundation.framework */; };
+		8A521A1E19F3E82100FDB04D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A521A1D19F3E82100FDB04D /* CoreFoundation.framework */; };
+		8A63A2B819A4F2480067538D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A63A2B719A4F2480067538D /* MessageUI.framework */; };
+		8A7D64D719B046DB00734341 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7D64D619B046DB00734341 /* CFNetwork.framework */; };
+		8A7D64D919B0474400734341 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7D64D819B0474400734341 /* libz.1.2.5.dylib */; };
+		8A7D64DB19B0476600734341 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7D64DA19B0476600734341 /* MobileCoreServices.framework */; };
+		8A9A5D0E19B1C04400D26A93 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9A5D0D19B1C04400D26A93 /* CoreTelephony.framework */; };
+		F3980FB81A4D2688000FAC7F /* chinaMobile.png in Resources */ = {isa = PBXBuildFile; fileRef = F3980FB71A4D2688000FAC7F /* chinaMobile.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20573CE31B3148410054B099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20573CDE1B3148410054B099 /* IDMPCMCC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F35F76EA1A2D83500097F40E;
+			remoteInfo = IDMPCMCC;
+		};
+		20573CE51B3148410054B099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20573CDE1B3148410054B099 /* IDMPCMCC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F35F76F51A2D83500097F40E;
+			remoteInfo = IDMPCMCCTests;
+		};
+		8A1F23D1199B3F5400453215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A1F23A3199B3F5400453215 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A1F23AA199B3F5400453215;
+			remoteInfo = "IDMPMiddleWare-AlfredKing-CMCC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20573BE01B3100FE0054B099 /* IDMPRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPRegisterViewController.h; sourceTree = "<group>"; };
+		20573BE11B3100FE0054B099 /* IDMPRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPRegisterViewController.m; sourceTree = "<group>"; };
+		20573BE51B3100FE0054B099 /* IDMPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPTestViewController.h; sourceTree = "<group>"; };
+		20573BE61B3100FE0054B099 /* IDMPTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPTestViewController.m; sourceTree = "<group>"; };
+		20573CDE1B3148410054B099 /* IDMPCMCC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IDMPCMCC.xcodeproj; path = "IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC.xcodeproj"; sourceTree = "<group>"; };
+		3784357C1F04914B00EC4456 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		37D06E301FAAB99C00191889 /* IDMPVUPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMPVUPViewController.h; sourceTree = "<group>"; };
+		37D06E311FAAB99C00191889 /* IDMPVUPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMPVUPViewController.m; sourceTree = "<group>"; };
+		37F96D711F25DAB9001CE3D6 /* IDMPCMCC.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IDMPCMCC.bundle; sourceTree = "<group>"; };
+		5FC42DFECAF2A90D5AC3D885 /* libPods-IDMPMiddleWare-AlfredKing-CMCC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IDMPMiddleWare-AlfredKing-CMCC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A460301C06EDD600B0EBF3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		87A460311C06EDD600B0EBF3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		87A460321C06EDD600B0EBF3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		87A4604C1C070C6900B0EBF3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8A1F23AB199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IDMPMiddleWare-AlfredKing-CMCC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1F23B0199B3F5400453215 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8A1F23B6199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDMPMiddleWare-AlfredKing-CMCC-Info.plist"; sourceTree = "<group>"; };
+		8A1F23B8199B3F5400453215 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A1F23BA199B3F5400453215 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A1F23BD199B3F5400453215 /* IDMPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMPAppDelegate.h; sourceTree = "<group>"; };
+		8A1F23BE199B3F5400453215 /* IDMPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMPAppDelegate.m; sourceTree = "<group>"; };
+		8A1F23C6199B3F5400453215 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8A1F23CC199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IDMPMiddleWare-AlfredKing-CMCCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1F23D5199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDMPMiddleWare-AlfredKing-CMCCTests-Info.plist"; sourceTree = "<group>"; };
+		8A1F23D7199B3F5400453215 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A1F23D9199B3F5400453215 /* IDMPMiddleWare_AlfredKing_CMCCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMPMiddleWare_AlfredKing_CMCCTests.m; sourceTree = "<group>"; };
+		8A2B864F19AC7E5C0045F00A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8A521A1919F3E7E900FDB04D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A521A1B19F3E7F700FDB04D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8A521A1D19F3E82100FDB04D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8A63A2B719A4F2480067538D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8A7D64D619B046DB00734341 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8A7D64D819B0474400734341 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		8A7D64DA19B0476600734341 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8A92C7FD1D93C90300CDD57D /* IDMPMiddleWare-AlfredKing-CMCC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "IDMPMiddleWare-AlfredKing-CMCC.entitlements"; sourceTree = "<group>"; };
+		8A9A5D0D19B1C04400D26A93 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F3980FB71A4D2688000FAC7F /* chinaMobile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chinaMobile.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A1F23A8199B3F5400453215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A4604D1C070C6900B0EBF3 /* CoreLocation.framework in Frameworks */,
+				8A521A1E19F3E82100FDB04D /* CoreFoundation.framework in Frameworks */,
+				8A521A1C19F3E7F700FDB04D /* Foundation.framework in Frameworks */,
+				8A521A1A19F3E7E900FDB04D /* UIKit.framework in Frameworks */,
+				8A9A5D0E19B1C04400D26A93 /* CoreTelephony.framework in Frameworks */,
+				8A1F23B1199B3F5400453215 /* CoreGraphics.framework in Frameworks */,
+				8A7D64DB19B0476600734341 /* MobileCoreServices.framework in Frameworks */,
+				8A7D64D919B0474400734341 /* libz.1.2.5.dylib in Frameworks */,
+				8A7D64D719B046DB00734341 /* CFNetwork.framework in Frameworks */,
+				8A2B865019AC7E5C0045F00A /* SystemConfiguration.framework in Frameworks */,
+				20573CE91B31628F0054B099 /* libIDMPCMCC.a in Frameworks */,
+				8A63A2B819A4F2480067538D /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1F23C9199B3F5400453215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20573CE71B3149FB0054B099 /* libIDMPCMCC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20573BD51B3100FE0054B099 /* IDMPView */ = {
+			isa = PBXGroup;
+			children = (
+				20573BE01B3100FE0054B099 /* IDMPRegisterViewController.h */,
+				20573BE11B3100FE0054B099 /* IDMPRegisterViewController.m */,
+				20573BE51B3100FE0054B099 /* IDMPTestViewController.h */,
+				20573BE61B3100FE0054B099 /* IDMPTestViewController.m */,
+				3784357C1F04914B00EC4456 /* Main.storyboard */,
+				37D06E301FAAB99C00191889 /* IDMPVUPViewController.h */,
+				37D06E311FAAB99C00191889 /* IDMPVUPViewController.m */,
+			);
+			path = IDMPView;
+			sourceTree = "<group>";
+		};
+		20573CDF1B3148410054B099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20573CE41B3148410054B099 /* libIDMPCMCC.a */,
+				20573CE61B3148410054B099 /* IDMPCMCCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87A4602F1C06EDD600B0EBF3 /* LaunchImage */ = {
+			isa = PBXGroup;
+			children = (
+				87A460301C06EDD600B0EBF3 /* Default-568h@2x.png */,
+				87A460311C06EDD600B0EBF3 /* Default.png */,
+				87A460321C06EDD600B0EBF3 /* Default@2x.png */,
+			);
+			name = LaunchImage;
+			path = ../LaunchImage;
+			sourceTree = "<group>";
+		};
+		8A1F23A2199B3F5400453215 = {
+			isa = PBXGroup;
+			children = (
+				20573CDE1B3148410054B099 /* IDMPCMCC.xcodeproj */,
+				8A1F23B4199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCC */,
+				8A1F23D3199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCCTests */,
+				8A1F23AD199B3F5400453215 /* Frameworks */,
+				8A1F23AC199B3F5400453215 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A1F23AC199B3F5400453215 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F23AB199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCC.app */,
+				8A1F23CC199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A1F23AD199B3F5400453215 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87A4604C1C070C6900B0EBF3 /* CoreLocation.framework */,
+				8A521A1D19F3E82100FDB04D /* CoreFoundation.framework */,
+				8A521A1B19F3E7F700FDB04D /* Foundation.framework */,
+				8A521A1919F3E7E900FDB04D /* UIKit.framework */,
+				8A9A5D0D19B1C04400D26A93 /* CoreTelephony.framework */,
+				8A7D64DA19B0476600734341 /* MobileCoreServices.framework */,
+				8A7D64D819B0474400734341 /* libz.1.2.5.dylib */,
+				8A7D64D619B046DB00734341 /* CFNetwork.framework */,
+				8A2B864F19AC7E5C0045F00A /* SystemConfiguration.framework */,
+				8A63A2B719A4F2480067538D /* MessageUI.framework */,
+				8A1F23B0199B3F5400453215 /* CoreGraphics.framework */,
+				5FC42DFECAF2A90D5AC3D885 /* libPods-IDMPMiddleWare-AlfredKing-CMCC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A1F23B4199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCC */ = {
+			isa = PBXGroup;
+			children = (
+				37F96D711F25DAB9001CE3D6 /* IDMPCMCC.bundle */,
+				8A92C7FD1D93C90300CDD57D /* IDMPMiddleWare-AlfredKing-CMCC.entitlements */,
+				20573BD51B3100FE0054B099 /* IDMPView */,
+				8A1F23B5199B3F5400453215 /* Supporting Files */,
+			);
+			path = "IDMPMiddleWare-AlfredKing-CMCC";
+			sourceTree = "<group>";
+		};
+		8A1F23B5199B3F5400453215 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87A4602F1C06EDD600B0EBF3 /* LaunchImage */,
+				F3980FB71A4D2688000FAC7F /* chinaMobile.png */,
+				8A1F23BD199B3F5400453215 /* IDMPAppDelegate.h */,
+				8A1F23BE199B3F5400453215 /* IDMPAppDelegate.m */,
+				8A1F23C6199B3F5400453215 /* Images.xcassets */,
+				8A1F23B6199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCC-Info.plist */,
+				8A1F23B7199B3F5400453215 /* InfoPlist.strings */,
+				8A1F23BA199B3F5400453215 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A1F23D3199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCCTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F23D9199B3F5400453215 /* IDMPMiddleWare_AlfredKing_CMCCTests.m */,
+				8A1F23D4199B3F5400453215 /* Supporting Files */,
+			);
+			path = "IDMPMiddleWare-AlfredKing-CMCCTests";
+			sourceTree = "<group>";
+		};
+		8A1F23D4199B3F5400453215 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F23D5199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCCTests-Info.plist */,
+				8A1F23D6199B3F5400453215 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A1F23AA199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A1F23DD199B3F5400453215 /* Build configuration list for PBXNativeTarget "IDMPMiddleWare-AlfredKing-CMCC" */;
+			buildPhases = (
+				8A1F23A7199B3F5400453215 /* Sources */,
+				8A1F23A8199B3F5400453215 /* Frameworks */,
+				8A1F23A9199B3F5400453215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IDMPMiddleWare-AlfredKing-CMCC";
+			productName = "IDMPMiddleWare-AlfredKing-CMCC";
+			productReference = 8A1F23AB199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A1F23CB199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A1F23E0199B3F5400453215 /* Build configuration list for PBXNativeTarget "IDMPMiddleWare-AlfredKing-CMCCTests" */;
+			buildPhases = (
+				8A1F23C8199B3F5400453215 /* Sources */,
+				8A1F23C9199B3F5400453215 /* Frameworks */,
+				8A1F23CA199B3F5400453215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A1F23D2199B3F5400453215 /* PBXTargetDependency */,
+			);
+			name = "IDMPMiddleWare-AlfredKing-CMCCTests";
+			productName = "IDMPMiddleWare-AlfredKing-CMCCTests";
+			productReference = 8A1F23CC199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A1F23A3199B3F5400453215 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IDMP;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "alfredking－cmcc";
+				TargetAttributes = {
+					8A1F23AA199B3F5400453215 = {
+						DevelopmentTeam = HTTDSNH9HV;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					8A1F23CB199B3F5400453215 = {
+						DevelopmentTeam = YL5CKL934F;
+						TestTargetID = 8A1F23AA199B3F5400453215;
+					};
+				};
+			};
+			buildConfigurationList = 8A1F23A6199B3F5400453215 /* Build configuration list for PBXProject "IDMPMiddleWare-AlfredKing-CMCC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A1F23A2199B3F5400453215;
+			productRefGroup = 8A1F23AC199B3F5400453215 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 20573CDF1B3148410054B099 /* Products */;
+					ProjectRef = 20573CDE1B3148410054B099 /* IDMPCMCC.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8A1F23AA199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCC */,
+				8A1F23CB199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		20573CE41B3148410054B099 /* libIDMPCMCC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIDMPCMCC.a;
+			remoteRef = 20573CE31B3148410054B099 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		20573CE61B3148410054B099 /* IDMPCMCCTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IDMPCMCCTests.xctest;
+			remoteRef = 20573CE51B3148410054B099 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A1F23A9199B3F5400453215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3719FD001F25ED5F00A039AC /* IDMPCMCC.bundle in Resources */,
+				87A460341C06EDD600B0EBF3 /* Default.png in Resources */,
+				87A460351C06EDD600B0EBF3 /* Default@2x.png in Resources */,
+				F3980FB81A4D2688000FAC7F /* chinaMobile.png in Resources */,
+				87A460331C06EDD600B0EBF3 /* Default-568h@2x.png in Resources */,
+				3784357D1F04914B00EC4456 /* Main.storyboard in Resources */,
+				8A1F23C7199B3F5400453215 /* Images.xcassets in Resources */,
+				8A1F23B9199B3F5400453215 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1F23CA199B3F5400453215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1F23D8199B3F5400453215 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A1F23A7199B3F5400453215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1F23BF199B3F5400453215 /* IDMPAppDelegate.m in Sources */,
+				20573C091B3100FF0054B099 /* IDMPRegisterViewController.m in Sources */,
+				8A1F23BB199B3F5400453215 /* main.m in Sources */,
+				20573C0C1B3100FF0054B099 /* IDMPTestViewController.m in Sources */,
+				37D06E321FAAB99C00191889 /* IDMPVUPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1F23C8199B3F5400453215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1F23DA199B3F5400453215 /* IDMPMiddleWare_AlfredKing_CMCCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A1F23D2199B3F5400453215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A1F23AA199B3F5400453215 /* IDMPMiddleWare-AlfredKing-CMCC */;
+			targetProxy = 8A1F23D1199B3F5400453215 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A1F23B7199B3F5400453215 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A1F23B8199B3F5400453215 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8A1F23D6199B3F5400453215 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A1F23D7199B3F5400453215 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A1F23DB199B3F5400453215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A1F23DC199B3F5400453215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A1F23DE199B3F5400453215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "IDMPMiddleWare-AlfredKing-CMCC/IDMPMiddleWare-AlfredKing-CMCC.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HTTDSNH9HV;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel/loginOperate",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPReference/",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPResource",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPController",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPDataProcess",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel",
+				);
+				INFOPLIST_FILE = "IDMPMiddleWare-AlfredKing-CMCC/IDMPMiddleWare-AlfredKing-CMCC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-Objc",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmhz.IDMPMiddleWare-AlfredKing-CMCC117651";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8A1F23DF199B3F5400453215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "IDMPMiddleWare-AlfredKing-CMCC/IDMPMiddleWare-AlfredKing-CMCC.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HTTDSNH9HV;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel/loginOperate",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPReference/",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPResource",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPController",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPDataProcess",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel",
+				);
+				INFOPLIST_FILE = "IDMPMiddleWare-AlfredKing-CMCC/IDMPMiddleWare-AlfredKing-CMCC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-Objc",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmhz.IDMPMiddleWare-AlfredKing-CMCC117651";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8A1F23E1199B3F5400453215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IDMPMiddleWare-AlfredKing-CMCC.app/IDMPMiddleWare-AlfredKing-CMCC";
+				CODE_SIGN_IDENTITY = "iPhone Developer: qibing jin (QBQKGP4FCB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YL5CKL934F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPView",
+					"$(inherited)",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel/loginOperate",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPController",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPReference",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPResource",
+				);
+				INFOPLIST_FILE = "IDMPMiddleWare-AlfredKing-CMCCTests/IDMPMiddleWare-AlfredKing-CMCCTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmhz.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f7c1d5bc-2044-406c-b840-744121a3ccd4";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALID_ARCHS = "arm64 armv7 armv7s armv6";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8A1F23E2199B3F5400453215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IDMPMiddleWare-AlfredKing-CMCC.app/IDMPMiddleWare-AlfredKing-CMCC";
+				CODE_SIGN_IDENTITY = "iPhone Developer: qibing jin (QBQKGP4FCB)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPView",
+					"$(inherited)",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel/loginOperate",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPController",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPReference",
+					"$(PROJECT_DIR)/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPResource",
+				);
+				INFOPLIST_FILE = "IDMPMiddleWare-AlfredKing-CMCCTests/IDMPMiddleWare-AlfredKing-CMCCTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cmhz.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f7c1d5bc-2044-406c-b840-744121a3ccd4";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALID_ARCHS = "arm64 armv7 armv7s armv6";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A1F23A6199B3F5400453215 /* Build configuration list for PBXProject "IDMPMiddleWare-AlfredKing-CMCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A1F23DB199B3F5400453215 /* Debug */,
+				8A1F23DC199B3F5400453215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A1F23DD199B3F5400453215 /* Build configuration list for PBXNativeTarget "IDMPMiddleWare-AlfredKing-CMCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A1F23DE199B3F5400453215 /* Debug */,
+				8A1F23DF199B3F5400453215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A1F23E0199B3F5400453215 /* Build configuration list for PBXNativeTarget "IDMPMiddleWare-AlfredKing-CMCCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A1F23E1199B3F5400453215 /* Debug */,
+				8A1F23E2199B3F5400453215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A1F23A3199B3F5400453215 /* Project object */;
+}

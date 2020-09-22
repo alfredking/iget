@@ -1,0 +1,13 @@
+dependencies: \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel/Log.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC-Prefix.pch \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel/httpRequest/IDMPHttpRequest.m \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel/httpRequest/IDMPHttpRequest.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPResource/IDMPConst.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPResource/IDMPConfigure.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPDataProcess/IDMPParseParament.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel/userInfoStorage.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPDataProcess/IDMPFormatTransform.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPReference/GCDSocket/IDMPGCDAsyncSocket.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPResource/NSTimer+IDMPBlocks.h \
+  /Users/wj/IDMPMiddleWare-south-socket-18220/IDMPMiddleWare-AlfredKing-CMCC/IDMPCMCC/IDMPCMCC/IDMPModel/loginOperate/IDMPQueryModel.h

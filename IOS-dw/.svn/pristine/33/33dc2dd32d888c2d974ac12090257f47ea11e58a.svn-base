@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>south-develop</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.6.3</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>phoneSimSepBtnBorderColor</key>
+	<string>#35a8ef</string>
+	<key>phoneSimSepLeftBtnBgEndColor</key>
+	<string>#20a2eb</string>
+	<key>phoneSimSepLeftBtnBgStartColor</key>
+	<string>#66baff</string>
+	<key>phoneSimSepLeftBtnTitleColor</key>
+	<string>#ffffff</string>
+	<key>phoneSimSepMsgColor1</key>
+	<string>#000000</string>
+	<key>phoneSimSepMsgColor2</key>
+	<string>#3c3c3c</string>
+	<key>phoneSimSepMsgStressColor</key>
+	<string>#ff6600</string>
+	<key>phoneSimSepRightBtnBgColor</key>
+	<string>#ffffff</string>
+	<key>phoneSimSepRightBtnTitleColor</key>
+	<string>#35a8ef</string>
+	<key>unsubscribeWarnHeaderViewBgColor</key>
+	<string>#f6f6f6</string>
+	<key>unsubscribeWarnMsgColor</key>
+	<string>#000000</string>
+</dict>
+</plist>

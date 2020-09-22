@@ -1,0 +1,24 @@
+//
+//  IDMPTempSmsMode.h
+//  IDMPMiddleWare-AlfredKing-CMCC
+//
+//  Created by alfredking－cmcc on 14-8-21.
+//  Copyright (c) 2014年 alfredking－cmcc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface IDMPTempSmsMode : NSObject
+
+typedef void (^IDMPBlock)(void);
+typedef void (^accessBlock)(NSDictionary *paraments);
+
+- (void)getSmsCodeWithUserName:(NSString*)userName busiType:(NSString *)busiType successBlock:(accessBlock)successBlock failBlock:(accessBlock)failBlock;
+
+- (void)getVOCWithUserName:(NSString*)userName busiType:(NSString *)busiType voiceVersion:(NSString *)voiceVersion successBlock:(accessBlock)successBlock failBlock:(accessBlock)failBlock;
+
+-(void)getVOCKSWithSipInfo:(NSString *)sipinfo userName:(NSString *)userName messageCode:(NSString *)messageCode voiceVersion:(NSString *)voiceVersion traceId:(NSString *)traceId successBlock:(accessBlock)successBlock failBlock:(accessBlock)failBlock;
+
+-(void)getTMKSWithSipInfo: (NSString *)sipinfo UserName:(NSString *)userName messageCode:(NSString *)messageCode traceId:(NSString *)traceId successBlock:(accessBlock)successBlock failBlock:(accessBlock)failBlock;
+
+@end

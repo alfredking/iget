@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+
+target 'ASDK_Demo' do
+
+pod 'MJRefresh'
+pod 'SDWebImage'
+pod 'AFNetworking'
+pod 'AsyncDisplayKit'
+
+
+end

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		19C3AABA1B70BE290034411B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C3AAB91B70BE290034411B /* main.m */; };
 		19C3AABD1B70BE290034411B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C3AABC1B70BE290034411B /* AppDelegate.m */; };
-		19C3AAC01B70BE290034411B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C3AABF1B70BE290034411B /* ViewController.m */; };
+		19C3AAC01B70BE290034411B /* WeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C3AABF1B70BE290034411B /* WeiboViewController.m */; };
 		19C3AAC31B70BE290034411B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C3AAC11B70BE290034411B /* Main.storyboard */; };
 		19C3AAC51B70BE290034411B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C3AAC41B70BE290034411B /* Images.xcassets */; };
 		19C3AAC81B70BE290034411B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19C3AAC61B70BE290034411B /* LaunchScreen.xib */; };
@@ -35,8 +35,8 @@
 		19C3AAB91B70BE290034411B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		19C3AABB1B70BE290034411B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		19C3AABC1B70BE290034411B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		19C3AABE1B70BE290034411B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		19C3AABF1B70BE290034411B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		19C3AABE1B70BE290034411B /* WeiboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboViewController.h; sourceTree = "<group>"; };
+		19C3AABF1B70BE290034411B /* WeiboViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboViewController.m; sourceTree = "<group>"; };
 		19C3AAC21B70BE290034411B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19C3AAC41B70BE290034411B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		19C3AAC71B70BE290034411B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -96,8 +96,8 @@
 				19C3AABC1B70BE290034411B /* AppDelegate.m */,
 				19C3AAE51B71E7F00034411B /* SwizzleManager.h */,
 				19C3AAE61B71E7F00034411B /* SwizzleManager.m */,
-				19C3AABE1B70BE290034411B /* ViewController.h */,
-				19C3AABF1B70BE290034411B /* ViewController.m */,
+				19C3AABE1B70BE290034411B /* WeiboViewController.h */,
+				19C3AABF1B70BE290034411B /* WeiboViewController.m */,
 				19C3AAC11B70BE290034411B /* Main.storyboard */,
 				19C3AAC41B70BE290034411B /* Images.xcassets */,
 				19C3AAC61B70BE290034411B /* LaunchScreen.xib */,
@@ -211,6 +211,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -252,7 +253,7 @@
 			files = (
 				19C3AAE41B71E3760034411B /* Aspects.m in Sources */,
 				19C3AAE01B70BED40034411B /* UIViewController+swizzling.m in Sources */,
-				19C3AAC01B70BE290034411B /* ViewController.m in Sources */,
+				19C3AAC01B70BE290034411B /* WeiboViewController.m in Sources */,
 				19C3AABD1B70BE290034411B /* AppDelegate.m in Sources */,
 				19C3AAE71B71E7F00034411B /* SwizzleManager.m in Sources */,
 				19C3AABA1B70BE290034411B /* main.m in Sources */,
@@ -454,6 +455,7 @@
 				19C3AAD91B70BE290034411B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19C3AADA1B70BE290034411B /* Build configuration list for PBXNativeTarget "iOSSwizzlingDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +464,7 @@
 				19C3AADC1B70BE290034411B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
