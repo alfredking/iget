@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A788274252583BC0018CF0E /* YYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A788273252583BC0018CF0E /* YYTestViewController.m */; };
 		ABDC320D1BEAFB870012A159 /* YYTextTagExample.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDC320C1BEAFB870012A159 /* YYTextTagExample.m */; };
 		D9067DF11B975D3900F346EB /* YYTextExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9067DF01B975D3900F346EB /* YYTextExampleHelper.m */; };
 		D9067DF41B9813B500F346EB /* YYTextEditExample.m in Sources */ = {isa = PBXBuildFile; fileRef = D9067DF31B9813B500F346EB /* YYTextEditExample.m */; };
@@ -196,6 +197,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A788272252583BC0018CF0E /* YYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTestViewController.h; sourceTree = "<group>"; };
+		8A788273252583BC0018CF0E /* YYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTestViewController.m; sourceTree = "<group>"; };
 		ABDC320B1BEAFB870012A159 /* YYTextTagExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextTagExample.h; sourceTree = "<group>"; };
 		ABDC320C1BEAFB870012A159 /* YYTextTagExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextTagExample.m; sourceTree = "<group>"; };
 		D9067DEF1B975D3900F346EB /* YYTextExampleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextExampleHelper.h; sourceTree = "<group>"; };
@@ -542,6 +545,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A7882712525835D0018CF0E /* MyTest */ = {
+			isa = PBXGroup;
+			children = (
+				8A788272252583BC0018CF0E /* YYTestViewController.h */,
+				8A788273252583BC0018CF0E /* YYTestViewController.m */,
+			);
+			name = MyTest;
+			sourceTree = "<group>";
+		};
 		D9067E041B98A39200F346EB /* Feed List */ = {
 			isa = PBXGroup;
 			children = (
@@ -793,6 +805,7 @@
 		D97484D219CAAD2900F46DE1 /* YYKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8A7882712525835D0018CF0E /* MyTest */,
 				D97484D719CAAD2900F46DE1 /* YYAppDelegate.h */,
 				D97484D819CAAD2900F46DE1 /* YYAppDelegate.m */,
 				D943B48B19EC2BC100A9481E /* YYRootViewController.h */,
@@ -1299,6 +1312,7 @@
 				D9B2608D1BEE79370038C00A /* YYTextArchiver.m in Sources */,
 				D9067DF71B9856FF00F346EB /* YYTextMarkdownExample.m in Sources */,
 				D9B2608C1BEE79370038C00A /* UIPasteboard+YYText.m in Sources */,
+				8A788274252583BC0018CF0E /* YYTestViewController.m in Sources */,
 				D9387D4A1C7CBD7F00717477 /* YYKeychainExample.m in Sources */,
 				D9B2606C1BEE79370038C00A /* UITextField+YYAdd.m in Sources */,
 				D9B2607D1BEE79370038C00A /* YYWebImageManager.m in Sources */,
