@@ -45,7 +45,7 @@
     //发生了深拷贝，但是确是不可变的
     NSLog(@"拷贝string的地址:%p",copyString);
 
-    //[copyString appendString:@"test"];
+    [copyString appendString:@"test"];
     
     NSLog(@"copyString is :%@",copyString);
     

@@ -268,6 +268,7 @@ static void _YYDiskCacheSetGlobal(YYDiskCache *cache) {
     }
     if (!value) return;
     NSString *filename = nil;
+    //表示存在文件存储
     if (_kv.type != YYKVStorageTypeSQLite) {
         if (value.length > _inlineThreshold) {
             filename = [self _filenameForKey:key];

@@ -732,7 +732,8 @@ static NSString *const kTrashDirectoryName = @"trash";
         return NO;
     }
     
-    if (filename.length) {
+    if (filename.length)
+    {
         if (![self _fileWriteWithName:filename data:value]) {
             return NO;
         }
@@ -741,10 +742,16 @@ static NSString *const kTrashDirectoryName = @"trash";
             return NO;
         }
         return YES;
-    } else {
-        if (_type != YYKVStorageTypeSQLite) {
+    }
+    else
+    {
+        //这种情况是文件名为0，type为sql或者混合，所以不应该有文件存储
+        if (_type != YYKVStorageTypeSQLite)
+        {
+            //这就是混合类型
             NSString *filename = [self _dbGetFilenameWithKey:key];
-            if (filename) {
+            if (filename)
+            {
                 [self _fileDeleteWithName:filename];
             }
         }
@@ -1001,6 +1008,7 @@ static NSString *const kTrashDirectoryName = @"trash";
 - (NSArray *)getItemForKeys:(NSArray *)keys {
     if (keys.count == 0) return nil;
     NSMutableArray *items = [self _dbGetItemWithKeys:keys excludeInlineData:NO];
+    //这个条件表示存在文件
     if (_type != YYKVStorageTypeSQLite) {
         for (NSInteger i = 0, max = items.count; i < max; i++) {
             YYKVStorageItem *item = items[i];

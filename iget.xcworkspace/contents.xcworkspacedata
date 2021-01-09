@@ -5,7 +5,7 @@
       location = "group:SampleApp/SampleApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:&#x5b9e;&#x9645;&#x6d4b;&#x8bd5;&#x53ef;&#x7528;&#x7684;&#x7b2c;&#x4e09;&#x65b9;&#x5fae;&#x535a;Fenvo-master/Fenvo.xcodeproj">
+      location = "group:实际测试可用的第三方微博Fenvo-master/Fenvo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:weico/weico.xcodeproj">
@@ -14,13 +14,13 @@
       location = "group:YYKit-master/Demo/YYKitDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/cmcc/Desktop/iget/iOS&#x8fdb;&#x9636;Demo/DemoProjects/CoreText/CoreTextDemotang.xcodeproj">
+      location = "group:/Users/cmcc/Desktop/iget/iOS进阶Demo/DemoProjects/CoreText/CoreTextDemotang.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:/Users/cmcc/Desktop/iget/CoreTextDemo/CoreTextDemome.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ASDK&#x4f7f;&#x7528;&#x65b9;&#x6cd5;/ASDK_Demo.xcodeproj">
+      location = "group:ASDK使用方法/ASDK_Demo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:workForMove/eHome.xcodeproj">
@@ -29,7 +29,7 @@
       location = "group:/Users/cmcc/Desktop/iget/Masonry+FDTemplateLayoutCell/Demo/Masonry+FDTemplateLayoutCell.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:TableViewCellOfSelfSizing-master/Tableview&#x81ea;&#x9002;&#x5e94;&#x9ad8;&#x5ea6;.xcodeproj">
+      location = "group:TableViewCellOfSelfSizing-master/Tableview自适应高度.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:p200UITestDemo/UITestDemo.xcodeproj">
@@ -53,13 +53,13 @@
       location = "group:/Users/cmcc/Desktop/iget/p129 drag/NewFeature/p129drag.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:p124 iOS&#x52a8;&#x753b;/p124 propertyAnimator&#x8fd8;&#x6709;&#x5176;&#x4ed6;&#x5b66;&#x4e60;demo/PropertyAnimator/PropertyAnimator.xcodeproj">
+      location = "group:p124 iOS动画/p124 propertyAnimator还有其他学习demo/PropertyAnimator/PropertyAnimator.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:p124 iOS&#x52a8;&#x753b;/Animations-Demo.xcodeproj">
+      location = "group:p124 iOS动画/Animations-Demo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:p125 &#x63a7;&#x5236;&#x5c0f;&#x7403;/SaveTheDot.xcodeproj">
+      location = "group:p125 控制小球/SaveTheDot.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:MyPlayground.playground">
@@ -71,15 +71,18 @@
       location = "group:p108 method swizzling/iOSSwizzlingDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/cmcc/Desktop/iget/p100 timer&#x6682;&#x505c;/&#x5411;&#x4e0a;&#x6eda;&#x52a8;&#x6761;&#x5e45;/p100 timer&#x6682;&#x505c;.xcodeproj">
+      location = "group:/Users/cmcc/Desktop/iget/p100 timer暂停/向上滚动条幅/p100 timer暂停.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:RSA-Algorithm-master/RSA&#x539f;&#x7406;/RSA&#x539f;&#x7406;.xcodeproj">
+      location = "group:RSA-Algorithm-master/RSA原理/RSA原理.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:p92 &#x5185;&#x5b58;&#x6cc4;&#x9732;demo/swift-memory-leaks-demo.xcodeproj">
+      location = "group:p92 内存泄露demo/swift-memory-leaks-demo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:iget.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

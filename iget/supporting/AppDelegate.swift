@@ -19,7 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
-        let rootV = ViewController()
+//        let rootV = ViewController()
+        
+        let rootV = CoverViewController()
+
         
         let  rootNav  = UINavigationController.init(rootViewController: rootV)
         

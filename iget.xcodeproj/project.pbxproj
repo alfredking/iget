@@ -33,6 +33,9 @@
 		8A5E19332367501C000B6C66 /* TestPriorityInversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E19322367501B000B6C66 /* TestPriorityInversion.swift */; };
 		8A5E193523675B82000B6C66 /* TestEscapeClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E193423675B82000B6C66 /* TestEscapeClosure.swift */; };
 		8AA60809234F92870034C0CD /* TestArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA60808234F92870034C0CD /* TestArray.swift */; };
+		8AAC672625A804CB004CBBCD /* CoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC672525A804CB004CBBCD /* CoverViewController.swift */; };
+		8AAC673725A865A3004CBBCD /* AFImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC673625A865A3004CBBCD /* AFImageViewController.m */; };
+		8AB340DD25A9B2ED00953180 /* WechatIMG7996.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8AB340DC25A9B2ED00953180 /* WechatIMG7996.jpeg */; };
 		8AD01CC621D8777000950350 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD01CC521D8777000950350 /* Sorting.swift */; };
 		8AD01CC821D9E6B100950350 /* binSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD01CC721D9E6B100950350 /* binSearch.swift */; };
 		8AE07B2023045A8F00F8C510 /* SwiftProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE07B1F23045A8F00F8C510 /* SwiftProtocol.swift */; };
@@ -49,6 +52,7 @@
 		B4D68D1621AE85E100A5DDCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D68D1421AE85E100A5DDCB /* LaunchScreen.storyboard */; };
 		B4D68D2121AE85E200A5DDCB /* igetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D68D2021AE85E200A5DDCB /* igetTests.swift */; };
 		B4D68D2C21AE85E200A5DDCB /* igetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D68D2B21AE85E200A5DDCB /* igetUITests.swift */; };
+		DA50081BE2CD4C121D86A0A4 /* libPods-iget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 219DADA56496A5CA53DDDE04 /* libPods-iget.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		219DADA56496A5CA53DDDE04 /* libPods-iget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5406F5896162D8E6BB09D2C9 /* Pods-iget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iget.release.xcconfig"; path = "Target Support Files/Pods-iget/Pods-iget.release.xcconfig"; sourceTree = "<group>"; };
 		8A15F9D3230920510084CE47 /* MethodSwizzling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodSwizzling.swift; sourceTree = "<group>"; };
 		8A15F9FA232D05AA0084CE47 /* RaceCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCondition.swift; sourceTree = "<group>"; };
 		8A15F9FC232D310B0084CE47 /* SafeArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArray.swift; sourceTree = "<group>"; };
@@ -95,6 +101,10 @@
 		8A5E19322367501B000B6C66 /* TestPriorityInversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPriorityInversion.swift; sourceTree = "<group>"; };
 		8A5E193423675B82000B6C66 /* TestEscapeClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEscapeClosure.swift; sourceTree = "<group>"; };
 		8AA60808234F92870034C0CD /* TestArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArray.swift; sourceTree = "<group>"; };
+		8AAC672525A804CB004CBBCD /* CoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverViewController.swift; sourceTree = "<group>"; };
+		8AAC673525A865A3004CBBCD /* AFImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFImageViewController.h; sourceTree = "<group>"; };
+		8AAC673625A865A3004CBBCD /* AFImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFImageViewController.m; sourceTree = "<group>"; };
+		8AB340DC25A9B2ED00953180 /* WechatIMG7996.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG7996.jpeg; sourceTree = "<group>"; };
 		8AD01CC521D8777000950350 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		8AD01CC721D9E6B100950350 /* binSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binSearch.swift; sourceTree = "<group>"; };
 		8AE07B1F23045A8F00F8C510 /* SwiftProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProtocol.swift; sourceTree = "<group>"; };
@@ -105,6 +115,7 @@
 		8AF1A7BE22F5DA1300E9E0C3 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		8AF1A7C322F6B76700E9E0C3 /* myLeakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = myLeakView.swift; path = ../grammar/myLeakView.swift; sourceTree = "<group>"; };
 		8AF1A7C522F6B89C00E9E0C3 /* myLeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = myLeakViewController.swift; path = ../grammar/myLeakViewController.swift; sourceTree = "<group>"; };
+		ACD06047DB05C52E28685E5B /* Pods-iget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iget.debug.xcconfig"; path = "Target Support Files/Pods-iget/Pods-iget.debug.xcconfig"; sourceTree = "<group>"; };
 		B4D68D0521AE85E000A5DDCB /* iget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D68D0821AE85E000A5DDCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4D68D0A21AE85E000A5DDCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA50081BE2CD4C121D86A0A4 /* libPods-iget.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +158,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73FAC51E2C6507701E07CBFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				219DADA56496A5CA53DDDE04 /* libPods-iget.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A5E1920235B614A000B6C66 /* ui */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +204,7 @@
 				B4D68D1221AE85E100A5DDCB /* Assets.xcassets */,
 				B4D68D1721AE85E100A5DDCB /* Info.plist */,
 				B4D68D0F21AE85E000A5DDCB /* iget.xcdatamodeld */,
+				8AB340DC25A9B2ED00953180 /* WechatIMG7996.jpeg */,
 				B4D68D0C21AE85E000A5DDCB /* Main.storyboard */,
 				B4D68D0821AE85E000A5DDCB /* AppDelegate.swift */,
 				B4D68D1421AE85E100A5DDCB /* LaunchScreen.storyboard */,
@@ -237,6 +258,8 @@
 				B4D68D1F21AE85E200A5DDCB /* igetTests */,
 				B4D68D2A21AE85E200A5DDCB /* igetUITests */,
 				B4D68D0621AE85E000A5DDCB /* Products */,
+				C5D09D87838AE274134074A1 /* Pods */,
+				73FAC51E2C6507701E07CBFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -259,6 +282,9 @@
 				8AF1A79622F07B7F00E9E0C3 /* grammar */,
 				8AD01CC421D876C900950350 /* algorithm */,
 				B4D68D0A21AE85E000A5DDCB /* ViewController.swift */,
+				8AAC673525A865A3004CBBCD /* AFImageViewController.h */,
+				8AAC673625A865A3004CBBCD /* AFImageViewController.m */,
+				8AAC672525A804CB004CBBCD /* CoverViewController.swift */,
 				8AD01CC321D876BF00950350 /* supporting */,
 			);
 			path = iget;
@@ -282,6 +308,15 @@
 			path = igetUITests;
 			sourceTree = "<group>";
 		};
+		C5D09D87838AE274134074A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACD06047DB05C52E28685E5B /* Pods-iget.debug.xcconfig */,
+				5406F5896162D8E6BB09D2C9 /* Pods-iget.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -289,6 +324,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4D68D3021AE85E200A5DDCB /* Build configuration list for PBXNativeTarget "iget" */;
 			buildPhases = (
+				BC6EC00FB856C15A09B3DD46 /* [CP] Check Pods Manifest.lock */,
 				B4D68D0121AE85E000A5DDCB /* Sources */,
 				B4D68D0221AE85E000A5DDCB /* Frameworks */,
 				B4D68D0321AE85E000A5DDCB /* Resources */,
@@ -389,6 +425,7 @@
 			files = (
 				B4D68D1621AE85E100A5DDCB /* LaunchScreen.storyboard in Resources */,
 				B4D68D1321AE85E100A5DDCB /* Assets.xcassets in Resources */,
+				8AB340DD25A9B2ED00953180 /* WechatIMG7996.jpeg in Resources */,
 				B4D68D0E21AE85E000A5DDCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +446,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BC6EC00FB856C15A09B3DD46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B4D68D0121AE85E000A5DDCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -426,6 +488,7 @@
 				8A15F9FB232D05AA0084CE47 /* RaceCondition.swift in Sources */,
 				8A489D0E2340B6F700B988A1 /* kvo.swift in Sources */,
 				B4D68D0B21AE85E000A5DDCB /* ViewController.swift in Sources */,
+				8AAC672625A804CB004CBBCD /* CoverViewController.swift in Sources */,
 				8AF1A7C622F6B89C00E9E0C3 /* myLeakViewController.swift in Sources */,
 				B4D68D0921AE85E000A5DDCB /* AppDelegate.swift in Sources */,
 				8A35E34D21E08C9200A7C2D7 /* dynamicPlanning.swift in Sources */,
@@ -451,6 +514,7 @@
 				8A5E19332367501C000B6C66 /* TestPriorityInversion.swift in Sources */,
 				8A5E191D235A1CAD000B6C66 /* TestStackQueue.swift in Sources */,
 				8A489D102340EFD700B988A1 /* POP.swift in Sources */,
+				8AAC673725A865A3004CBBCD /* AFImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +687,7 @@
 		};
 		B4D68D3121AE85E200A5DDCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACD06047DB05C52E28685E5B /* Pods-iget.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -644,6 +709,7 @@
 		};
 		B4D68D3221AE85E200A5DDCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5406F5896162D8E6BB09D2C9 /* Pods-iget.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

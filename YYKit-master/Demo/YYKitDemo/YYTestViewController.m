@@ -19,23 +19,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSMutableDictionary *aDictionary = [[NSMutableDictionary alloc] initWithCapacity:0];
-    {
-        NSString *aKey = @"akey";
-        NSObject *aObject = [[NSObject alloc] init];
-        [aDictionary setObject:aObject forKey:aKey];
-        NSLog(@"dictionary: %@", aDictionary);
-    }
-    NSLog(@"dictionary: %@", aDictionary);
+//    [self test];
+//    [self test01];
+    [self test02];
     
-    NSMapTable *aMapTable = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsStrongMemory valueOptions:NSPointerFunctionsWeakMemory];
-    {
-        NSObject *keyObject = [[NSObject alloc] init];
-        NSObject *valueObject = [[NSObject alloc] init];
-        [aMapTable setObject:valueObject forKey:keyObject];
-        NSLog(@"NSMapTable:%@", aMapTable);
-    }
-    NSLog(@"NSMapTable:%@", aMapTable);
+//    NSMutableDictionary *aDictionary = [[NSMutableDictionary alloc] initWithCapacity:0];
+//    {
+//        NSString *aKey = @"akey";
+//        NSObject *aObject = [[NSObject alloc] init];
+//        [aDictionary setObject:aObject forKey:aKey];
+//        NSLog(@"dictionary: %@", aDictionary);
+//    }
+//    NSLog(@"dictionary: %@", aDictionary);
+//
+//    NSMapTable *aMapTable = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsStrongMemory valueOptions:NSPointerFunctionsWeakMemory];
+//    {
+//        NSObject *keyObject = [[NSObject alloc] init];
+//        NSObject *valueObject = [[NSObject alloc] init];
+//        [aMapTable setObject:valueObject forKey:keyObject];
+//        NSLog(@"NSMapTable:%@", aMapTable);
+//    }
+//    NSLog(@"NSMapTable:%@", aMapTable);
 //    NSString *textStr = @"The YYLabel class implements a read-only text view,这是删除样式~~这是下划线样式~~这是带边框样式，这是带阴影样式，点击交互事件，添加点击事件，分割分割分割";
 //        YYLabel * label = [[YYLabel alloc] initWithFrame:CGRectZero];
 //        label.backgroundColor = [UIColor grayColor];
@@ -177,14 +181,70 @@
 
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (void)test
+{
+
+    if (true)
+    {
+        NSInteger age;
+        UILabel *mylabel=[UILabel new];
+        mylabel.text= age?[NSString stringWithFormat:@"%@",age]:@"";
+        NSLog(@"mylabel.text is %@",mylabel.text);
+        [self.view addSubview:mylabel];
+        
+    }
+
 }
-*/
+
+- (void)test01
+{
+
+    if (true)
+    {
+        NSInteger age;
+        UILabel *mylabel=[UILabel new];
+        mylabel.text= age?[NSString stringWithFormat:@"%@",age]:@"";
+        age = 10;
+        
+        [self.view addSubview:mylabel];
+    }
+
+    int c = 10;
+    
+}
+
+-(void) test02
+{
+    //下面分别定义各种类型的变量
+     int a = 10;                       //普通变量
+    __block int b = 20;                //带__block修饰符的block普通变量
+    NSString *str = @"123";
+    __block NSString *blockStr = str;  //带__block修饰符的block OC变量
+    NSString *strongStr = @"456";      //默认是__strong修饰的OC变量
+    NSMutableString *mutableStr = @"456";
+    __block NSMutableArray *mArray = [NSMutableArray arrayWithObjects:@"a",@"b",@"abc",nil];
+    NSMutableArray *testArray = [NSMutableArray arrayWithObjects:@"a",@"b",@"abc",@"test",nil];
+    __weak NSString *weakStr = @"789"; //带__weak修饰的OC变量
+    
+    NSLog(@"mArray is %@",mArray);
+  
+  //定义一个block块并带一个参数
+    void (^testBlock)(int) = ^(int c){
+         int  d = a + b + c;
+//        [mArray addObject:@"alfredking"];
+        mArray = testArray;
+         NSLog(@"a=%d,b=%d,c=%d,d=%d, strongStr=%@, blockStr=%@, weakStr=%@", a,b,c,d, strongStr, blockStr, weakStr);
+     };
+ 
+    a = 20;  //修改值不会影响testBlock内的计算结果
+    b = 40;  //修改值会影响testBlock内的计算结果。
+    testBlock(30);  //执行block代码。
+    
+    NSLog(@"a is %d",a);
+    NSLog(@"b is %d",b);
+    NSLog(@"mArray is %@",mArray);
+}
 
 @end
