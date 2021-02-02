@@ -21,22 +21,15 @@
     self.view.backgroundColor = [UIColor yellowColor];
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0,30, self.view.bounds.size.width, self.view.bounds.size.height)];
     UIImage *muscleimage = [UIImage imageNamed:@"WechatIMG7996.jpeg"];
-//    UIImageView *imageView = [[UIImageView alloc]initWithImage:muscleimage];
-    imageView.image = muscleimage;
+//    imageView.image = muscleimage;
+  
+
+    //如果是block方法，block有值就不会为image赋值
+    [imageView setImageWithURL:[NSURL URLWithString:@"https://dfzximg02.dftoutiao.com/news/20210108/20210108092827_d6b2db7a6a3830b3d185dc464006935f_0_mwpm_03201609.jpeg"]];
+    
+    
     [self.view addSubview:imageView];
-//    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://dfzximg02.dftoutiao.com/news/20210108/20210108092827_d6b2db7a6a3830b3d185dc464006935f_0_mwpm_03201609.jpeg"]];
-//    [imageView setImageWithURLRequest: request  placeholderImage:nil
-//    success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image)
-//    {
-//         NSLog(@"success image is %@",image);
-//
-//    }
-//    failure:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, NSError * _Nonnull error)
-//    {
-//         NSLog(@"fail");
-//    }];
-//
-//    [self.view layoutIfNeeded];
+   
     
     
     // Do any additional setup after loading the view.

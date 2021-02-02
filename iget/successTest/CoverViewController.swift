@@ -13,7 +13,6 @@ class CoverViewController: UIViewController,UITableViewDataSource,UITableViewDel
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        print("self.titles?.count is \(String(describing: self.titles.count))" )
         return self.titles.count ;
     }
     
@@ -43,6 +42,9 @@ class CoverViewController: UIViewController,UITableViewDataSource,UITableViewDel
         
 //        self.addCell(title: "深度优先搜索", classname: "ViewController")
         self.addCell(title: "AFNetworking", classname: "AFImageViewController")
+        self.addCell(title: "线程测试", classname: "testThreadViewController")
+        self.addCell(title: "block测试", classname: "blockTestViewController")
+        self.addCell(title: "NSStringFromClass", classname: "NSStringFromClassViewController")
         tableView = UITableView(frame: CGRect(x: 0,y: 30,width: self.view.bounds.size.width,height: self.view.bounds.size.height),style: UITableView.Style.plain)
         tableView.delegate=self;
         tableView.dataSource=self;
@@ -57,8 +59,7 @@ class CoverViewController: UIViewController,UITableViewDataSource,UITableViewDel
     {
         self.titles.append(title)
         self.classNames.append(classname)
-        print("add cell called")
-        print("self.titles?.count is \(String(describing: self.titles.count))" )
+        
     
     }
     
