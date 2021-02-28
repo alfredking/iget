@@ -1,0 +1,16 @@
+//
+//  TopConditionCollectionView.h
+//  MyCoinRisk
+//
+//  Created by yuyou on 2018/7/30.
+//  Copyright © 2018年 yuyou. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+@class FilterSelectIndexModel;
+
+@interface TopConditionCollectionView : UICollectionView
+//<FilterSelectIndexModel *>
+@property (nonatomic, strong) NSArray *conditions;
+
+@end

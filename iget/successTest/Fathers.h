@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Fathers : NSObject
 
+@property (nonatomic,strong) NSString *name;
+@property (nonatomic,strong) NSString *old;
+
 @end
 
 NS_ASSUME_NONNULL_END

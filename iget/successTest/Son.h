@@ -6,11 +6,14 @@
 //  Copyright © 2021 alfredking. All rights reserved.
 //
 
-#import "Fathers.h"
-
+//#import "Fathers.h"
+#import <Foundation/Foundation.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Son : Fathers
+@interface Son : NSObject
+
+@property (nonatomic,strong) NSString *name;
+@property (nonatomic,strong) NSString *old;
 
 @end
 

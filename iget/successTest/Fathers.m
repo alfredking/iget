@@ -10,4 +10,13 @@
 
 @implementation Fathers
 
+//@synthesize name;
+//@synthesize old;
+-(id)copyWithZone:(NSZone *)zone
+{
+    Fathers *fa =[[Fathers alloc]init];
+    fa.name = self.name;
+    fa.old=self.old;
+    return fa;
+}
 @end

@@ -25,12 +25,17 @@ static int b = 2;
     
 
 
-
+//    firstTest();
 //    blockTest();
     
 //    testPointer();
     
-    nonBlockTest();
+   
+    
+//    nonBlockTest();
+    forwardingTest();
+    
+//    blockArray();
     
     
     
@@ -43,6 +48,7 @@ void firstTest()
 //    int a =0;
     __block NSString *ak=@"hello alfredking";
 
+    //a因为是基本类型没有地址，所以就是a的值0
     NSLog(@"a before %p --%p,",&a,a);
     NSLog(@"ak before %p --%p,",&ak,ak);
 
@@ -50,17 +56,30 @@ void firstTest()
 
         a=1;
         ak =@"good alfredking";
+        
+        
 
 
+        //在block中已经变成堆地址
     NSLog(@"a middle --%p,a is %d",&a,a);
     NSLog(@"ak middle --%p,a is %@",&ak,ak);
+        
+        //定义临时变量就是在栈上
+//         int test1 = 9;
+//         NSString *test2=@"hello test";
+        //定义block变量就是在堆上，错误，还是在栈上
+        __block int test1 = 9;
+        __block NSString *test2=@"hello test";
+        NSLog(@"test middle --%p,a is %d",&test1,test1);
+        NSLog(@"test middle --%p,a is %@",&test2,test2);
 
     };
 
-  
+  //block内部定义的外部无法访问
+//    NSLog(@"a after --%p, a is %d",&test1,test1);
     a=2;
     ak=@"test alfredking";
-
+    //因为在block后面所以也是堆地址
    NSLog(@"a after --%p, a is %d",&a,a);
    NSLog(@"ak after --%p,a is %@",&ak,ak);
     
@@ -97,7 +116,7 @@ void blockTest() {
     d++;
     NSLog(@"mystr p is %p",mystr);
     NSLog(@"mystr指针内存地址：%p",&mystr);
-str = [[NSMutableString alloc]initWithString:@"haha"];
+    str = [[NSMutableString alloc]initWithString:@"haha"];
    
     mystr = [[NSMutableString alloc]initWithString:@"new"];
     NSLog(@"mystr p is %p",mystr);
@@ -122,6 +141,7 @@ void testPointer()
     NSString *test = @"test1";
     NSLog(@"test p is %p,test address is %p",test,&test);
     [test stringByAppendingFormat:@"appendstring"];
+    NSLog(@"test is %@",test);
     NSLog(@"test p is %p,test address is %p",test,&test);
     test=@"test2";
     NSLog(@"test p is %p,test address is %p",test,&test);
@@ -138,15 +158,22 @@ void nonBlockTest()
     NSLog(@"before a指向的堆中地址：%p,a在栈中的指针地址：%p", a, &a);               //a在栈区
     void (^foo)(void) =
     ^{
+        
+            NSString  *test =@"alfredking";
+            NSLog(@"block内部：test指向的堆中地址：%p；test在栈中的指针地址：%p", test, &test);
             NSLog(@"block内部：a指向的堆中地址：%p；a在栈中的指针地址：%p", a, &a);
-//            a.string = @"Jerry";
+        //可以通过编译
+            a.string = @"Jerry";
             NSLog(@"block内部：a指向的堆中地址：%p；a在栈中的指针地址：%p", a, &a);
             [a appendFormat:@"jerry"];
             NSLog(@"block内部：a指向的堆中地址：%p；a在栈中的指针地址：%p", a, &a);
             NSLog(@"a is in block %@",a);
             //a在栈区
-//            a = [NSMutableString stringWithString:@"William"];
+           //无法通过编译
+            //a = [NSMutableString stringWithString:@"William"];
     };
+    
+    NSLog(@"foo type is %@",foo);
     
     NSLog(@"after a指向的堆中地址：%p；a在栈中的指针地址：%p", a, &a);               //a在栈区
     foo();
@@ -176,6 +203,28 @@ void forwardingTest()
         printf("&val:%p, val:%d \n", &val, val);
         ++val;
         printf("&val:%p, val:%d \n", &val, val);
+}
+
+
+//block作为函数参数，不会从栈拷贝到堆
+void blockArray()
+{
+    int intVarInStack = 0;
+        printf("&intVarInStack:%p, intVarInStack:%d \n", &intVarInStack, intVarInStack);
+
+        __block int val = 0;
+        
+        printf("&b:%p, b:%d \n", &val, val);
+        NSArray *blockArray = [[NSArray alloc] initWithObjects:^{
+            printf("hello world!");},
+            ^{
+                printf("inBlock2    &val:%p, val:%d \n", &val, val);
+                ++val;
+            },
+        nil];
+        
+        printf("&val:%p, val:%d \n", &val, val);
+        ++val;
 }
 
 /*

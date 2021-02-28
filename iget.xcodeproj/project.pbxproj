@@ -36,13 +36,19 @@
 		8A8D84A225C44CDC006040A3 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D84A125C44CDC006040A3 /* Son.m */; };
 		8A8D84A825C44D98006040A3 /* NSStringFromClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D84A725C44D98006040A3 /* NSStringFromClassViewController.m */; };
 		8A8D856E25C58B96006040A3 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D856D25C58B96006040A3 /* UIViewController+Tracking.m */; };
+		8A9BBB3525EA4B7B00882B42 /* testMapleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BBB3425EA4B7B00882B42 /* testMapleTableViewController.m */; };
 		8AA2883E25BA6F68003C561D /* blockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2883D25BA6F68003C561D /* blockTestViewController.m */; };
 		8AA2884925BD6704003C561D /* testForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2884825BD6704003C561D /* testForwarding.m */; };
 		8AA2885125BD725A003C561D /* testOCForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2885025BD725A003C561D /* testOCForwarding.m */; };
 		8AA60809234F92870034C0CD /* TestArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA60808234F92870034C0CD /* TestArray.swift */; };
 		8AAC672625A804CB004CBBCD /* CoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC672525A804CB004CBBCD /* CoverViewController.swift */; };
 		8AAC673725A865A3004CBBCD /* AFImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC673625A865A3004CBBCD /* AFImageViewController.m */; };
+		8AB26B2425CB8D060072FDFD /* constStaticTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB26B2325CB8D060072FDFD /* constStaticTest.m */; };
 		8AB340DD25A9B2ED00953180 /* WechatIMG7996.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8AB340DC25A9B2ED00953180 /* WechatIMG7996.jpeg */; };
+		8AB6B58825CFE3460022C12D /* safeDicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6B58725CFE3460022C12D /* safeDicViewController.m */; };
+		8AB6B59425D037010022C12D /* multiStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6B59325D037010022C12D /* multiStorageViewController.m */; };
+		8AB6B59F25D135B80022C12D /* testInstanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6B59E25D135B80022C12D /* testInstanceViewController.m */; };
+		8AB6B5AA25D13F3A0022C12D /* testToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6B5A925D13F3A0022C12D /* testToken.m */; };
 		8AD01CC621D8777000950350 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD01CC521D8777000950350 /* Sorting.swift */; };
 		8AD01CC821D9E6B100950350 /* binSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD01CC721D9E6B100950350 /* binSearch.swift */; };
 		8AE07B2023045A8F00F8C510 /* SwiftProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE07B1F23045A8F00F8C510 /* SwiftProtocol.swift */; };
@@ -116,6 +122,8 @@
 		8A8D84A725C44D98006040A3 /* NSStringFromClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringFromClassViewController.m; sourceTree = "<group>"; };
 		8A8D856C25C58B96006040A3 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
 		8A8D856D25C58B96006040A3 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		8A9BBB3325EA4B7B00882B42 /* testMapleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testMapleTableViewController.h; sourceTree = "<group>"; };
+		8A9BBB3425EA4B7B00882B42 /* testMapleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testMapleTableViewController.m; sourceTree = "<group>"; };
 		8AA2883C25BA6F68003C561D /* blockTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockTestViewController.h; sourceTree = "<group>"; };
 		8AA2883D25BA6F68003C561D /* blockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blockTestViewController.m; sourceTree = "<group>"; };
 		8AA2884825BD6704003C561D /* testForwarding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testForwarding.m; sourceTree = "<group>"; };
@@ -124,7 +132,17 @@
 		8AAC672525A804CB004CBBCD /* CoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverViewController.swift; sourceTree = "<group>"; };
 		8AAC673525A865A3004CBBCD /* AFImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFImageViewController.h; sourceTree = "<group>"; };
 		8AAC673625A865A3004CBBCD /* AFImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFImageViewController.m; sourceTree = "<group>"; };
+		8AB26B2225CB8D060072FDFD /* constStaticTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constStaticTest.h; sourceTree = "<group>"; };
+		8AB26B2325CB8D060072FDFD /* constStaticTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = constStaticTest.m; sourceTree = "<group>"; };
 		8AB340DC25A9B2ED00953180 /* WechatIMG7996.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG7996.jpeg; sourceTree = "<group>"; };
+		8AB6B58625CFE3460022C12D /* safeDicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = safeDicViewController.h; sourceTree = "<group>"; };
+		8AB6B58725CFE3460022C12D /* safeDicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = safeDicViewController.m; sourceTree = "<group>"; };
+		8AB6B59225D037010022C12D /* multiStorageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = multiStorageViewController.h; sourceTree = "<group>"; };
+		8AB6B59325D037010022C12D /* multiStorageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = multiStorageViewController.m; sourceTree = "<group>"; };
+		8AB6B59D25D135B80022C12D /* testInstanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testInstanceViewController.h; sourceTree = "<group>"; };
+		8AB6B59E25D135B80022C12D /* testInstanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testInstanceViewController.m; sourceTree = "<group>"; };
+		8AB6B5A825D13F3A0022C12D /* testToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testToken.h; sourceTree = "<group>"; };
+		8AB6B5A925D13F3A0022C12D /* testToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testToken.m; sourceTree = "<group>"; };
 		8AD01CC521D8777000950350 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		8AD01CC721D9E6B100950350 /* binSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binSearch.swift; sourceTree = "<group>"; };
 		8AE07B1F23045A8F00F8C510 /* SwiftProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProtocol.swift; sourceTree = "<group>"; };
@@ -224,10 +242,10 @@
 			isa = PBXGroup;
 			children = (
 				8AAC672525A804CB004CBBCD /* CoverViewController.swift */,
+				8AEB889525B5773200FA5010 /* testThreadViewController.h */,
 				8AEB889625B5773200FA5010 /* testThreadViewController.m */,
 				8AAC673525A865A3004CBBCD /* AFImageViewController.h */,
 				8AAC673625A865A3004CBBCD /* AFImageViewController.m */,
-				8AEB889525B5773200FA5010 /* testThreadViewController.h */,
 				8AA2883C25BA6F68003C561D /* blockTestViewController.h */,
 				8AA2883D25BA6F68003C561D /* blockTestViewController.m */,
 				8AA2884825BD6704003C561D /* testForwarding.m */,
@@ -240,6 +258,18 @@
 				8A8D84A725C44D98006040A3 /* NSStringFromClassViewController.m */,
 				8A8D856C25C58B96006040A3 /* UIViewController+Tracking.h */,
 				8A8D856D25C58B96006040A3 /* UIViewController+Tracking.m */,
+				8AB26B2225CB8D060072FDFD /* constStaticTest.h */,
+				8AB26B2325CB8D060072FDFD /* constStaticTest.m */,
+				8AB6B58625CFE3460022C12D /* safeDicViewController.h */,
+				8AB6B58725CFE3460022C12D /* safeDicViewController.m */,
+				8AB6B59225D037010022C12D /* multiStorageViewController.h */,
+				8AB6B59325D037010022C12D /* multiStorageViewController.m */,
+				8AB6B59D25D135B80022C12D /* testInstanceViewController.h */,
+				8AB6B59E25D135B80022C12D /* testInstanceViewController.m */,
+				8AB6B5A825D13F3A0022C12D /* testToken.h */,
+				8AB6B5A925D13F3A0022C12D /* testToken.m */,
+				8A9BBB3325EA4B7B00882B42 /* testMapleTableViewController.h */,
+				8A9BBB3425EA4B7B00882B42 /* testMapleTableViewController.m */,
 			);
 			path = successTest;
 			sourceTree = "<group>";
@@ -528,11 +558,14 @@
 				8A15F9D4230920510084CE47 /* MethodSwizzling.swift in Sources */,
 				8A1CA385233D180600B81195 /* sharedInstance.swift in Sources */,
 				8A507DD121CFF16A005CBF42 /* BinaryTree.swift in Sources */,
+				8AB6B59F25D135B80022C12D /* testInstanceViewController.m in Sources */,
 				8A5E19272364A539000B6C66 /* TestEncode.swift in Sources */,
 				8A5E191B235A1C15000B6C66 /* TestString.swift in Sources */,
+				8AB6B58825CFE3460022C12D /* safeDicViewController.m in Sources */,
 				8A15F9FB232D05AA0084CE47 /* RaceCondition.swift in Sources */,
 				8AA2884925BD6704003C561D /* testForwarding.m in Sources */,
 				8AA2883E25BA6F68003C561D /* blockTestViewController.m in Sources */,
+				8AB6B5AA25D13F3A0022C12D /* testToken.m in Sources */,
 				8A489D0E2340B6F700B988A1 /* kvo.swift in Sources */,
 				B4D68D0B21AE85E000A5DDCB /* ViewController.swift in Sources */,
 				8AAC672625A804CB004CBBCD /* CoverViewController.swift in Sources */,
@@ -547,6 +580,7 @@
 				8A5E1919235A1936000B6C66 /* TestDictionarySet.swift in Sources */,
 				8A5E193523675B82000B6C66 /* TestEscapeClosure.swift in Sources */,
 				B4D68D1121AE85E000A5DDCB /* iget.xcdatamodeld in Sources */,
+				8AB26B2425CB8D060072FDFD /* constStaticTest.m in Sources */,
 				8AD01CC621D8777000950350 /* Sorting.swift in Sources */,
 				8AF1A79822F07BF400E9E0C3 /* grammarTest.swift in Sources */,
 				8A5E192F2365F5F3000B6C66 /* TestSorting.swift in Sources */,
@@ -556,6 +590,7 @@
 				8AA2885125BD725A003C561D /* testOCForwarding.m in Sources */,
 				8A8D849C25C44CB8006040A3 /* Fathers.m in Sources */,
 				8AF1A7BF22F5DA1300E9E0C3 /* Father.m in Sources */,
+				8AB6B59425D037010022C12D /* multiStorageViewController.m in Sources */,
 				8A5E19252364A3F2000B6C66 /* TestLeak.swift in Sources */,
 				8A5E192D2365F56D000B6C66 /* TestBinaryTree.swift in Sources */,
 				8A15F9FD232D310B0084CE47 /* SafeArray.swift in Sources */,
@@ -565,6 +600,7 @@
 				8A5E19332367501C000B6C66 /* TestPriorityInversion.swift in Sources */,
 				8A8D84A825C44D98006040A3 /* NSStringFromClassViewController.m in Sources */,
 				8A5E191D235A1CAD000B6C66 /* TestStackQueue.swift in Sources */,
+				8A9BBB3525EA4B7B00882B42 /* testMapleTableViewController.m in Sources */,
 				8A489D102340EFD700B988A1 /* POP.swift in Sources */,
 				8AAC673725A865A3004CBBCD /* AFImageViewController.m in Sources */,
 			);

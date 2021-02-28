@@ -19,6 +19,8 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor =[UIColor whiteColor];
     
+    
+//    NSLog(@"主线程   %@",[NSThread currentThread]);
 //    NSLog(@"------------------1");
 //       dispatch_queue_t queue = dispatch_get_main_queue();
 //       dispatch_async(queue, ^{
@@ -89,26 +91,26 @@
     dispatch_queue_t serialqueue =dispatch_queue_create("concurrent",DISPATCH_QUEUE_SERIAL);
     dispatch_queue_t serialqueue2 =dispatch_queue_create("concurrent2",DISPATCH_QUEUE_SERIAL);
     dispatch_queue_t queue =dispatch_queue_create("concurrent",DISPATCH_QUEUE_CONCURRENT);
-        dispatch_async(serialqueue, ^{
-            
-            
-            
+        dispatch_async(queue, ^{
+
+
+
             for (int i =0; i <3; i ++) {
                 NSLog(@"task1------%@", [NSThread currentThread]);
             }
-            
-            
-            
-            
-            
+
+
+
+
+
         });
-    
+
     dispatch_async(serialqueue2, ^{
         for (int i =0; i <3; i ++) {
             NSLog(@"task2------%@", [NSThread currentThread]);
         }
     });
-        
+
         dispatch_async(serialqueue, ^{
             for (int i =0; i <3; i ++) {
                 NSLog(@"task3------%@", [NSThread currentThread]);

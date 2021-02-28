@@ -45,6 +45,11 @@ class CoverViewController: UIViewController,UITableViewDataSource,UITableViewDel
         self.addCell(title: "线程测试", classname: "testThreadViewController")
         self.addCell(title: "block测试", classname: "blockTestViewController")
         self.addCell(title: "NSStringFromClass", classname: "NSStringFromClassViewController")
+        self.addCell(title: "constStatic", classname: "constStaticTest")
+        self.addCell(title: "安全字典", classname: "safeDicViewController")
+        self.addCell(title: "多线程存储", classname: "multiStorageViewController")
+        self.addCell(title: "token测试", classname: "testInstanceViewController")
+        self.addCell(title: "mapleTable测试", classname: "testMapleTableViewController")
         tableView = UITableView(frame: CGRect(x: 0,y: 30,width: self.view.bounds.size.width,height: self.view.bounds.size.height),style: UITableView.Style.plain)
         tableView.delegate=self;
         tableView.dataSource=self;

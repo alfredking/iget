@@ -389,13 +389,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    WeiboMsg *weiboMsg                  = _weiboMsgArray[indexPath.row];
-//    WeiboDetailViewController *detailVC = [[WeiboDetailViewController alloc]initWithStyle:UITableViewStyleGrouped];
-//    detailVC.weiboMsg                   = weiboMsg;
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor greenColor];
+    WeiboMsg *weiboMsg                  = _weiboMsgArray[indexPath.row];
+    WeiboDetailViewController *detailVC = [[WeiboDetailViewController alloc]initWithStyle:UITableViewStyleGrouped];
+    detailVC.weiboMsg                   = weiboMsg;
+    //自己做测试的
+//    UIViewController *vc = [[UIViewController alloc] init];
+//    vc.view.backgroundColor = [UIColor greenColor];
     
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
