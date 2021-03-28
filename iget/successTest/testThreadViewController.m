@@ -88,33 +88,52 @@
 //          }
 //      });
 
-    dispatch_queue_t serialqueue =dispatch_queue_create("concurrent",DISPATCH_QUEUE_SERIAL);
+    static dispatch_semaphore_t semaphore;
+//    dispatch_queue_t serialqueue =dispatch_queue_create("concurrent",DISPATCH_QUEUE_SERIAL);
     dispatch_queue_t serialqueue2 =dispatch_queue_create("concurrent2",DISPATCH_QUEUE_SERIAL);
     dispatch_queue_t queue =dispatch_queue_create("concurrent",DISPATCH_QUEUE_CONCURRENT);
-        dispatch_async(queue, ^{
+    dispatch_queue_t serialqueue = dispatch_get_global_queue(0, 0);
+    dispatch_queue_t tokenQueue= dispatch_queue_create("token", NULL);
+    
+    semaphore = dispatch_semaphore_create(1);
+    
+        dispatch_async(tokenQueue, ^{
 
 
+//            dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
 
-            for (int i =0; i <3; i ++) {
+            for (int i =0; i <100; i ++) {
                 NSLog(@"task1------%@", [NSThread currentThread]);
             }
 
 
 
+//            dispatch_semaphore_signal(semaphore);
 
 
         });
-
     dispatch_async(serialqueue2, ^{
-        for (int i =0; i <3; i ++) {
-            NSLog(@"task2------%@", [NSThread currentThread]);
-        }
+        
+        dispatch_barrier_async(tokenQueue, ^{
+//        dispatch_async(tokenQueue, ^{
+            
+//            dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+            for (int i =0; i <50; i ++) {
+                NSLog(@"task2------%@", [NSThread currentThread]);
+            }
+//            dispatch_semaphore_signal(semaphore);
+        });
     });
+    
 
-        dispatch_async(serialqueue, ^{
-            for (int i =0; i <3; i ++) {
+        dispatch_async(tokenQueue, ^{
+            
+//            dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+            for (int i =0; i <50; i ++) {
                 NSLog(@"task3------%@", [NSThread currentThread]);
             }
+            
+//            dispatch_semaphore_signal(semaphore);
 
         });
 

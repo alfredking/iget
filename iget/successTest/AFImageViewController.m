@@ -9,6 +9,7 @@
 #import "AFImageViewController.h"
 #import <AFNetworking.h>
 #import "UIImageView+AFNetworking.h"
+#import "UIImage+CircleImage.h"
 @interface AFImageViewController ()
 
 @end
@@ -19,17 +20,34 @@
     [super viewDidLoad];
     NSLog(@"AFImageViewController called");
     self.view.backgroundColor = [UIColor yellowColor];
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0,30, self.view.bounds.size.width, self.view.bounds.size.height)];
+    //占满全屏幕
+//    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0,30, self.view.bounds.size.width, self.view.bounds.size.height)];
+    
+    //正方形
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(self.view.bounds.size.width/2-100,self.view.bounds.size.height/2, 200, 200)];
     UIImage *muscleimage = [UIImage imageNamed:@"WechatIMG7996.jpeg"];
 //    imageView.image = muscleimage;
   
 
     //如果是block方法，block有值就不会为image赋值
-    [imageView setImageWithURL:[NSURL URLWithString:@"https://dfzximg02.dftoutiao.com/news/20210108/20210108092827_d6b2db7a6a3830b3d185dc464006935f_0_mwpm_03201609.jpeg"]];
+//    [imageView setImageWithURL:[NSURL URLWithString:@"https://wx2.sinaimg.cn/mw690/744bc337ly1gnfwt733zog206o06o4au.gif"]];
+//    [imageView setImageWithURL:[NSURL URLWithString:@"https://wx3.sinaimg.cn/mw690/744bc337ly1gmh99a3n57j20u015wqcz.jpg"]];
+//
+//    imageView.layer.cornerRadius=imageView.frame.size.width/2;
+//    imageView.layer.masksToBounds=YES;
+//
+//    //光栅化可以缓存离屏渲染结果，变化少的场景可以使用
+//    imageView.layer.shouldRasterize = YES;
     
-    
-    [self.view addSubview:imageView];
    
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        UIImage *img = [[UIImage imageNamed:@"WechatIMG7996.jpeg"] drawCircleImage];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            imageView.image = img;
+            [self.view addSubview:imageView];
+        });
+    });
     
     
     // Do any additional setup after loading the view.

@@ -14,6 +14,7 @@
 		8A1CA385233D180600B81195 /* sharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CA384233D180600B81195 /* sharedInstance.swift */; };
 		8A35E34B21DD0E8000A7C2D7 /* search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A35E34A21DD0E8000A7C2D7 /* search.swift */; };
 		8A35E34D21E08C9200A7C2D7 /* dynamicPlanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A35E34C21E08C9200A7C2D7 /* dynamicPlanning.swift */; };
+		8A4327D625F499070052990C /* UIImage+CircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4327D525F499070052990C /* UIImage+CircleImage.m */; };
 		8A489D0E2340B6F700B988A1 /* kvo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A489D0D2340B6F700B988A1 /* kvo.swift */; };
 		8A489D102340EFD700B988A1 /* POP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A489D0F2340EFD700B988A1 /* POP.swift */; };
 		8A489D132341F91700B988A1 /* TEST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A489D112341B78600B988A1 /* TEST.swift */; };
@@ -96,6 +97,8 @@
 		8A1CA384233D180600B81195 /* sharedInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharedInstance.swift; sourceTree = "<group>"; };
 		8A35E34A21DD0E8000A7C2D7 /* search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = search.swift; sourceTree = "<group>"; };
 		8A35E34C21E08C9200A7C2D7 /* dynamicPlanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamicPlanning.swift; sourceTree = "<group>"; };
+		8A4327D425F499070052990C /* UIImage+CircleImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CircleImage.h"; sourceTree = "<group>"; };
+		8A4327D525F499070052990C /* UIImage+CircleImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CircleImage.m"; sourceTree = "<group>"; };
 		8A489D0D2340B6F700B988A1 /* kvo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kvo.swift; sourceTree = "<group>"; };
 		8A489D0F2340EFD700B988A1 /* POP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POP.swift; sourceTree = "<group>"; };
 		8A489D112341B78600B988A1 /* TEST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEST.swift; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 				8AB6B5A925D13F3A0022C12D /* testToken.m */,
 				8A9BBB3325EA4B7B00882B42 /* testMapleTableViewController.h */,
 				8A9BBB3425EA4B7B00882B42 /* testMapleTableViewController.m */,
+				8A4327D425F499070052990C /* UIImage+CircleImage.h */,
+				8A4327D525F499070052990C /* UIImage+CircleImage.m */,
 			);
 			path = successTest;
 			sourceTree = "<group>";
@@ -585,6 +590,7 @@
 				8AF1A79822F07BF400E9E0C3 /* grammarTest.swift in Sources */,
 				8A5E192F2365F5F3000B6C66 /* TestSorting.swift in Sources */,
 				8A8D84A225C44CDC006040A3 /* Son.m in Sources */,
+				8A4327D625F499070052990C /* UIImage+CircleImage.m in Sources */,
 				8A5E192B2365F485000B6C66 /* TestOperation.swift in Sources */,
 				8A35E34B21DD0E8000A7C2D7 /* search.swift in Sources */,
 				8AA2885125BD725A003C561D /* testOCForwarding.m in Sources */,

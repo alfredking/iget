@@ -108,6 +108,7 @@ static dispatch_queue_t YYAsyncLayerGetReleaseQueue() {
 
 - (void)_displayAsync:(BOOL)async {
     __strong id<YYAsyncLayerDelegate> delegate = (id)self.delegate;
+    //绘制的时候要新建一个具体的绘制任务
     YYAsyncLayerDisplayTask *task = [delegate newAsyncDisplayTask];
     if (!task.display) {
         if (task.willDisplay) task.willDisplay(self);

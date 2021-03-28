@@ -88,8 +88,11 @@
     }else{
         for (int i = 0; i < thumbnail_urls.count; i++) {
 
+            //使用这个队列会崩溃，改成主队列
             dispatch_queue_t loadImageQueue = dispatch_queue_create("baseImagesView.setThumbnail.loadImage", NULL);
-            dispatch_async(loadImageQueue, ^{
+            
+//            dispatch_async(loadImageQueue, ^{
+                dispatch_async(dispatch_get_main_queue(), ^{
                 CGFloat imageY;
                 CGRect  imageRect;
                 CGFloat imageWidth ;

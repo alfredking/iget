@@ -154,6 +154,13 @@
     [center removeObserver:self name:WBNOTIFICATION_DOWNLOADDATA object:nil];
     [center addObserver:self selector:@selector(getWeiboMsg:) name:WBNOTIFICATION_DOWNLOADDATA object:nil];
     
+    //自己测试用
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    [dic setObject:@"50" forKey:@"count"];
+    [self getWeiboMsgFromRemote:dic];
+    //自己测试用
+    
+    //开始请求微博数据
     [self getWeiboMsg:nil];
     
     [self addRefreshViewController];
@@ -195,8 +202,11 @@
         _max_id         = max_id;
         
         _since_id       = since_id;
+        NSLog(@"get cache success");
         
     } failure:^(NSString *description) {
+        
+        NSLog(@"get cache fail");
         
         NSMutableDictionary *dic = [NSMutableDictionary dictionary];
         
@@ -321,6 +331,8 @@
 
         [_weiboMsgArray addObjectsFromArray:array];
         
+        NSLog(@"new weibo is %@",_weiboMsgArray);
+        
         _since_id   = since_id;
         _max_id     = max_id;
         
@@ -334,7 +346,7 @@
                                  autoSaveKey:@"HomeTimeLine"];
         });
     } failure:^(NSString *description) {
-        NSLog(@"%@",description);
+        NSLog(@"didFinishLoadingWithResult:%@",description);
     }];
 }
 
