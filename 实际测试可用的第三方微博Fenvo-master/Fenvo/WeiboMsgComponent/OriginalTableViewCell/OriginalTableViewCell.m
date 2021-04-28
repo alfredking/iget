@@ -207,7 +207,7 @@
     CGFloat wbDetailX = 10;
     CGFloat wbDetailY = CGRectGetMaxY(_avatar.frame) + WBStatusCellControlSpacing;
     CGFloat wbDetailWidth = IPHONE_SCREEN_WIDTH - WBStatusCellControlSpacing * 2;
-    //[_wbDetail setText:weiboMsg.wbDetail];
+    [_wbDetail setText:weiboMsg.wbDetail];
     
     CGSize wbDetailSize = [weiboMsg.wbDetail
                            boundingRectWithSize:CGSizeMake(wbDetailWidth, MAXFLOAT)
@@ -227,7 +227,7 @@
         CGFloat wbForwardTextY = CGRectGetMaxY(_wbDetail.frame) + WBStatusCellControlSpacing;
         CGFloat wbForwardTextWidth = IPHONE_SCREEN_WIDTH - WBStatusCellControlSpacing*2;
         NSString *retweeted_text = [NSString stringWithFormat:@"@%@：%@",weiboMsg.retweeted_status.user.screen_name ,weiboMsg.retweeted_status.wbDetail];
-        //_wbForwardText.text = retweeted_text;
+        _wbForwardText.text = retweeted_text;
         CGSize wbForwardTextSize = [retweeted_text
                                boundingRectWithSize:CGSizeMake(wbForwardTextWidth, MAXFLOAT)
                                options:NSStringDrawingUsesLineFragmentOrigin
@@ -235,8 +235,8 @@
                                context:nil].size;
         CGRect wbForwardTextRect = CGRectMake(wbForwardTextX, wbForwardTextY, wbForwardTextSize.width, wbForwardTextSize.height);
         _wbForwardText.frame = wbForwardTextRect;
-        //_wbForwardText.backgroundColor = [UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1.0];
-        [_wbForwardText setEmojiText:retweeted_text];
+        _wbForwardText.backgroundColor = [UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1.0];
+        [_wbForwardText setEmojiText:weiboMsg.wbDetail];
         [_wbForwardText sizeToFit];
         //转发。 有配图
         

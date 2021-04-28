@@ -507,10 +507,10 @@ didSelectLinkWithTextCheckingResult:(NSTextCheckingResult *)result;
         for (NSUInteger i=0; i<kURLActionCount; i++) {
             if ([result.replacementString hasPrefix:kURLActions[i]]) {
                 NSString *content = [result.replacementString substringFromIndex:kURLActions[i].length];
-                if(self.weiboLabelDelegate&&[self.weiboLabelDelegate respondsToSelector:@selector(mlEmojiLabel:didSelectLink:withType:)]){
+//                if(self.weiboLabelDelegate&&[self.weiboLabelDelegate respondsToSelector:@selector(mlEmojiLabel:didSelectLink:withType:)]){
                     //type的数组和i刚好对应
                     [self.weiboLabelDelegate mlEmojiLabel:self didSelectLink:content withType:i];
-                }
+//                }
             }
         }
     }

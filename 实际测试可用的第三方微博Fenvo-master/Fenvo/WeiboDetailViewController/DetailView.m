@@ -15,6 +15,9 @@
 #import "BaseRetweetView.h"
 
 #import "StyleOfRemindSubviews.h"
+#import <WebKit/WebKit.h>
+#import "WebViewController.h"
+#import "ViewManagerTool.h"
 
 @interface DetailView()<WeiboLabelDelegate>{
     BaseHeaderView *_header;
@@ -104,5 +107,37 @@
     
     self.frame = CGRectMake(0, 0, self.frame.size.width, textY);
     _height = textY;
+}
+
+#pragma mark - WeiboLabelDelegate
+- (void)mlEmojiLabel:(WeiboLabel *)emojiLabel didSelectLink:(NSString *)link withType:(WeiboLabelLinkType)type
+{
+    WebViewController *webview = [[WebViewController alloc]init];
+    switch (type) {
+        case MLEmojiLabelLinkTypeURL:
+            [webview initWithLink:link];
+            
+            NSLog(@"current navigationController is %@",[ViewManagerTool viewController:self].navigationController);
+            NSLog(@"current viewcontroller is %@",[ViewManagerTool viewController:self]);
+            [[ViewManagerTool viewController:self].navigationController pushViewController:webview animated:YES];
+            NSLog(@"点击了URL没反应 %@",link);
+            break;
+            
+        case MLEmojiLabelLinkTypePhoneNumber:
+            NSLog(@"点击了电话%@",link);
+            break;
+        case MLEmojiLabelLinkTypeEmail:
+            NSLog(@"点击了邮箱%@",link);
+            break;
+        case MLEmojiLabelLinkTypeAt:
+            NSLog(@"点击了用户%@",link);
+            break;
+        case MLEmojiLabelLinkTypePoundSign:
+            NSLog(@"点击了话题%@",link);
+            break;
+        default:
+            NSLog(@"点击了不知道啥%@",link);
+            break;
+    }
 }
 @end

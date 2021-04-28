@@ -436,6 +436,7 @@
 		39E5B4281B5AB21800C2A734 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E5B4261B5AB21800C2A734 /* MainViewController.m */; };
 		39ECD7B71B30212E00AD37B6 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ECD7B61B30212E00AD37B6 /* UIBarButtonItem+Extension.m */; };
 		39ED9F2E1B555CCE00E2B545 /* NewWeiboVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED9F2D1B555CCE00E2B545 /* NewWeiboVC.m */; };
+		8ABA55D72636BD590005112A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABA55D62636BD590005112A /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1003,6 +1004,7 @@
 		39ECD7B61B30212E00AD37B6 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		39ED9F2C1B555CCE00E2B545 /* NewWeiboVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewWeiboVC.h; path = WriteNewWeibo/NewWeiboVC.h; sourceTree = "<group>"; };
 		39ED9F2D1B555CCE00E2B545 /* NewWeiboVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewWeiboVC.m; path = WriteNewWeibo/NewWeiboVC.m; sourceTree = "<group>"; };
+		8ABA55D62636BD590005112A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B5642B2D26A9D25437A24E51 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1011,6 +1013,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABA55D72636BD590005112A /* WebKit.framework in Frameworks */,
 				280EEA441B92ECFE007CDC6A /* libz.1.dylib in Frameworks */,
 				280EEA421B92ECD9007CDC6A /* libsqlite3.dylib in Frameworks */,
 				280EEA3B1B92E98E007CDC6A /* Security.framework in Frameworks */,
@@ -2074,6 +2077,7 @@
 		C9498BA315BB03680715E144 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8ABA55D62636BD590005112A /* WebKit.framework */,
 				39CED5D91B0B633C005DBA93 /* CoreImage.framework */,
 				39D70CFB1ACFEAE600F34A7C /* MapKit.framework */,
 				280EEA431B92ECFE007CDC6A /* libz.1.dylib */,

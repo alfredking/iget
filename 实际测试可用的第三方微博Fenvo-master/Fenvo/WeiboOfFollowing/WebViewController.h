@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebViewController : UIViewController<UIWebViewDelegate>
+@interface WebViewController : UIViewController
 - (void)initWithLink:(NSString *)linkAdr;
 @end

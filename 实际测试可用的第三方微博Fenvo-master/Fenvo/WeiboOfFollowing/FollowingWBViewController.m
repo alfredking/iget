@@ -407,8 +407,10 @@
     //自己做测试的
 //    UIViewController *vc = [[UIViewController alloc] init];
 //    vc.view.backgroundColor = [UIColor greenColor];
+//    [self.navigationController pushViewController:vc animated:YES];
     
     [self.navigationController pushViewController:detailVC animated:YES];
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

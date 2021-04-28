@@ -601,6 +601,7 @@ static inline CGSize CTFramesetterSuggestFrameSizeForAttributedStringWithConstra
 #pragma mark -
 
 - (NSTextCheckingResult *)linkAtCharacterIndex:(CFIndex)idx {
+    //按照索引号从大到小访问数组的元素，而不是从小到大访问数组的元素。
     NSEnumerator *enumerator = [self.links reverseObjectEnumerator];
     NSTextCheckingResult *result = nil;
     while ((result = [enumerator nextObject])) {
@@ -1405,6 +1406,7 @@ afterInheritingLabelAttributesAndConfiguringWithBlock:(NSMutableAttributedString
     UITouch *touch = [touches anyObject];
 
     self.activeLink = [self linkAtPoint:[touch locationInView:self]];
+    NSLog(@"activeLink is %@",self.activeLink);
 
     if (!self.activeLink) {
         [super touchesBegan:touches withEvent:event];
@@ -1474,6 +1476,8 @@ afterInheritingLabelAttributesAndConfiguringWithBlock:(NSMutableAttributedString
             [self.delegate attributedLabel:self didSelectLinkWithTextCheckingResult:result];
         }
     } else {
+        
+        NSLog(@"link didnot called");
         [super touchesEnded:touches withEvent:event];
     }
 }

@@ -50,11 +50,16 @@
 		8AB6B59425D037010022C12D /* multiStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6B59325D037010022C12D /* multiStorageViewController.m */; };
 		8AB6B59F25D135B80022C12D /* testInstanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6B59E25D135B80022C12D /* testInstanceViewController.m */; };
 		8AB6B5AA25D13F3A0022C12D /* testToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6B5A925D13F3A0022C12D /* testToken.m */; };
+		8ABA5543263078870005112A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA5542263078870005112A /* Person.m */; };
+		8ABA5549263078D20005112A /* testInitializeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA5548263078D20005112A /* testInitializeViewController.m */; };
+		8ABA554F263112210005112A /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA554E263112210005112A /* Student.m */; };
+		8ABA5561263465790005112A /* ClickLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA5560263465790005112A /* ClickLinkViewController.m */; };
 		8AD01CC621D8777000950350 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD01CC521D8777000950350 /* Sorting.swift */; };
 		8AD01CC821D9E6B100950350 /* binSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD01CC721D9E6B100950350 /* binSearch.swift */; };
 		8AE07B2023045A8F00F8C510 /* SwiftProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE07B1F23045A8F00F8C510 /* SwiftProtocol.swift */; };
 		8AE07B222305BC7600F8C510 /* staticLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE07B212305BC7600F8C510 /* staticLanguage.swift */; };
 		8AEB889725B5773200FA5010 /* testThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB889625B5773200FA5010 /* testThreadViewController.m */; };
+		8AEBD72E2618BC3D00791D31 /* testProducerConsumerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBD72D2618BC3D00791D31 /* testProducerConsumerViewController.m */; };
 		8AF1A79822F07BF400E9E0C3 /* grammarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A79722F07BF400E9E0C3 /* grammarTest.swift */; };
 		8AF1A7BF22F5DA1300E9E0C3 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A7BE22F5DA1300E9E0C3 /* Father.m */; };
 		8AF1A7C422F6B76700E9E0C3 /* myLeakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A7C322F6B76700E9E0C3 /* myLeakView.swift */; };
@@ -146,12 +151,22 @@
 		8AB6B59E25D135B80022C12D /* testInstanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testInstanceViewController.m; sourceTree = "<group>"; };
 		8AB6B5A825D13F3A0022C12D /* testToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testToken.h; sourceTree = "<group>"; };
 		8AB6B5A925D13F3A0022C12D /* testToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testToken.m; sourceTree = "<group>"; };
+		8ABA5541263078870005112A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		8ABA5542263078870005112A /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		8ABA5547263078D20005112A /* testInitializeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testInitializeViewController.h; sourceTree = "<group>"; };
+		8ABA5548263078D20005112A /* testInitializeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testInitializeViewController.m; sourceTree = "<group>"; };
+		8ABA554D263112210005112A /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		8ABA554E263112210005112A /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		8ABA555F263465790005112A /* ClickLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickLinkViewController.h; sourceTree = "<group>"; };
+		8ABA5560263465790005112A /* ClickLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickLinkViewController.m; sourceTree = "<group>"; };
 		8AD01CC521D8777000950350 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		8AD01CC721D9E6B100950350 /* binSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binSearch.swift; sourceTree = "<group>"; };
 		8AE07B1F23045A8F00F8C510 /* SwiftProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProtocol.swift; sourceTree = "<group>"; };
 		8AE07B212305BC7600F8C510 /* staticLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staticLanguage.swift; sourceTree = "<group>"; };
 		8AEB889525B5773200FA5010 /* testThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testThreadViewController.h; sourceTree = "<group>"; };
 		8AEB889625B5773200FA5010 /* testThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testThreadViewController.m; sourceTree = "<group>"; };
+		8AEBD72C2618BC3D00791D31 /* testProducerConsumerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testProducerConsumerViewController.h; sourceTree = "<group>"; };
+		8AEBD72D2618BC3D00791D31 /* testProducerConsumerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testProducerConsumerViewController.m; sourceTree = "<group>"; };
 		8AF1A79722F07BF400E9E0C3 /* grammarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grammarTest.swift; sourceTree = "<group>"; };
 		8AF1A7BC22F5DA1300E9E0C3 /* iget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iget-Bridging-Header.h"; sourceTree = "<group>"; };
 		8AF1A7BD22F5DA1300E9E0C3 /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
@@ -275,6 +290,16 @@
 				8A9BBB3425EA4B7B00882B42 /* testMapleTableViewController.m */,
 				8A4327D425F499070052990C /* UIImage+CircleImage.h */,
 				8A4327D525F499070052990C /* UIImage+CircleImage.m */,
+				8AEBD72C2618BC3D00791D31 /* testProducerConsumerViewController.h */,
+				8AEBD72D2618BC3D00791D31 /* testProducerConsumerViewController.m */,
+				8ABA5541263078870005112A /* Person.h */,
+				8ABA5542263078870005112A /* Person.m */,
+				8ABA5547263078D20005112A /* testInitializeViewController.h */,
+				8ABA5548263078D20005112A /* testInitializeViewController.m */,
+				8ABA554D263112210005112A /* Student.h */,
+				8ABA554E263112210005112A /* Student.m */,
+				8ABA555F263465790005112A /* ClickLinkViewController.h */,
+				8ABA5560263465790005112A /* ClickLinkViewController.m */,
 			);
 			path = successTest;
 			sourceTree = "<group>";
@@ -557,6 +582,7 @@
 			files = (
 				8A5E19312365F63F000B6C66 /* TestRaceCondition.swift in Sources */,
 				8AA60809234F92870034C0CD /* TestArray.swift in Sources */,
+				8ABA5543263078870005112A /* Person.m in Sources */,
 				8A5E1923235B61C2000B6C66 /* TestFrame.swift in Sources */,
 				8AE07B2023045A8F00F8C510 /* SwiftProtocol.swift in Sources */,
 				8AEB889725B5773200FA5010 /* testThreadViewController.m in Sources */,
@@ -572,12 +598,14 @@
 				8AA2883E25BA6F68003C561D /* blockTestViewController.m in Sources */,
 				8AB6B5AA25D13F3A0022C12D /* testToken.m in Sources */,
 				8A489D0E2340B6F700B988A1 /* kvo.swift in Sources */,
+				8ABA5549263078D20005112A /* testInitializeViewController.m in Sources */,
 				B4D68D0B21AE85E000A5DDCB /* ViewController.swift in Sources */,
 				8AAC672625A804CB004CBBCD /* CoverViewController.swift in Sources */,
 				8AF1A7C622F6B89C00E9E0C3 /* myLeakViewController.swift in Sources */,
 				B4D68D0921AE85E000A5DDCB /* AppDelegate.swift in Sources */,
 				8A35E34D21E08C9200A7C2D7 /* dynamicPlanning.swift in Sources */,
 				8A5E191F235B5EA9000B6C66 /* TestList.swift in Sources */,
+				8ABA554F263112210005112A /* Student.m in Sources */,
 				8AE07B222305BC7600F8C510 /* staticLanguage.swift in Sources */,
 				8AF1A7C422F6B76700E9E0C3 /* myLeakView.swift in Sources */,
 				8A489D132341F91700B988A1 /* TEST.swift in Sources */,
@@ -587,10 +615,12 @@
 				B4D68D1121AE85E000A5DDCB /* iget.xcdatamodeld in Sources */,
 				8AB26B2425CB8D060072FDFD /* constStaticTest.m in Sources */,
 				8AD01CC621D8777000950350 /* Sorting.swift in Sources */,
+				8ABA5561263465790005112A /* ClickLinkViewController.m in Sources */,
 				8AF1A79822F07BF400E9E0C3 /* grammarTest.swift in Sources */,
 				8A5E192F2365F5F3000B6C66 /* TestSorting.swift in Sources */,
 				8A8D84A225C44CDC006040A3 /* Son.m in Sources */,
 				8A4327D625F499070052990C /* UIImage+CircleImage.m in Sources */,
+				8AEBD72E2618BC3D00791D31 /* testProducerConsumerViewController.m in Sources */,
 				8A5E192B2365F485000B6C66 /* TestOperation.swift in Sources */,
 				8A35E34B21DD0E8000A7C2D7 /* search.swift in Sources */,
 				8AA2885125BD725A003C561D /* testOCForwarding.m in Sources */,

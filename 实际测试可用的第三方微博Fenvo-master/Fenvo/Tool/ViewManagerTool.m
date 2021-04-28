@@ -15,6 +15,8 @@
 + (UIViewController *)viewController: (UIView *)view{
     for (UIView* next = [view superview]; next; next =
          next.superview) {
+        
+        NSLog(@"next is %@",next);
         UIResponder* nextResponder = [next nextResponder];
         if ([nextResponder isMemberOfClass:[UIViewController class]]) {
             return (UIViewController*)nextResponder;
