@@ -33,6 +33,7 @@
 		8A5E19312365F63F000B6C66 /* TestRaceCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E19302365F63F000B6C66 /* TestRaceCondition.swift */; };
 		8A5E19332367501C000B6C66 /* TestPriorityInversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E19322367501B000B6C66 /* TestPriorityInversion.swift */; };
 		8A5E193523675B82000B6C66 /* TestEscapeClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E193423675B82000B6C66 /* TestEscapeClosure.swift */; };
+		8A8A2023266B8440002CE332 /* testTableviewScrollTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8A2022266B8440002CE332 /* testTableviewScrollTableViewController.m */; };
 		8A8D849C25C44CB8006040A3 /* Fathers.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D849B25C44CB8006040A3 /* Fathers.m */; };
 		8A8D84A225C44CDC006040A3 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D84A125C44CDC006040A3 /* Son.m */; };
 		8A8D84A825C44D98006040A3 /* NSStringFromClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D84A725C44D98006040A3 /* NSStringFromClassViewController.m */; };
@@ -122,6 +123,8 @@
 		8A5E19302365F63F000B6C66 /* TestRaceCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRaceCondition.swift; sourceTree = "<group>"; };
 		8A5E19322367501B000B6C66 /* TestPriorityInversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPriorityInversion.swift; sourceTree = "<group>"; };
 		8A5E193423675B82000B6C66 /* TestEscapeClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEscapeClosure.swift; sourceTree = "<group>"; };
+		8A8A2021266B8440002CE332 /* testTableviewScrollTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testTableviewScrollTableViewController.h; sourceTree = "<group>"; };
+		8A8A2022266B8440002CE332 /* testTableviewScrollTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTableviewScrollTableViewController.m; sourceTree = "<group>"; };
 		8A8D849A25C44CB8006040A3 /* Fathers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fathers.h; sourceTree = "<group>"; };
 		8A8D849B25C44CB8006040A3 /* Fathers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fathers.m; sourceTree = "<group>"; };
 		8A8D84A025C44CDC006040A3 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
@@ -300,6 +303,8 @@
 				8ABA554E263112210005112A /* Student.m */,
 				8ABA555F263465790005112A /* ClickLinkViewController.h */,
 				8ABA5560263465790005112A /* ClickLinkViewController.m */,
+				8A8A2021266B8440002CE332 /* testTableviewScrollTableViewController.h */,
+				8A8A2022266B8440002CE332 /* testTableviewScrollTableViewController.m */,
 			);
 			path = successTest;
 			sourceTree = "<group>";
@@ -580,6 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8A2023266B8440002CE332 /* testTableviewScrollTableViewController.m in Sources */,
 				8A5E19312365F63F000B6C66 /* TestRaceCondition.swift in Sources */,
 				8AA60809234F92870034C0CD /* TestArray.swift in Sources */,
 				8ABA5543263078870005112A /* Person.m in Sources */,
