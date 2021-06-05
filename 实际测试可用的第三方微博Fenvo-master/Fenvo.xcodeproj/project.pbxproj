@@ -10,7 +10,6 @@
 		280EEA0F1B92DDF6007CDC6A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280EEA0E1B92DDF6007CDC6A /* CoreTelephony.framework */; };
 		280EEA111B92DE12007CDC6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280EEA101B92DE12007CDC6A /* UIKit.framework */; };
 		280EEA131B92DE24007CDC6A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280EEA121B92DE24007CDC6A /* CoreText.framework */; };
-		280EEA241B92E710007CDC6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 280EEA231B92E710007CDC6A /* libPods.a */; };
 		280EEA321B92E7BF007CDC6A /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 280EEA261B92E7BF007CDC6A /* libWeiboSDK.a */; };
 		280EEA331B92E7BF007CDC6A /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 280EEA2F1B92E7BF007CDC6A /* WeiboSDK.bundle */; };
 		280EEA351B92E969007CDC6A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280EEA341B92E969007CDC6A /* ImageIO.framework */; };
@@ -437,6 +436,7 @@
 		39ECD7B71B30212E00AD37B6 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ECD7B61B30212E00AD37B6 /* UIBarButtonItem+Extension.m */; };
 		39ED9F2E1B555CCE00E2B545 /* NewWeiboVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED9F2D1B555CCE00E2B545 /* NewWeiboVC.m */; };
 		8ABA55D72636BD590005112A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABA55D62636BD590005112A /* WebKit.framework */; };
+		D562AD370A93F6FF9C302029 /* libPods-Fenvo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99DBE475CC7B370C1CE8C98 /* libPods-Fenvo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -450,11 +450,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A33574618125F81EE190B58 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		280EEA0E1B92DDF6007CDC6A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		280EEA101B92DE12007CDC6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		280EEA121B92DE24007CDC6A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		280EEA231B92E710007CDC6A /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		280EEA261B92E7BF007CDC6A /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
 		280EEA271B92E7BF007CDC6A /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
 		280EEA281B92E7BF007CDC6A /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
@@ -1005,7 +1003,9 @@
 		39ED9F2C1B555CCE00E2B545 /* NewWeiboVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewWeiboVC.h; path = WriteNewWeibo/NewWeiboVC.h; sourceTree = "<group>"; };
 		39ED9F2D1B555CCE00E2B545 /* NewWeiboVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewWeiboVC.m; path = WriteNewWeibo/NewWeiboVC.m; sourceTree = "<group>"; };
 		8ABA55D62636BD590005112A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		B5642B2D26A9D25437A24E51 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C9BD21CE685392D0DBE511A3 /* Pods-Fenvo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fenvo.debug.xcconfig"; path = "Target Support Files/Pods-Fenvo/Pods-Fenvo.debug.xcconfig"; sourceTree = "<group>"; };
+		F081A6277EE547307C0EBD18 /* Pods-Fenvo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fenvo.release.xcconfig"; path = "Target Support Files/Pods-Fenvo/Pods-Fenvo.release.xcconfig"; sourceTree = "<group>"; };
+		F99DBE475CC7B370C1CE8C98 /* libPods-Fenvo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fenvo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1020,13 +1020,13 @@
 				280EEA391B92E983007CDC6A /* QuartzCore.framework in Frameworks */,
 				280EEA371B92E978007CDC6A /* SystemConfiguration.framework in Frameworks */,
 				280EEA351B92E969007CDC6A /* ImageIO.framework in Frameworks */,
-				280EEA241B92E710007CDC6A /* libPods.a in Frameworks */,
 				280EEA131B92DE24007CDC6A /* CoreText.framework in Frameworks */,
 				280EEA111B92DE12007CDC6A /* UIKit.framework in Frameworks */,
 				280EEA321B92E7BF007CDC6A /* libWeiboSDK.a in Frameworks */,
 				280EEA0F1B92DDF6007CDC6A /* CoreTelephony.framework in Frameworks */,
 				39CED5DA1B0B633C005DBA93 /* CoreImage.framework in Frameworks */,
 				39D70CFC1ACFEAE600F34A7C /* MapKit.framework in Frameworks */,
+				D562AD370A93F6FF9C302029 /* libPods-Fenvo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1773,8 +1773,8 @@
 				39CF25DC1AB8088C006AA556 /* Fenvo */,
 				39CF25F91AB8088C006AA556 /* FenvoTests */,
 				39CF25DB1AB8088C006AA556 /* Products */,
-				64C8B0C6501E4477B74928A7 /* Pods */,
 				C9498BA315BB03680715E144 /* Frameworks */,
+				7B6B0F23A2BFEDF67FA03246 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2065,13 +2065,14 @@
 			name = RemoteRequest;
 			sourceTree = "<group>";
 		};
-		64C8B0C6501E4477B74928A7 /* Pods */ = {
+		7B6B0F23A2BFEDF67FA03246 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B5642B2D26A9D25437A24E51 /* Pods.debug.xcconfig */,
-				0A33574618125F81EE190B58 /* Pods.release.xcconfig */,
+				C9BD21CE685392D0DBE511A3 /* Pods-Fenvo.debug.xcconfig */,
+				F081A6277EE547307C0EBD18 /* Pods-Fenvo.release.xcconfig */,
 			);
 			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		C9498BA315BB03680715E144 /* Frameworks */ = {
@@ -2086,10 +2087,10 @@
 				280EEA381B92E983007CDC6A /* QuartzCore.framework */,
 				280EEA361B92E978007CDC6A /* SystemConfiguration.framework */,
 				280EEA341B92E969007CDC6A /* ImageIO.framework */,
-				280EEA231B92E710007CDC6A /* libPods.a */,
 				280EEA121B92DE24007CDC6A /* CoreText.framework */,
 				280EEA101B92DE12007CDC6A /* UIKit.framework */,
 				280EEA0E1B92DDF6007CDC6A /* CoreTelephony.framework */,
+				F99DBE475CC7B370C1CE8C98 /* libPods-Fenvo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2101,12 +2102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39CF26001AB8088C006AA556 /* Build configuration list for PBXNativeTarget "Fenvo" */;
 			buildPhases = (
-				5944718571FDB042386EFF3F /* Check Pods Manifest.lock */,
+				B8BF8C3EF68B86CFE8C02726 /* [CP] Check Pods Manifest.lock */,
 				39CF25D61AB8088C006AA556 /* Sources */,
 				39CF25D71AB8088C006AA556 /* Frameworks */,
 				39CF25D81AB8088C006AA556 /* Resources */,
 				39CF26061AB808AA006AA556 /* Run Script */,
-				CC5B5C65E3F90745FD627DA9 /* Copy Pods Resources */,
+				FC7F87AFDF0FA222F78734E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2512,34 +2513,50 @@
 			shellPath = /bin/sh;
 			shellScript = "";
 		};
-		5944718571FDB042386EFF3F /* Check Pods Manifest.lock */ = {
+		B8BF8C3EF68B86CFE8C02726 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fenvo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC5B5C65E3F90745FD627DA9 /* Copy Pods Resources */ = {
+		FC7F87AFDF0FA222F78734E8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fenvo/Pods-Fenvo-resources.sh",
+				"${PODS_ROOT}/KVNProgress/KVNProgress/Resources/KVNProgressView.xib",
+				"${PODS_ROOT}/MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RETableViewManager/RETableViewManager.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KVNProgressView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RETableViewManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fenvo/Pods-Fenvo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2786,7 +2803,7 @@
 		};
 		39CF26011AB8088C006AA556 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5642B2D26A9D25437A24E51 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = C9BD21CE685392D0DBE511A3 /* Pods-Fenvo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
@@ -2842,7 +2859,7 @@
 		};
 		39CF26021AB8088C006AA556 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A33574618125F81EE190B58 /* Pods.release.xcconfig */;
+			baseConfigurationReference = F081A6277EE547307C0EBD18 /* Pods-Fenvo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;

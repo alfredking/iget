@@ -17,6 +17,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSLog(@"test result is %d",bracketTest(@"[]()"));
+    NSLog(@"formatDurationString result is %@",[self formatDurationString:@"1:21"]);
+    
 }
 //struct testStruct{
 //    int b;
@@ -70,6 +72,22 @@ bool bracketTest(NSString *input)
         return  false;
     else
         return true;
+}
+
+-(NSString *)formatDurationString:(NSString *)durationString
+{
+    NSString *resultString;
+    NSArray *times = [durationString
+                      componentsSeparatedByString:@":"];
+    if ([times count]>=2) {
+        resultString = [NSString stringWithFormat: @"%@'%@''",times[0],times[1]];
+        
+        return resultString;
+    }
+    else
+        
+        return durationString;
+    
 }
 
 @end

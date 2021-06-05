@@ -10,12 +10,18 @@
 
 @implementation MainTabBar
 
-- (CGSize)sizeThatFits:(CGSize)size {
-    CGSize osize = [super sizeThatFits:size];
-    osize.height = 40;
-    
-    return osize;
-}
+//既然不需要改变size，就不需要重写了
+//- (CGSize)sizeThatFits:(CGSize)size {
+//    CGSize osize = [super sizeThatFits:size];
+//
+//    NSLog(@"osize is %@",NSStringFromCGSize(osize));
+////    osize.height = 40;
+//    //测试改变tabbar高度，然后就没有图标和字体重叠的问题了
+////    osize.height = 80;
+//    //测试发现，直接使用系统给的size就可以，不需要再自己设置高度
+//
+//    return osize;
+//}
 
 - (void)layoutSubviews {
     [super layoutSubviews];

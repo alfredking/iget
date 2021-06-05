@@ -128,6 +128,9 @@
 {
     [super viewDidLoad];
     
+    //自己添加的，因为导航栏会遮盖下面的视图
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     
     [self initNavigationBar];
     

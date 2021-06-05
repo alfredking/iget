@@ -18,6 +18,7 @@
 #import <WebKit/WebKit.h>
 #import "WebViewController.h"
 #import "ViewManagerTool.h"
+#import "UIViewControllerCJHelper.h"
 
 @interface DetailView()<WeiboLabelDelegate>{
     BaseHeaderView *_header;
@@ -115,12 +116,18 @@
     WebViewController *webview = [[WebViewController alloc]init];
     switch (type) {
         case MLEmojiLabelLinkTypeURL:
+        {
             [webview initWithLink:link];
             
             NSLog(@"current navigationController is %@",[ViewManagerTool viewController:self].navigationController);
             NSLog(@"current viewcontroller is %@",[ViewManagerTool viewController:self]);
-            [[ViewManagerTool viewController:self].navigationController pushViewController:webview animated:YES];
+//            [[ViewManagerTool viewController:self].navigationController pushViewController:webview animated:YES];
             NSLog(@"点击了URL没反应 %@",link);
+            //在分支里面初始化了变量需要用括号括起来
+            UIViewController *vc = [UIViewControllerCJHelper findCurrentShowingViewController];
+            [vc.navigationController pushViewController:webview animated:YES];
+            NSLog(@"vc is  %@",vc);
+        }
             break;
             
         case MLEmojiLabelLinkTypePhoneNumber:

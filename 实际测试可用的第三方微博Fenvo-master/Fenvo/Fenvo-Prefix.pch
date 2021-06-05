@@ -36,7 +36,9 @@
 #pragma mark - Weibo Original Cell样式宏定义
 //颜色
 #define WBColor(r,g,b)          [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0f]
-#define WBStatusGrayColor       WBColor(240, 240, 240)
+//#define WBStatusGrayColor       WBColor(240, 240, 240)
+//修改字体颜色
+#define WBStatusGrayColor       [UIColor blackColor]
 #define WBStatusLightGrayColor  WBColor(120,120,180)
 //间距
 #define WBStatusCellControlSpacing          12//控件间距

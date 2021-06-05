@@ -61,6 +61,7 @@
     //微博发布来源
     _source = [[UILabel alloc]init];
     _source.textColor = WBStatusGrayColor;
+    
     _source.font = WBStatusCellSourceFont;
     [self.containView addSubview:_source];
     //微博详情
@@ -116,12 +117,14 @@
     [_praiseBtn setImage:[UIImage imageWithIcon:@"fa-thumbs-o-up" backgroundColor:[UIColor clearColor] iconColor:[UIColor colorWithRed:230.0/255.0f green:230.0/255.0f blue:230.0/255.0f alpha:1] andSize:CGSizeMake(16.0f, 16.0f)] forState:UIControlStateNormal];
     [_praiseBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.containView addSubview:_praiseBtn];
+    
     _forwardBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _forwardBtn.tag = 101;
     [_forwardBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_forwardBtn setImage:[UIImage imageWithIcon:@"fa-share" backgroundColor:[UIColor clearColor] iconColor:[UIColor colorWithRed:230.0/255.0f green:230.0/255.0f blue:230.0/255.0f alpha:1] andSize:CGSizeMake(16.0f, 16.0f)] forState:UIControlStateNormal];
     _forwardBtn.titleLabel.font = BUTTON_FONT;
     [self.containView addSubview:_forwardBtn];
+    
     _commentBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _commentBtn.tag = 102;
     _commentBtn.titleLabel.font = BUTTON_FONT;
