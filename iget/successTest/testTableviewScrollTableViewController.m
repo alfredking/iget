@@ -18,11 +18,16 @@
     [super viewDidLoad];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"testTableviewScroll"];
-    [self.tableView reloadData];
-    NSIndexPath *index = [NSIndexPath indexPathForRow:0 inSection:0];
+//    [self.tableView reloadData];
+    NSIndexPath *index = [NSIndexPath indexPathForRow:35 inSection:0];
+    NSLog(@"current thread is %@",[NSThread currentThread]);
     dispatch_async(dispatch_get_main_queue(), ^{
+//        [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionTop animated:YES];
+//        [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
         [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+    NSLog(@"inside current thread is %@",[NSThread currentThread]);
     });
+    [self.tableView reloadData];
     
     
     // Uncomment the following line to preserve selection between presentations.
