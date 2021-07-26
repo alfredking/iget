@@ -38,6 +38,9 @@
 		8A8D84A225C44CDC006040A3 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D84A125C44CDC006040A3 /* Son.m */; };
 		8A8D84A825C44D98006040A3 /* NSStringFromClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D84A725C44D98006040A3 /* NSStringFromClassViewController.m */; };
 		8A8D856E25C58B96006040A3 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D856D25C58B96006040A3 /* UIViewController+Tracking.m */; };
+		8A938CC5268F003200F810AC /* testScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A938CC4268F003200F810AC /* testScrollView.m */; };
+		8A938E672694535100F810AC /* testSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A938E662694535100F810AC /* testSetViewController.m */; };
+		8A9393192699734C00F810AC /* testContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9393182699734B00F810AC /* testContactsViewController.m */; };
 		8A9BBB3525EA4B7B00882B42 /* testMapleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BBB3425EA4B7B00882B42 /* testMapleTableViewController.m */; };
 		8AA2883E25BA6F68003C561D /* blockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2883D25BA6F68003C561D /* blockTestViewController.m */; };
 		8AA2884925BD6704003C561D /* testForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2884825BD6704003C561D /* testForwarding.m */; };
@@ -133,6 +136,12 @@
 		8A8D84A725C44D98006040A3 /* NSStringFromClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringFromClassViewController.m; sourceTree = "<group>"; };
 		8A8D856C25C58B96006040A3 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
 		8A8D856D25C58B96006040A3 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		8A938CC3268F003200F810AC /* testScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testScrollView.h; sourceTree = "<group>"; };
+		8A938CC4268F003200F810AC /* testScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testScrollView.m; sourceTree = "<group>"; };
+		8A938E652694535100F810AC /* testSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testSetViewController.h; sourceTree = "<group>"; };
+		8A938E662694535100F810AC /* testSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testSetViewController.m; sourceTree = "<group>"; };
+		8A9393172699734B00F810AC /* testContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testContactsViewController.h; sourceTree = "<group>"; };
+		8A9393182699734B00F810AC /* testContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testContactsViewController.m; sourceTree = "<group>"; };
 		8A9BBB3325EA4B7B00882B42 /* testMapleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testMapleTableViewController.h; sourceTree = "<group>"; };
 		8A9BBB3425EA4B7B00882B42 /* testMapleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testMapleTableViewController.m; sourceTree = "<group>"; };
 		8AA2883C25BA6F68003C561D /* blockTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockTestViewController.h; sourceTree = "<group>"; };
@@ -305,6 +314,12 @@
 				8ABA5560263465790005112A /* ClickLinkViewController.m */,
 				8A8A2021266B8440002CE332 /* testTableviewScrollTableViewController.h */,
 				8A8A2022266B8440002CE332 /* testTableviewScrollTableViewController.m */,
+				8A938CC3268F003200F810AC /* testScrollView.h */,
+				8A938CC4268F003200F810AC /* testScrollView.m */,
+				8A938E652694535100F810AC /* testSetViewController.h */,
+				8A938E662694535100F810AC /* testSetViewController.m */,
+				8A9393172699734B00F810AC /* testContactsViewController.h */,
+				8A9393182699734B00F810AC /* testContactsViewController.m */,
 			);
 			path = successTest;
 			sourceTree = "<group>";
@@ -613,6 +628,7 @@
 				8A5E191F235B5EA9000B6C66 /* TestList.swift in Sources */,
 				8ABA554F263112210005112A /* Student.m in Sources */,
 				8AE07B222305BC7600F8C510 /* staticLanguage.swift in Sources */,
+				8A9393192699734C00F810AC /* testContactsViewController.m in Sources */,
 				8AF1A7C422F6B76700E9E0C3 /* myLeakView.swift in Sources */,
 				8A489D132341F91700B988A1 /* TEST.swift in Sources */,
 				8A5E19292364B05B000B6C66 /* TestMultiThread.swift in Sources */,
@@ -630,6 +646,7 @@
 				8A5E192B2365F485000B6C66 /* TestOperation.swift in Sources */,
 				8A35E34B21DD0E8000A7C2D7 /* search.swift in Sources */,
 				8AA2885125BD725A003C561D /* testOCForwarding.m in Sources */,
+				8A938E672694535100F810AC /* testSetViewController.m in Sources */,
 				8A8D849C25C44CB8006040A3 /* Fathers.m in Sources */,
 				8AF1A7BF22F5DA1300E9E0C3 /* Father.m in Sources */,
 				8AB6B59425D037010022C12D /* multiStorageViewController.m in Sources */,
@@ -642,6 +659,7 @@
 				8A5E19332367501C000B6C66 /* TestPriorityInversion.swift in Sources */,
 				8A8D84A825C44D98006040A3 /* NSStringFromClassViewController.m in Sources */,
 				8A5E191D235A1CAD000B6C66 /* TestStackQueue.swift in Sources */,
+				8A938CC5268F003200F810AC /* testScrollView.m in Sources */,
 				8A9BBB3525EA4B7B00882B42 /* testMapleTableViewController.m in Sources */,
 				8A489D102340EFD700B988A1 /* POP.swift in Sources */,
 				8AAC673725A865A3004CBBCD /* AFImageViewController.m in Sources */,
