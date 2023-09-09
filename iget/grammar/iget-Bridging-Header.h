@@ -4,3 +4,4 @@
 //swift会自动在非private方法（属性）前加上@objc
 #import "Father.h"
 #import "AFImageViewController.h"
+#import <Bugly/Bugly.h>

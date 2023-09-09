@@ -35,4 +35,10 @@
     [super touchesCancelled:touches withEvent:event];
 }
 
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+    NSLog(@"yellow view hitTest called");
+    return  [super hitTest:point withEvent:event];
+}
 @end

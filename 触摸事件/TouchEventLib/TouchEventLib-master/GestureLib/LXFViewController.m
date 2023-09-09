@@ -18,14 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    LXFTapGestureRecognizer *tap = [[LXFTapGestureRecognizer alloc] initWithTarget:self action:@selector(actionTap)];
-//    [self.view addGestureRecognizer:tap];
-//
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(actionPan)];
-//    pan.cancelsTouchesInView = NO;
-    pan.delaysTouchesBegan = YES;
-//    pan.delaysTouchesEnded = YES;
-    [self.view addGestureRecognizer:pan];
+    LXFTapGestureRecognizer *tap = [[LXFTapGestureRecognizer alloc] initWithTarget:self action:@selector(actionTap)];
+    [self.view addGestureRecognizer:tap];
+    self.view.backgroundColor = [UIColor greenColor];
+//    [self.yellowView addGestureRecognizer:tap];
+
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(actionPan)];
+////    pan.cancelsTouchesInView = NO;
+//    pan.delaysTouchesBegan = YES;
+////    pan.delaysTouchesEnded = YES;
+//    [self.view addGestureRecognizer:pan];
 }
 
 - (void)actionTap
@@ -41,5 +43,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
 
 @end

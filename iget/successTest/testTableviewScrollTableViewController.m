@@ -16,15 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"self.tableView is %@",self.tableView);
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"testTableviewScroll"];
 //    [self.tableView reloadData];
     NSIndexPath *index = [NSIndexPath indexPathForRow:35 inSection:0];
-    NSLog(@"current thread is %@",[NSThread currentThread]);
+//    NSLog(@"current thread is %@",[NSThread currentThread]);
     dispatch_async(dispatch_get_main_queue(), ^{
 //        [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionTop animated:YES];
 //        [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
-        [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+//        [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionBottom animated:YES];
     NSLog(@"inside current thread is %@",[NSThread currentThread]);
     });
     [self.tableView reloadData];
@@ -46,32 +47,43 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 100;
+    return 500;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"testTableviewScroll" forIndexPath:indexPath];
-    
     if (cell) {
+        NSLog(@"cell is %@",cell);
         cell.textLabel.text=[NSString stringWithFormat:@"%ld",indexPath.row];
+    }
+    else
+    {
+        NSLog(@"create new cell");
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"testTableviewScroll"];
     }
     
     return cell;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UILabel *titleLabel = [[UILabel alloc] init];
-    titleLabel.backgroundColor = [UIColor greenColor];
-    titleLabel.font = [UIFont boldSystemFontOfSize:20.0f];;
-    titleLabel.textColor = [UIColor blackColor];
-    titleLabel.text = @"header";
-    titleLabel.textAlignment = UITextAlignmentCenter;
-    return titleLabel;
-}
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//    UILabel *titleLabel = [[UILabel alloc] init];
+//    titleLabel.backgroundColor = [UIColor greenColor];
+//    titleLabel.font = [UIFont boldSystemFontOfSize:20.0f];;
+//    titleLabel.textColor = [UIColor blackColor];
+//    titleLabel.text = @"header";
+//    titleLabel.textAlignment = UITextAlignmentCenter;
+//    return titleLabel;
+//}
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 18.;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+//    return 25;
+//}
+
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return 60;
+//}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

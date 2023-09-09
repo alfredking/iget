@@ -11,6 +11,14 @@
 #import <WebKit/WebKit.h>
 @interface ClickLinkViewController ()
 
+@property(nonatomic,strong) UILabel *label1;
+@property(nonatomic,strong) UILabel *label2;
+@property(nonatomic,strong) UILabel *label3;
+@property(nonatomic,strong) UILabel *label4;
+@property(nonatomic,strong) UILabel *label5;
+@property(nonatomic,strong) UILabel *label6;
+@property(nonatomic,strong) NSString *testString;
+
 @end
 
 @implementation ClickLinkViewController
@@ -20,9 +28,22 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor =[UIColor whiteColor];
 //    NSString *webString = @"这不是网址\"http://www.baidu.com\"这是我大百度帝国";
-    NSString *webString = @"这不是网址\"http://m.weibo.cn/2014433131/4629845684786036\"这是我大百度帝国";
+//    NSString *webString = @"这不是网址\"http://m.weibo.cn/2014433131/4629845684786036\"这是我大百度帝国";
+//
+//    [self needHightText:webString];
+    
+    
+    self.testString = @"jkf测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本";
+//    self.testString = @"juxtaposedjuxtaposedjuxtaposedjuxtaposedjuxtaposedjuxtaposedjuxtaposedjuxtaposed";
+    
 
-    [self needHightText:webString];
+         [self.view addSubview:self.label1];
+         [self.view addSubview:self.label2];
+        [self.view addSubview:self.label3];
+        [self.view addSubview:self.label4];
+        [self.view addSubview:self.label5];
+        [self.view addSubview:self.label6];
+    
 }
 
 - (void)needHightText:(NSString *)wholeText {
@@ -62,14 +83,213 @@
     mainLabel.attributedText = text;
 }
 
-/*
-#pragma mark - Navigation
+-(UILabel *)label1
+{
+    if (!_label1) {
+        _label1 = [[UILabel alloc]init];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+        _label1.backgroundColor = [UIColor greenColor];
+
+        _label1.textColor = [UIColor blackColor];
+
+        _label1.numberOfLines = 0;
+
+        _label1.text = self.testString;
+
+//        _label1.lineBreakMode = NSLineBreakByWordWrapping;
+//        _label1.lineBreakMode = NSLineBreakByTruncatingTail;
+
+        NSDictionary * attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:14]};
+
+        CGRect rect = [_label1.text boundingRectWithSize:CGSizeMake(100, MAXFLOAT)  options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil];
+
+        NSLog(@"%f-----%f", rect.size.width,  rect.size.height);
+
+        _label1.frame = (CGRect){{100, 100}, rect.size};
+        if (rect.size.height > 61) {
+
+            _label1.numberOfLines = 3;
+
+            _label1.frame = (CGRect){{100, 100}, {rect.size.width, 60.862}};
+
+        }
+//        [_label1 sizeToFit];
+    }
+    return _label1;
 }
-*/
 
+-(UILabel *)label2
+{
+    if (!_label2) {
+        _label2 = [[UILabel alloc]init];
+
+        _label2.backgroundColor = [UIColor greenColor];
+
+        _label2.textColor = [UIColor blackColor];
+
+        _label2.numberOfLines = 0;
+
+        _label2.text = self.testString;
+
+//        _label2.lineBreakMode = NSLineBreakByCharWrapping;
+//        _label2.lineBreakMode = NSLineBreakByTruncatingTail;
+
+        NSDictionary * attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:15]};
+
+        CGRect rect = [_label2.text boundingRectWithSize:CGSizeMake(100, MAXFLOAT)  options:NSStringDrawingUsesFontLeading attributes:attributes context:nil];
+
+        NSLog(@"%f-----%f", rect.size.width,  rect.size.height);
+
+        _label2.frame = (CGRect){{100, 180}, rect.size};
+        if (rect.size.height > 61) {
+
+            _label2.numberOfLines = 3;
+
+            _label2.frame = (CGRect){{100, 180}, {rect.size.width, 60.862}};
+
+        }
+//        [_label2 sizeToFit];
+    }
+    return _label2;
+}
+
+-(UILabel *)label3
+{
+    if (!_label3) {
+        _label3 = [[UILabel alloc]init];
+
+        _label3.backgroundColor = [UIColor greenColor];
+
+        _label3.textColor = [UIColor blackColor];
+
+        _label3.numberOfLines = 0;
+
+        _label3.text = self.testString;
+
+//        _label3.lineBreakMode = NSLineBreakByClipping;
+        _label3.lineBreakMode = NSLineBreakByTruncatingTail;
+
+        NSDictionary * attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:15]};
+
+        CGRect rect = [_label3.text boundingRectWithSize:CGSizeMake(100, MAXFLOAT)  options:NSStringDrawingUsesDeviceMetrics|NSStringDrawingTruncatesLastVisibleLine attributes:attributes context:nil];
+
+        NSLog(@"%f-----%f", rect.size.width,  rect.size.height);
+
+        _label3.frame = (CGRect){{100, 260}, rect.size};
+        if (rect.size.height > 61) {
+
+            _label3.numberOfLines = 3;
+
+            _label3.frame = (CGRect){{100, 260}, {rect.size.width, 60.862}};
+
+        }
+//        [_label3 sizeToFit];
+    }
+    return _label3;
+}
+
+-(UILabel *)label4
+{
+    if (!_label4) {
+        _label4 = [[UILabel alloc]init];
+
+        _label4.backgroundColor = [UIColor greenColor];
+
+        _label4.textColor = [UIColor blackColor];
+
+        _label4.numberOfLines = 0;
+
+        _label4.text = self.testString;
+
+//        _label4.lineBreakMode = NSLineBreakByTruncatingHead;
+        _label4.lineBreakMode = NSLineBreakByTruncatingTail;
+
+        NSDictionary * attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:14]};
+
+        CGRect rect = [_label4.text boundingRectWithSize:CGSizeMake(100, MAXFLOAT)  options:NSStringDrawingTruncatesLastVisibleLine attributes:attributes context:nil];
+
+        NSLog(@"%f-----%f", rect.size.width,  rect.size.height);
+
+        _label4.frame = (CGRect){{100, 340}, rect.size};
+        if (rect.size.height > 61) {
+
+            _label4.numberOfLines = 3;
+
+            _label4.frame = (CGRect){{100, 340}, {rect.size.width, 60.862}};
+
+        }
+//        [_label4 sizeToFit];
+    }
+    return _label4;
+}
+
+-(UILabel *)label5
+{
+    if (!_label5) {
+        _label5 = [[UILabel alloc]init];
+
+        _label5.backgroundColor = [UIColor greenColor];
+
+        _label5.textColor = [UIColor blackColor];
+
+        _label5.numberOfLines = 0;
+
+        _label5.text = self.testString;
+
+        _label5.lineBreakMode = NSLineBreakByTruncatingTail;
+    
+
+        NSDictionary * attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:14]};
+
+        CGRect rect = [_label5.text boundingRectWithSize:CGSizeMake(100, MAXFLOAT)  options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingTruncatesLastVisibleLine attributes:attributes context:nil];
+
+        NSLog(@"%f-----%f", rect.size.width,  rect.size.height);
+
+        _label5.frame = (CGRect){{100, 420}, rect.size};
+        if (rect.size.height > 61) {
+
+            _label5.numberOfLines = 3;
+
+            _label5.frame = (CGRect){{100, 420}, {rect.size.width, 60.862}};
+
+        }
+//        [_label5 sizeToFit];
+    }
+    return _label5;
+}
+
+-(UILabel *)label6
+{
+    if (!_label6) {
+        _label6 = [[UILabel alloc]init];
+
+        _label6.backgroundColor = [UIColor greenColor];
+
+        _label6.textColor = [UIColor blackColor];
+
+        _label6.numberOfLines = 0;
+
+        _label6.text = self.testString;
+
+//        _label6.lineBreakMode = NSLineBreakByTruncatingMiddle;
+        _label6.lineBreakMode = NSLineBreakByTruncatingTail;
+
+        NSDictionary * attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:14]};
+
+        CGRect rect = [_label6.text boundingRectWithSize:CGSizeMake(100, MAXFLOAT)  options:nil attributes:attributes context:nil];
+
+        NSLog(@"%f-----%f", rect.size.width,  rect.size.height);
+
+        _label6.frame = (CGRect){{100, 500}, rect.size};
+        if (rect.size.height > 61) {
+
+            _label6.numberOfLines = 3;
+
+            _label6.frame = (CGRect){{100, 500}, {rect.size.width, 60.862}};
+
+        }
+//        [_label6 sizeToFit];
+    }
+    return _label6;
+}
 @end

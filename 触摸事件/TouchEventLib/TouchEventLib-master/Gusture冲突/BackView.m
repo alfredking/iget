@@ -34,8 +34,8 @@
     [super touchesCancelled:touches withEvent:event];
 }
 
-//- (void)buttonTap {
-//    NSLog(@"BackView - button clicked!");
-//}
+- (void)buttonTap {
+    NSLog(@"BackView - button clicked!");
+}
 
 @end

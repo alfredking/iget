@@ -21,7 +21,7 @@
     
 //    [self test];
 //    [self test01];
-    [self test02];
+//    [self test02];
     
 //    NSMutableDictionary *aDictionary = [[NSMutableDictionary alloc] initWithCapacity:0];
 //    {
@@ -178,6 +178,29 @@
 //        //如果单纯的做点击处理可以用attributedText直接赋值给YYLabel,但是如果需要异步渲染就必须用YYTextLayout
 //        [self.view addSubview:label];
 
+    UILabel * lbl = [[UILabel alloc] init];
+
+         lbl.backgroundColor = [UIColor redColor];
+
+         lbl.textColor = [UIColor blackColor];
+
+         lbl.numberOfLines = 0;
+
+         lbl.text = @"连卡精神分裂就离开家啊";
+
+         lbl.lineBreakMode = UILineBreakModeWordWrap;
+
+      NSMutableDictionary * dic = [NSMutableDictionary dictionary];
+
+         dic[NSFontAttributeName] = [UIFont systemFontOfSize:17];
+
+      CGRect rect = [lbl.text boundingRectWithSize:CGSizeMake(100, MAXFLOAT)  options:NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil];
+
+      NSLog(@"%f-----%f", rect.size.width,  rect.size.height);
+
+         lbl.frame = (CGRect){{0, 20}, rect.size};
+
+         [self.view addSubview:lbl];
 
 }
 

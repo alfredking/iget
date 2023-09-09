@@ -26,7 +26,7 @@
     //正方形
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(self.view.bounds.size.width/2-100,self.view.bounds.size.height/2, 200, 200)];
     UIImage *muscleimage = [UIImage imageNamed:@"WechatIMG7996.jpeg"];
-//    imageView.image = muscleimage;
+    imageView.image = muscleimage;
   
 
     //如果是block方法，block有值就不会为image赋值
@@ -42,9 +42,19 @@
    
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        UIImage *img = [[UIImage imageNamed:@"WechatIMG7996.jpeg"] drawCircleImage];
+//        UIImage *img = [[UIImage imageNamed:@"WechatIMG7996.jpeg"] drawCircleImage];
+        
+        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:imageView.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(20, 20)];
+        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+        //设置大小
+        maskLayer.frame = imageView.bounds;
+        //设置图形样子
+        maskLayer.path = maskPath.CGPath;
+        imageView.layer.mask = maskLayer;
+//        [self.view addSubview:imageView];
+        
         dispatch_async(dispatch_get_main_queue(), ^{
-            imageView.image = img;
+//            imageView.image = img;
             [self.view addSubview:imageView];
         });
     });

@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let rootV = ViewController()
         
         let rootV = CoverViewController()
+        
+        Bugly.start(withAppId: "ebe53d6004")
+           
 
         
         let  rootNav  = UINavigationController.init(rootViewController: rootV)
@@ -55,6 +58,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
+    
+//    supportedInterfaceOrientationsForWin
 
     // MARK: - Core Data stack
 

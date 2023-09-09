@@ -29,7 +29,10 @@
     NSLog(@"%s",__func__);
 }
 
-
+-(void)dealloc
+{
+    NSLog(@"dealloc called");
+}
 //-(void)viewDidDisappear:(BOOL)animated
 //{
 //    [super viewDidDisappear:animated];

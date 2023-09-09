@@ -10,13 +10,18 @@
 
 @implementation Student
 
-//+(void)load {
-//    NSLog(@"%s", __FUNCTION__);
-//    NSLog(@"%s  %@", __FUNCTION__, [self class]);
-//}
++(void)load {
+    NSLog(@"%s  %@", __FUNCTION__, [self class]);
+}
 
 //+(void)initialize {
 //    NSLog(@"%s  %@", __FUNCTION__, [self class]);
+//}
+
+//-(instancetype)init {
+//    self = [super init];
+//    NSLog(@"%s", __FUNCTION__);
+//    return  self;
 //}
 
 @end

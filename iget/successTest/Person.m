@@ -20,8 +20,8 @@
 }
  
 +(void)load {
-    NSLog(@"%s", __FUNCTION__);
-//    NSLog(@"%s  %@", __FUNCTION__, [self class]);
+//    NSLog(@"%s", __FUNCTION__);
+    NSLog(@"%s  %@", __FUNCTION__, [self class]);
 }
  
 @end

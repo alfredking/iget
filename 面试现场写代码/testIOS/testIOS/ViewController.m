@@ -14,6 +14,11 @@
 
 @implementation ViewController
 
+//+(void)initialize
+//{
+//    NSLog(@"ViewController initialize called");
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

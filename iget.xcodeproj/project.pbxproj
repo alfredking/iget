@@ -3,22 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09EDB78820433DE6276AC373 /* Pods_iget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF36681629F4F58B87ED1E4 /* Pods_iget.framework */; };
+		8A110F9D2AA321E200FE297B /* YHMallcScrbble.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A110F9C2AA321E200FE297B /* YHMallcScrbble.m */; };
+		8A110FA42AA3237300FE297B /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A110FA22AA3237300FE297B /* fishhook.c */; };
+		8A1273EB2827B2EA00C872E8 /* TestOffScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1273EA2827B2EA00C872E8 /* TestOffScreenViewController.m */; };
+		8A1273EF2827D6DC00C872E8 /* line.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8A1273EE2827D6DC00C872E8 /* line.jpeg */; };
 		8A15F9D4230920510084CE47 /* MethodSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A15F9D3230920510084CE47 /* MethodSwizzling.swift */; };
 		8A15F9FB232D05AA0084CE47 /* RaceCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A15F9FA232D05AA0084CE47 /* RaceCondition.swift */; };
 		8A15F9FD232D310B0084CE47 /* SafeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A15F9FC232D310B0084CE47 /* SafeArray.swift */; };
 		8A1CA383232FE54300B81195 /* OperationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CA382232FE54300B81195 /* OperationTest.swift */; };
 		8A1CA385233D180600B81195 /* sharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CA384233D180600B81195 /* sharedInstance.swift */; };
+		8A21F56727B8D0E7005100AF /* TestCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A21F56627B8D0E7005100AF /* TestCategoryViewController.m */; };
+		8A21F56A27B8D8CE005100AF /* TestCategoryClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A21F56927B8D8CE005100AF /* TestCategoryClass.m */; };
+		8A21F57027B8DF4F005100AF /* TestCategoryClass+Category1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A21F56F27B8DF4E005100AF /* TestCategoryClass+Category1.m */; };
+		8A21F57327B8DF6F005100AF /* TestCategoryClass+Category2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A21F57227B8DF6F005100AF /* TestCategoryClass+Category2.m */; };
+		8A21F57C27BA5BD2005100AF /* TestMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A21F57B27BA5BD2005100AF /* TestMonitorViewController.m */; };
+		8A3190942753C20C002A8B15 /* TestLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3190932753C20C002A8B15 /* TestLayoutViewController.m */; };
 		8A35E34B21DD0E8000A7C2D7 /* search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A35E34A21DD0E8000A7C2D7 /* search.swift */; };
 		8A35E34D21E08C9200A7C2D7 /* dynamicPlanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A35E34C21E08C9200A7C2D7 /* dynamicPlanning.swift */; };
+		8A3A95C528216D210005129F /* TestPresentCanceledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A95C428216D210005129F /* TestPresentCanceledViewController.m */; };
 		8A4327D625F499070052990C /* UIImage+CircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4327D525F499070052990C /* UIImage+CircleImage.m */; };
+		8A4690CF2A62859300B17DD7 /* TestPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4690CE2A62859200B17DD7 /* TestPushViewController.m */; };
 		8A489D0E2340B6F700B988A1 /* kvo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A489D0D2340B6F700B988A1 /* kvo.swift */; };
 		8A489D102340EFD700B988A1 /* POP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A489D0F2340EFD700B988A1 /* POP.swift */; };
 		8A489D132341F91700B988A1 /* TEST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A489D112341B78600B988A1 /* TEST.swift */; };
 		8A507DD121CFF16A005CBF42 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A507DD021CFF16A005CBF42 /* BinaryTree.swift */; };
+		8A5866B026E3B55B003B099B /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5866AF26E3B55B003B099B /* TestTableViewController.m */; };
+		8A5866B926E4C67D003B099B /* TestCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5866B826E4C67D003B099B /* TestCustomTableViewCell.m */; };
 		8A5E1919235A1936000B6C66 /* TestDictionarySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E1918235A1936000B6C66 /* TestDictionarySet.swift */; };
 		8A5E191B235A1C15000B6C66 /* TestString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E191A235A1C15000B6C66 /* TestString.swift */; };
 		8A5E191D235A1CAD000B6C66 /* TestStackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E191C235A1CAD000B6C66 /* TestStackQueue.swift */; };
@@ -33,11 +48,22 @@
 		8A5E19312365F63F000B6C66 /* TestRaceCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E19302365F63F000B6C66 /* TestRaceCondition.swift */; };
 		8A5E19332367501C000B6C66 /* TestPriorityInversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E19322367501B000B6C66 /* TestPriorityInversion.swift */; };
 		8A5E193523675B82000B6C66 /* TestEscapeClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E193423675B82000B6C66 /* TestEscapeClosure.swift */; };
+		8A648D3B26C8E60D0000C008 /* testBoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A648D3A26C8E60D0000C008 /* testBoolViewController.m */; };
+		8A749D7A280D7C2B0033426C /* TestCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A749D79280D7C2B0033426C /* TestCollectionViewLayout.m */; };
+		8A783F292924852C005EC01E /* TestEdgeInsetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A783F282924852C005EC01E /* TestEdgeInsetsViewController.m */; };
+		8A8032AB27882B9F00C13F7C /* testKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8032AA27882B9F00C13F7C /* testKVOViewController.m */; };
+		8A8032AE27882CFF00C13F7C /* KVOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8032AD27882CFF00C13F7C /* KVOPerson.m */; };
+		8A8032B127883E3A00C13F7C /* QLStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8032B027883E3A00C13F7C /* QLStudent.m */; };
+		8A8032B427883EA800C13F7C /* QLPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8032B327883EA800C13F7C /* QLPerson.m */; };
+		8A8032B72788463800C13F7C /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8032B62788463800C13F7C /* TestPerson.m */; };
+		8A8032C0278B1AD500C13F7C /* TestMultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8032BF278B1AD500C13F7C /* TestMultiThreadViewController.m */; };
 		8A8A2023266B8440002CE332 /* testTableviewScrollTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8A2022266B8440002CE332 /* testTableviewScrollTableViewController.m */; };
+		8A8B0B8728A7728100A17B70 /* TestHttpCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8B0B8628A7728100A17B70 /* TestHttpCacheViewController.m */; };
 		8A8D849C25C44CB8006040A3 /* Fathers.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D849B25C44CB8006040A3 /* Fathers.m */; };
 		8A8D84A225C44CDC006040A3 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D84A125C44CDC006040A3 /* Son.m */; };
 		8A8D84A825C44D98006040A3 /* NSStringFromClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D84A725C44D98006040A3 /* NSStringFromClassViewController.m */; };
 		8A8D856E25C58B96006040A3 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D856D25C58B96006040A3 /* UIViewController+Tracking.m */; };
+		8A9194DB26B2EDE8004C56C4 /* testUIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9194DA26B2EDE8004C56C4 /* testUIStackViewController.m */; };
 		8A938CC5268F003200F810AC /* testScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A938CC4268F003200F810AC /* testScrollView.m */; };
 		8A938E672694535100F810AC /* testSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A938E662694535100F810AC /* testSetViewController.m */; };
 		8A9393192699734C00F810AC /* testContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9393182699734B00F810AC /* testContactsViewController.m */; };
@@ -45,6 +71,10 @@
 		8AA2883E25BA6F68003C561D /* blockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2883D25BA6F68003C561D /* blockTestViewController.m */; };
 		8AA2884925BD6704003C561D /* testForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2884825BD6704003C561D /* testForwarding.m */; };
 		8AA2885125BD725A003C561D /* testOCForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2885025BD725A003C561D /* testOCForwarding.m */; };
+		8AA57EAD2A95B744001D15C5 /* TestCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA57EAC2A95B744001D15C5 /* TestCrashViewController.m */; };
+		8AA57EB02A95B8CD001D15C5 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA57EAF2A95B8CD001D15C5 /* MyObject.m */; };
+		8AA57EB32A96F473001D15C5 /* _YHZombie_.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA57EB22A96F473001D15C5 /* _YHZombie_.m */; };
+		8AA57EB62A9704FE001D15C5 /* NSObject+YHZombiesNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA57EB52A9704FE001D15C5 /* NSObject+YHZombiesNSObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8AA60809234F92870034C0CD /* TestArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA60808234F92870034C0CD /* TestArray.swift */; };
 		8AAC672625A804CB004CBBCD /* CoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC672525A804CB004CBBCD /* CoverViewController.swift */; };
 		8AAC673725A865A3004CBBCD /* AFImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC673625A865A3004CBBCD /* AFImageViewController.m */; };
@@ -58,16 +88,25 @@
 		8ABA5549263078D20005112A /* testInitializeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA5548263078D20005112A /* testInitializeViewController.m */; };
 		8ABA554F263112210005112A /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA554E263112210005112A /* Student.m */; };
 		8ABA5561263465790005112A /* ClickLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA5560263465790005112A /* ClickLinkViewController.m */; };
+		8ACB86EB2A4C8DFB00A666DF /* TestLayerPositionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB86EA2A4C8DFB00A666DF /* TestLayerPositionVC.m */; };
+		8ACF85D327BB9F5300B2F47C /* IgetUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF85D227BB9F5300B2F47C /* IgetUtils.m */; };
+		8ACF85DB27BFA58A00B2F47C /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF85DA27BFA58A00B2F47C /* test.html */; };
+		8ACF85DE27BFA61F00B2F47C /* TestHtml5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF85DD27BFA61F00B2F47C /* TestHtml5ViewController.m */; };
+		8ACF85E027BFE89000B2F47C /* agreement.html in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF85DF27BFE89000B2F47C /* agreement.html */; };
 		8AD01CC621D8777000950350 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD01CC521D8777000950350 /* Sorting.swift */; };
 		8AD01CC821D9E6B100950350 /* binSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD01CC721D9E6B100950350 /* binSearch.swift */; };
+		8AD65725277375C5000762AE /* TestGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD65724277375C5000762AE /* TestGestureViewController.m */; };
 		8AE07B2023045A8F00F8C510 /* SwiftProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE07B1F23045A8F00F8C510 /* SwiftProtocol.swift */; };
 		8AE07B222305BC7600F8C510 /* staticLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE07B212305BC7600F8C510 /* staticLanguage.swift */; };
 		8AEB889725B5773200FA5010 /* testThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB889625B5773200FA5010 /* testThreadViewController.m */; };
 		8AEBD72E2618BC3D00791D31 /* testProducerConsumerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBD72D2618BC3D00791D31 /* testProducerConsumerViewController.m */; };
+		8AEEC7AA27C8887B0070B8EC /* TestTimeProfilerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEEC7A927C8887B0070B8EC /* TestTimeProfilerViewController.m */; };
 		8AF1A79822F07BF400E9E0C3 /* grammarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A79722F07BF400E9E0C3 /* grammarTest.swift */; };
 		8AF1A7BF22F5DA1300E9E0C3 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A7BE22F5DA1300E9E0C3 /* Father.m */; };
 		8AF1A7C422F6B76700E9E0C3 /* myLeakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A7C322F6B76700E9E0C3 /* myLeakView.swift */; };
 		8AF1A7C622F6B89C00E9E0C3 /* myLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A7C522F6B89C00E9E0C3 /* myLeakViewController.swift */; };
+		8AFC1E8B2721182F0079E832 /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC1E8A2721182F0079E832 /* TestCollectionViewController.m */; };
+		8AFC1E8E2721B07D0079E832 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC1E8D2721B07D0079E832 /* TestCollectionViewCell.m */; };
 		B4D68D0921AE85E000A5DDCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D68D0821AE85E000A5DDCB /* AppDelegate.swift */; };
 		B4D68D0B21AE85E000A5DDCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D68D0A21AE85E000A5DDCB /* ViewController.swift */; };
 		B4D68D0E21AE85E000A5DDCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D68D0C21AE85E000A5DDCB /* Main.storyboard */; };
@@ -76,7 +115,6 @@
 		B4D68D1621AE85E100A5DDCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D68D1421AE85E100A5DDCB /* LaunchScreen.storyboard */; };
 		B4D68D2121AE85E200A5DDCB /* igetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D68D2021AE85E200A5DDCB /* igetTests.swift */; };
 		B4D68D2C21AE85E200A5DDCB /* igetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D68D2B21AE85E200A5DDCB /* igetUITests.swift */; };
-		DA50081BE2CD4C121D86A0A4 /* libPods-iget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 219DADA56496A5CA53DDDE04 /* libPods-iget.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,21 +135,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		219DADA56496A5CA53DDDE04 /* libPods-iget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF36681629F4F58B87ED1E4 /* Pods_iget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5406F5896162D8E6BB09D2C9 /* Pods-iget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iget.release.xcconfig"; path = "Target Support Files/Pods-iget/Pods-iget.release.xcconfig"; sourceTree = "<group>"; };
+		8A110F9B2AA321E200FE297B /* YHMallcScrbble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHMallcScrbble.h; sourceTree = "<group>"; };
+		8A110F9C2AA321E200FE297B /* YHMallcScrbble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHMallcScrbble.m; sourceTree = "<group>"; };
+		8A110FA22AA3237300FE297B /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = "fishhook-main/fishhook.c"; sourceTree = "<group>"; };
+		8A110FA32AA3237300FE297B /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = "fishhook-main/fishhook.h"; sourceTree = "<group>"; };
+		8A1273E92827B2EA00C872E8 /* TestOffScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOffScreenViewController.h; sourceTree = "<group>"; };
+		8A1273EA2827B2EA00C872E8 /* TestOffScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOffScreenViewController.m; sourceTree = "<group>"; };
+		8A1273EE2827D6DC00C872E8 /* line.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = line.jpeg; sourceTree = "<group>"; };
 		8A15F9D3230920510084CE47 /* MethodSwizzling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodSwizzling.swift; sourceTree = "<group>"; };
 		8A15F9FA232D05AA0084CE47 /* RaceCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCondition.swift; sourceTree = "<group>"; };
 		8A15F9FC232D310B0084CE47 /* SafeArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArray.swift; sourceTree = "<group>"; };
 		8A1CA382232FE54300B81195 /* OperationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationTest.swift; sourceTree = "<group>"; };
 		8A1CA384233D180600B81195 /* sharedInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharedInstance.swift; sourceTree = "<group>"; };
+		8A21F56527B8D0E7005100AF /* TestCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCategoryViewController.h; sourceTree = "<group>"; };
+		8A21F56627B8D0E7005100AF /* TestCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCategoryViewController.m; sourceTree = "<group>"; };
+		8A21F56827B8D8CE005100AF /* TestCategoryClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCategoryClass.h; sourceTree = "<group>"; };
+		8A21F56927B8D8CE005100AF /* TestCategoryClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCategoryClass.m; sourceTree = "<group>"; };
+		8A21F56E27B8DF4E005100AF /* TestCategoryClass+Category1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCategoryClass+Category1.h"; sourceTree = "<group>"; };
+		8A21F56F27B8DF4E005100AF /* TestCategoryClass+Category1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestCategoryClass+Category1.m"; sourceTree = "<group>"; };
+		8A21F57127B8DF6F005100AF /* TestCategoryClass+Category2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCategoryClass+Category2.h"; sourceTree = "<group>"; };
+		8A21F57227B8DF6F005100AF /* TestCategoryClass+Category2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestCategoryClass+Category2.m"; sourceTree = "<group>"; };
+		8A21F57A27BA5BD2005100AF /* TestMonitorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMonitorViewController.h; sourceTree = "<group>"; };
+		8A21F57B27BA5BD2005100AF /* TestMonitorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMonitorViewController.m; sourceTree = "<group>"; };
+		8A3190922753C20C002A8B15 /* TestLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLayoutViewController.h; sourceTree = "<group>"; };
+		8A3190932753C20C002A8B15 /* TestLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLayoutViewController.m; sourceTree = "<group>"; };
 		8A35E34A21DD0E8000A7C2D7 /* search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = search.swift; sourceTree = "<group>"; };
 		8A35E34C21E08C9200A7C2D7 /* dynamicPlanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamicPlanning.swift; sourceTree = "<group>"; };
+		8A3A95C328216D210005129F /* TestPresentCanceledViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPresentCanceledViewController.h; sourceTree = "<group>"; };
+		8A3A95C428216D210005129F /* TestPresentCanceledViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPresentCanceledViewController.m; sourceTree = "<group>"; };
 		8A4327D425F499070052990C /* UIImage+CircleImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CircleImage.h"; sourceTree = "<group>"; };
 		8A4327D525F499070052990C /* UIImage+CircleImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CircleImage.m"; sourceTree = "<group>"; };
+		8A4690CD2A62859200B17DD7 /* TestPushViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPushViewController.h; sourceTree = "<group>"; };
+		8A4690CE2A62859200B17DD7 /* TestPushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPushViewController.m; sourceTree = "<group>"; };
 		8A489D0D2340B6F700B988A1 /* kvo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kvo.swift; sourceTree = "<group>"; };
 		8A489D0F2340EFD700B988A1 /* POP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POP.swift; sourceTree = "<group>"; };
 		8A489D112341B78600B988A1 /* TEST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEST.swift; sourceTree = "<group>"; };
 		8A507DD021CFF16A005CBF42 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		8A5866AE26E3B55B003B099B /* TestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		8A5866AF26E3B55B003B099B /* TestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		8A5866B726E4C67D003B099B /* TestCustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCustomTableViewCell.h; sourceTree = "<group>"; };
+		8A5866B826E4C67D003B099B /* TestCustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCustomTableViewCell.m; sourceTree = "<group>"; };
 		8A5E1918235A1936000B6C66 /* TestDictionarySet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDictionarySet.swift; sourceTree = "<group>"; };
 		8A5E191A235A1C15000B6C66 /* TestString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestString.swift; sourceTree = "<group>"; };
 		8A5E191C235A1CAD000B6C66 /* TestStackQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStackQueue.swift; sourceTree = "<group>"; };
@@ -126,8 +191,28 @@
 		8A5E19302365F63F000B6C66 /* TestRaceCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRaceCondition.swift; sourceTree = "<group>"; };
 		8A5E19322367501B000B6C66 /* TestPriorityInversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPriorityInversion.swift; sourceTree = "<group>"; };
 		8A5E193423675B82000B6C66 /* TestEscapeClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEscapeClosure.swift; sourceTree = "<group>"; };
+		8A648D3926C8E60D0000C008 /* testBoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testBoolViewController.h; sourceTree = "<group>"; };
+		8A648D3A26C8E60D0000C008 /* testBoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testBoolViewController.m; sourceTree = "<group>"; };
+		8A749D78280D7C2B0033426C /* TestCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewLayout.h; sourceTree = "<group>"; };
+		8A749D79280D7C2B0033426C /* TestCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewLayout.m; sourceTree = "<group>"; };
+		8A783F272924852C005EC01E /* TestEdgeInsetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEdgeInsetsViewController.h; sourceTree = "<group>"; };
+		8A783F282924852C005EC01E /* TestEdgeInsetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEdgeInsetsViewController.m; sourceTree = "<group>"; };
+		8A8032A927882B9F00C13F7C /* testKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testKVOViewController.h; sourceTree = "<group>"; };
+		8A8032AA27882B9F00C13F7C /* testKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testKVOViewController.m; sourceTree = "<group>"; };
+		8A8032AC27882CFF00C13F7C /* KVOPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOPerson.h; sourceTree = "<group>"; };
+		8A8032AD27882CFF00C13F7C /* KVOPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOPerson.m; sourceTree = "<group>"; };
+		8A8032AF27883E3A00C13F7C /* QLStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLStudent.h; sourceTree = "<group>"; };
+		8A8032B027883E3A00C13F7C /* QLStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLStudent.m; sourceTree = "<group>"; };
+		8A8032B227883EA800C13F7C /* QLPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLPerson.h; sourceTree = "<group>"; };
+		8A8032B327883EA800C13F7C /* QLPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLPerson.m; sourceTree = "<group>"; };
+		8A8032B52788463800C13F7C /* TestPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPerson.h; sourceTree = "<group>"; };
+		8A8032B62788463800C13F7C /* TestPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPerson.m; sourceTree = "<group>"; };
+		8A8032BE278B1AD500C13F7C /* TestMultiThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMultiThreadViewController.h; sourceTree = "<group>"; };
+		8A8032BF278B1AD500C13F7C /* TestMultiThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMultiThreadViewController.m; sourceTree = "<group>"; };
 		8A8A2021266B8440002CE332 /* testTableviewScrollTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testTableviewScrollTableViewController.h; sourceTree = "<group>"; };
 		8A8A2022266B8440002CE332 /* testTableviewScrollTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTableviewScrollTableViewController.m; sourceTree = "<group>"; };
+		8A8B0B8528A7728100A17B70 /* TestHttpCacheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHttpCacheViewController.h; sourceTree = "<group>"; };
+		8A8B0B8628A7728100A17B70 /* TestHttpCacheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHttpCacheViewController.m; sourceTree = "<group>"; };
 		8A8D849A25C44CB8006040A3 /* Fathers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fathers.h; sourceTree = "<group>"; };
 		8A8D849B25C44CB8006040A3 /* Fathers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fathers.m; sourceTree = "<group>"; };
 		8A8D84A025C44CDC006040A3 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
@@ -136,6 +221,8 @@
 		8A8D84A725C44D98006040A3 /* NSStringFromClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringFromClassViewController.m; sourceTree = "<group>"; };
 		8A8D856C25C58B96006040A3 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
 		8A8D856D25C58B96006040A3 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		8A9194D926B2EDE8004C56C4 /* testUIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testUIStackViewController.h; sourceTree = "<group>"; };
+		8A9194DA26B2EDE8004C56C4 /* testUIStackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUIStackViewController.m; sourceTree = "<group>"; };
 		8A938CC3268F003200F810AC /* testScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testScrollView.h; sourceTree = "<group>"; };
 		8A938CC4268F003200F810AC /* testScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testScrollView.m; sourceTree = "<group>"; };
 		8A938E652694535100F810AC /* testSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testSetViewController.h; sourceTree = "<group>"; };
@@ -148,6 +235,14 @@
 		8AA2883D25BA6F68003C561D /* blockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blockTestViewController.m; sourceTree = "<group>"; };
 		8AA2884825BD6704003C561D /* testForwarding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testForwarding.m; sourceTree = "<group>"; };
 		8AA2885025BD725A003C561D /* testOCForwarding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testOCForwarding.m; sourceTree = "<group>"; };
+		8AA57EAB2A95B744001D15C5 /* TestCrashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCrashViewController.h; sourceTree = "<group>"; };
+		8AA57EAC2A95B744001D15C5 /* TestCrashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCrashViewController.m; sourceTree = "<group>"; };
+		8AA57EAE2A95B8CD001D15C5 /* MyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
+		8AA57EAF2A95B8CD001D15C5 /* MyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
+		8AA57EB12A96F473001D15C5 /* _YHZombie_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _YHZombie_.h; sourceTree = "<group>"; };
+		8AA57EB22A96F473001D15C5 /* _YHZombie_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _YHZombie_.m; sourceTree = "<group>"; };
+		8AA57EB42A9704FD001D15C5 /* NSObject+YHZombiesNSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YHZombiesNSObject.h"; sourceTree = "<group>"; };
+		8AA57EB52A9704FE001D15C5 /* NSObject+YHZombiesNSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YHZombiesNSObject.m"; sourceTree = "<group>"; };
 		8AA60808234F92870034C0CD /* TestArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArray.swift; sourceTree = "<group>"; };
 		8AAC672525A804CB004CBBCD /* CoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverViewController.swift; sourceTree = "<group>"; };
 		8AAC673525A865A3004CBBCD /* AFImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFImageViewController.h; sourceTree = "<group>"; };
@@ -171,20 +266,36 @@
 		8ABA554E263112210005112A /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		8ABA555F263465790005112A /* ClickLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickLinkViewController.h; sourceTree = "<group>"; };
 		8ABA5560263465790005112A /* ClickLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickLinkViewController.m; sourceTree = "<group>"; };
+		8ACB86E92A4C8DFB00A666DF /* TestLayerPositionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLayerPositionVC.h; sourceTree = "<group>"; };
+		8ACB86EA2A4C8DFB00A666DF /* TestLayerPositionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLayerPositionVC.m; sourceTree = "<group>"; };
+		8ACF85D127BB9F5300B2F47C /* IgetUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IgetUtils.h; sourceTree = "<group>"; };
+		8ACF85D227BB9F5300B2F47C /* IgetUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IgetUtils.m; sourceTree = "<group>"; };
+		8ACF85DA27BFA58A00B2F47C /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		8ACF85DC27BFA61F00B2F47C /* TestHtml5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHtml5ViewController.h; sourceTree = "<group>"; };
+		8ACF85DD27BFA61F00B2F47C /* TestHtml5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHtml5ViewController.m; sourceTree = "<group>"; };
+		8ACF85DF27BFE89000B2F47C /* agreement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = agreement.html; sourceTree = "<group>"; };
 		8AD01CC521D8777000950350 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		8AD01CC721D9E6B100950350 /* binSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binSearch.swift; sourceTree = "<group>"; };
+		8AD65723277375C5000762AE /* TestGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGestureViewController.h; sourceTree = "<group>"; };
+		8AD65724277375C5000762AE /* TestGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGestureViewController.m; sourceTree = "<group>"; };
 		8AE07B1F23045A8F00F8C510 /* SwiftProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProtocol.swift; sourceTree = "<group>"; };
 		8AE07B212305BC7600F8C510 /* staticLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staticLanguage.swift; sourceTree = "<group>"; };
 		8AEB889525B5773200FA5010 /* testThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testThreadViewController.h; sourceTree = "<group>"; };
 		8AEB889625B5773200FA5010 /* testThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testThreadViewController.m; sourceTree = "<group>"; };
 		8AEBD72C2618BC3D00791D31 /* testProducerConsumerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testProducerConsumerViewController.h; sourceTree = "<group>"; };
 		8AEBD72D2618BC3D00791D31 /* testProducerConsumerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testProducerConsumerViewController.m; sourceTree = "<group>"; };
+		8AEEC7A827C8887B0070B8EC /* TestTimeProfilerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTimeProfilerViewController.h; sourceTree = "<group>"; };
+		8AEEC7A927C8887B0070B8EC /* TestTimeProfilerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTimeProfilerViewController.m; sourceTree = "<group>"; };
 		8AF1A79722F07BF400E9E0C3 /* grammarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grammarTest.swift; sourceTree = "<group>"; };
 		8AF1A7BC22F5DA1300E9E0C3 /* iget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iget-Bridging-Header.h"; sourceTree = "<group>"; };
 		8AF1A7BD22F5DA1300E9E0C3 /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
 		8AF1A7BE22F5DA1300E9E0C3 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		8AF1A7C322F6B76700E9E0C3 /* myLeakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = myLeakView.swift; path = ../grammar/myLeakView.swift; sourceTree = "<group>"; };
 		8AF1A7C522F6B89C00E9E0C3 /* myLeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = myLeakViewController.swift; path = ../grammar/myLeakViewController.swift; sourceTree = "<group>"; };
+		8AFC1E892721182F0079E832 /* TestCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewController.h; sourceTree = "<group>"; };
+		8AFC1E8A2721182F0079E832 /* TestCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewController.m; sourceTree = "<group>"; };
+		8AFC1E8C2721B07D0079E832 /* TestCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewCell.h; sourceTree = "<group>"; };
+		8AFC1E8D2721B07D0079E832 /* TestCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewCell.m; sourceTree = "<group>"; };
 		ACD06047DB05C52E28685E5B /* Pods-iget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iget.debug.xcconfig"; path = "Target Support Files/Pods-iget/Pods-iget.debug.xcconfig"; sourceTree = "<group>"; };
 		B4D68D0521AE85E000A5DDCB /* iget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D68D0821AE85E000A5DDCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -207,7 +318,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA50081BE2CD4C121D86A0A4 /* libPods-iget.a in Frameworks */,
+				09EDB78820433DE6276AC373 /* Pods_iget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +342,7 @@
 		73FAC51E2C6507701E07CBFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				219DADA56496A5CA53DDDE04 /* libPods-iget.a */,
+				3AF36681629F4F58B87ED1E4 /* Pods_iget.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -271,6 +382,10 @@
 		8AA2883B25BA6F18003C561D /* successTest */ = {
 			isa = PBXGroup;
 			children = (
+				8A110FA22AA3237300FE297B /* fishhook.c */,
+				8A110FA32AA3237300FE297B /* fishhook.h */,
+				8ACF85DF27BFE89000B2F47C /* agreement.html */,
+				8ACF85DA27BFA58A00B2F47C /* test.html */,
 				8AAC672525A804CB004CBBCD /* CoverViewController.swift */,
 				8AEB889525B5773200FA5010 /* testThreadViewController.h */,
 				8AEB889625B5773200FA5010 /* testThreadViewController.m */,
@@ -320,6 +435,74 @@
 				8A938E662694535100F810AC /* testSetViewController.m */,
 				8A9393172699734B00F810AC /* testContactsViewController.h */,
 				8A9393182699734B00F810AC /* testContactsViewController.m */,
+				8A9194D926B2EDE8004C56C4 /* testUIStackViewController.h */,
+				8A9194DA26B2EDE8004C56C4 /* testUIStackViewController.m */,
+				8A648D3926C8E60D0000C008 /* testBoolViewController.h */,
+				8A648D3A26C8E60D0000C008 /* testBoolViewController.m */,
+				8A5866AE26E3B55B003B099B /* TestTableViewController.h */,
+				8A5866AF26E3B55B003B099B /* TestTableViewController.m */,
+				8A5866B726E4C67D003B099B /* TestCustomTableViewCell.h */,
+				8A5866B826E4C67D003B099B /* TestCustomTableViewCell.m */,
+				8AFC1E892721182F0079E832 /* TestCollectionViewController.h */,
+				8AFC1E8A2721182F0079E832 /* TestCollectionViewController.m */,
+				8AFC1E8C2721B07D0079E832 /* TestCollectionViewCell.h */,
+				8AFC1E8D2721B07D0079E832 /* TestCollectionViewCell.m */,
+				8A3190922753C20C002A8B15 /* TestLayoutViewController.h */,
+				8A3190932753C20C002A8B15 /* TestLayoutViewController.m */,
+				8AD65723277375C5000762AE /* TestGestureViewController.h */,
+				8AD65724277375C5000762AE /* TestGestureViewController.m */,
+				8A8032A927882B9F00C13F7C /* testKVOViewController.h */,
+				8A8032AA27882B9F00C13F7C /* testKVOViewController.m */,
+				8A8032AC27882CFF00C13F7C /* KVOPerson.h */,
+				8A8032AD27882CFF00C13F7C /* KVOPerson.m */,
+				8A8032AF27883E3A00C13F7C /* QLStudent.h */,
+				8A8032B027883E3A00C13F7C /* QLStudent.m */,
+				8A8032B227883EA800C13F7C /* QLPerson.h */,
+				8A8032B327883EA800C13F7C /* QLPerson.m */,
+				8A8032B52788463800C13F7C /* TestPerson.h */,
+				8A8032B62788463800C13F7C /* TestPerson.m */,
+				8A8032BE278B1AD500C13F7C /* TestMultiThreadViewController.h */,
+				8A8032BF278B1AD500C13F7C /* TestMultiThreadViewController.m */,
+				8A21F56527B8D0E7005100AF /* TestCategoryViewController.h */,
+				8A21F56627B8D0E7005100AF /* TestCategoryViewController.m */,
+				8A21F56827B8D8CE005100AF /* TestCategoryClass.h */,
+				8A21F56927B8D8CE005100AF /* TestCategoryClass.m */,
+				8A21F56E27B8DF4E005100AF /* TestCategoryClass+Category1.h */,
+				8A21F56F27B8DF4E005100AF /* TestCategoryClass+Category1.m */,
+				8A21F57127B8DF6F005100AF /* TestCategoryClass+Category2.h */,
+				8A21F57227B8DF6F005100AF /* TestCategoryClass+Category2.m */,
+				8A21F57A27BA5BD2005100AF /* TestMonitorViewController.h */,
+				8A21F57B27BA5BD2005100AF /* TestMonitorViewController.m */,
+				8ACF85D127BB9F5300B2F47C /* IgetUtils.h */,
+				8ACF85D227BB9F5300B2F47C /* IgetUtils.m */,
+				8ACF85DC27BFA61F00B2F47C /* TestHtml5ViewController.h */,
+				8ACF85DD27BFA61F00B2F47C /* TestHtml5ViewController.m */,
+				8AEEC7A827C8887B0070B8EC /* TestTimeProfilerViewController.h */,
+				8AEEC7A927C8887B0070B8EC /* TestTimeProfilerViewController.m */,
+				8A749D78280D7C2B0033426C /* TestCollectionViewLayout.h */,
+				8A749D79280D7C2B0033426C /* TestCollectionViewLayout.m */,
+				8A3A95C328216D210005129F /* TestPresentCanceledViewController.h */,
+				8A3A95C428216D210005129F /* TestPresentCanceledViewController.m */,
+				8A1273E92827B2EA00C872E8 /* TestOffScreenViewController.h */,
+				8A1273EA2827B2EA00C872E8 /* TestOffScreenViewController.m */,
+				8A8B0B8528A7728100A17B70 /* TestHttpCacheViewController.h */,
+				8A8B0B8628A7728100A17B70 /* TestHttpCacheViewController.m */,
+				8A783F272924852C005EC01E /* TestEdgeInsetsViewController.h */,
+				8A783F282924852C005EC01E /* TestEdgeInsetsViewController.m */,
+				8ACB86E92A4C8DFB00A666DF /* TestLayerPositionVC.h */,
+				8ACB86EA2A4C8DFB00A666DF /* TestLayerPositionVC.m */,
+				8A4690CD2A62859200B17DD7 /* TestPushViewController.h */,
+				8A4690CE2A62859200B17DD7 /* TestPushViewController.m */,
+				8AA57EAB2A95B744001D15C5 /* TestCrashViewController.h */,
+				8AA57EAC2A95B744001D15C5 /* TestCrashViewController.m */,
+				8AA57EAE2A95B8CD001D15C5 /* MyObject.h */,
+				8AA57EAF2A95B8CD001D15C5 /* MyObject.m */,
+				8AA57EB12A96F473001D15C5 /* _YHZombie_.h */,
+				8AA57EB22A96F473001D15C5 /* _YHZombie_.m */,
+				8AA57EB42A9704FD001D15C5 /* NSObject+YHZombiesNSObject.h */,
+				8AA57EB52A9704FE001D15C5 /* NSObject+YHZombiesNSObject.m */,
+				8A110F9B2AA321E200FE297B /* YHMallcScrbble.h */,
+				8A110F9C2AA321E200FE297B /* YHMallcScrbble.m */,
 			);
 			path = successTest;
 			sourceTree = "<group>";
@@ -327,6 +510,7 @@
 		8AD01CC321D876BF00950350 /* supporting */ = {
 			isa = PBXGroup;
 			children = (
+				8A1273EE2827D6DC00C872E8 /* line.jpeg */,
 				B4D68D1221AE85E100A5DDCB /* Assets.xcassets */,
 				B4D68D1721AE85E100A5DDCB /* Info.plist */,
 				B4D68D0F21AE85E000A5DDCB /* iget.xcdatamodeld */,
@@ -452,6 +636,7 @@
 				B4D68D0121AE85E000A5DDCB /* Sources */,
 				B4D68D0221AE85E000A5DDCB /* Frameworks */,
 				B4D68D0321AE85E000A5DDCB /* Resources */,
+				CBDA8AF9715546456B63A58C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -550,6 +735,9 @@
 				B4D68D1621AE85E100A5DDCB /* LaunchScreen.storyboard in Resources */,
 				B4D68D1321AE85E100A5DDCB /* Assets.xcassets in Resources */,
 				8AB340DD25A9B2ED00953180 /* WechatIMG7996.jpeg in Resources */,
+				8ACF85E027BFE89000B2F47C /* agreement.html in Resources */,
+				8A1273EF2827D6DC00C872E8 /* line.jpeg in Resources */,
+				8ACF85DB27BFA58A00B2F47C /* test.html in Resources */,
 				B4D68D0E21AE85E000A5DDCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +781,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CBDA8AF9715546456B63A58C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iget/Pods-iget-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iget/Pods-iget-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iget/Pods-iget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -600,31 +805,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8032B127883E3A00C13F7C /* QLStudent.m in Sources */,
+				8AA57EB32A96F473001D15C5 /* _YHZombie_.m in Sources */,
+				8A648D3B26C8E60D0000C008 /* testBoolViewController.m in Sources */,
+				8A8032AB27882B9F00C13F7C /* testKVOViewController.m in Sources */,
+				8A21F56A27B8D8CE005100AF /* TestCategoryClass.m in Sources */,
+				8A21F57327B8DF6F005100AF /* TestCategoryClass+Category2.m in Sources */,
+				8A21F57027B8DF4F005100AF /* TestCategoryClass+Category1.m in Sources */,
 				8A8A2023266B8440002CE332 /* testTableviewScrollTableViewController.m in Sources */,
 				8A5E19312365F63F000B6C66 /* TestRaceCondition.swift in Sources */,
+				8A5866B026E3B55B003B099B /* TestTableViewController.m in Sources */,
 				8AA60809234F92870034C0CD /* TestArray.swift in Sources */,
 				8ABA5543263078870005112A /* Person.m in Sources */,
+				8AA57EAD2A95B744001D15C5 /* TestCrashViewController.m in Sources */,
 				8A5E1923235B61C2000B6C66 /* TestFrame.swift in Sources */,
 				8AE07B2023045A8F00F8C510 /* SwiftProtocol.swift in Sources */,
 				8AEB889725B5773200FA5010 /* testThreadViewController.m in Sources */,
+				8AEEC7AA27C8887B0070B8EC /* TestTimeProfilerViewController.m in Sources */,
 				8A15F9D4230920510084CE47 /* MethodSwizzling.swift in Sources */,
 				8A1CA385233D180600B81195 /* sharedInstance.swift in Sources */,
+				8AA57EB02A95B8CD001D15C5 /* MyObject.m in Sources */,
+				8A9194DB26B2EDE8004C56C4 /* testUIStackViewController.m in Sources */,
+				8A3190942753C20C002A8B15 /* TestLayoutViewController.m in Sources */,
+				8A110FA42AA3237300FE297B /* fishhook.c in Sources */,
 				8A507DD121CFF16A005CBF42 /* BinaryTree.swift in Sources */,
 				8AB6B59F25D135B80022C12D /* testInstanceViewController.m in Sources */,
+				8A5866B926E4C67D003B099B /* TestCustomTableViewCell.m in Sources */,
+				8A749D7A280D7C2B0033426C /* TestCollectionViewLayout.m in Sources */,
+				8A783F292924852C005EC01E /* TestEdgeInsetsViewController.m in Sources */,
+				8A3A95C528216D210005129F /* TestPresentCanceledViewController.m in Sources */,
 				8A5E19272364A539000B6C66 /* TestEncode.swift in Sources */,
 				8A5E191B235A1C15000B6C66 /* TestString.swift in Sources */,
+				8A8032AE27882CFF00C13F7C /* KVOPerson.m in Sources */,
 				8AB6B58825CFE3460022C12D /* safeDicViewController.m in Sources */,
 				8A15F9FB232D05AA0084CE47 /* RaceCondition.swift in Sources */,
 				8AA2884925BD6704003C561D /* testForwarding.m in Sources */,
 				8AA2883E25BA6F68003C561D /* blockTestViewController.m in Sources */,
 				8AB6B5AA25D13F3A0022C12D /* testToken.m in Sources */,
+				8AFC1E8E2721B07D0079E832 /* TestCollectionViewCell.m in Sources */,
 				8A489D0E2340B6F700B988A1 /* kvo.swift in Sources */,
 				8ABA5549263078D20005112A /* testInitializeViewController.m in Sources */,
 				B4D68D0B21AE85E000A5DDCB /* ViewController.swift in Sources */,
 				8AAC672625A804CB004CBBCD /* CoverViewController.swift in Sources */,
+				8A8B0B8728A7728100A17B70 /* TestHttpCacheViewController.m in Sources */,
 				8AF1A7C622F6B89C00E9E0C3 /* myLeakViewController.swift in Sources */,
 				B4D68D0921AE85E000A5DDCB /* AppDelegate.swift in Sources */,
+				8AA57EB62A9704FE001D15C5 /* NSObject+YHZombiesNSObject.m in Sources */,
 				8A35E34D21E08C9200A7C2D7 /* dynamicPlanning.swift in Sources */,
+				8A21F56727B8D0E7005100AF /* TestCategoryViewController.m in Sources */,
 				8A5E191F235B5EA9000B6C66 /* TestList.swift in Sources */,
 				8ABA554F263112210005112A /* Student.m in Sources */,
 				8AE07B222305BC7600F8C510 /* staticLanguage.swift in Sources */,
@@ -632,7 +860,10 @@
 				8AF1A7C422F6B76700E9E0C3 /* myLeakView.swift in Sources */,
 				8A489D132341F91700B988A1 /* TEST.swift in Sources */,
 				8A5E19292364B05B000B6C66 /* TestMultiThread.swift in Sources */,
+				8A4690CF2A62859300B17DD7 /* TestPushViewController.m in Sources */,
+				8ACF85DE27BFA61F00B2F47C /* TestHtml5ViewController.m in Sources */,
 				8A5E1919235A1936000B6C66 /* TestDictionarySet.swift in Sources */,
+				8A8032B72788463800C13F7C /* TestPerson.m in Sources */,
 				8A5E193523675B82000B6C66 /* TestEscapeClosure.swift in Sources */,
 				B4D68D1121AE85E000A5DDCB /* iget.xcdatamodeld in Sources */,
 				8AB26B2425CB8D060072FDFD /* constStaticTest.m in Sources */,
@@ -640,11 +871,15 @@
 				8ABA5561263465790005112A /* ClickLinkViewController.m in Sources */,
 				8AF1A79822F07BF400E9E0C3 /* grammarTest.swift in Sources */,
 				8A5E192F2365F5F3000B6C66 /* TestSorting.swift in Sources */,
+				8A110F9D2AA321E200FE297B /* YHMallcScrbble.m in Sources */,
+				8AFC1E8B2721182F0079E832 /* TestCollectionViewController.m in Sources */,
 				8A8D84A225C44CDC006040A3 /* Son.m in Sources */,
 				8A4327D625F499070052990C /* UIImage+CircleImage.m in Sources */,
 				8AEBD72E2618BC3D00791D31 /* testProducerConsumerViewController.m in Sources */,
 				8A5E192B2365F485000B6C66 /* TestOperation.swift in Sources */,
+				8A8032B427883EA800C13F7C /* QLPerson.m in Sources */,
 				8A35E34B21DD0E8000A7C2D7 /* search.swift in Sources */,
+				8A8032C0278B1AD500C13F7C /* TestMultiThreadViewController.m in Sources */,
 				8AA2885125BD725A003C561D /* testOCForwarding.m in Sources */,
 				8A938E672694535100F810AC /* testSetViewController.m in Sources */,
 				8A8D849C25C44CB8006040A3 /* Fathers.m in Sources */,
@@ -653,16 +888,21 @@
 				8A5E19252364A3F2000B6C66 /* TestLeak.swift in Sources */,
 				8A5E192D2365F56D000B6C66 /* TestBinaryTree.swift in Sources */,
 				8A15F9FD232D310B0084CE47 /* SafeArray.swift in Sources */,
+				8A1273EB2827B2EA00C872E8 /* TestOffScreenViewController.m in Sources */,
 				8A8D856E25C58B96006040A3 /* UIViewController+Tracking.m in Sources */,
 				8A1CA383232FE54300B81195 /* OperationTest.swift in Sources */,
 				8AD01CC821D9E6B100950350 /* binSearch.swift in Sources */,
 				8A5E19332367501C000B6C66 /* TestPriorityInversion.swift in Sources */,
 				8A8D84A825C44D98006040A3 /* NSStringFromClassViewController.m in Sources */,
+				8ACB86EB2A4C8DFB00A666DF /* TestLayerPositionVC.m in Sources */,
+				8ACF85D327BB9F5300B2F47C /* IgetUtils.m in Sources */,
 				8A5E191D235A1CAD000B6C66 /* TestStackQueue.swift in Sources */,
 				8A938CC5268F003200F810AC /* testScrollView.m in Sources */,
 				8A9BBB3525EA4B7B00882B42 /* testMapleTableViewController.m in Sources */,
 				8A489D102340EFD700B988A1 /* POP.swift in Sources */,
 				8AAC673725A865A3004CBBCD /* AFImageViewController.m in Sources */,
+				8AD65725277375C5000762AE /* TestGestureViewController.m in Sources */,
+				8A21F57C27BA5BD2005100AF /* TestMonitorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,7 +991,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -840,6 +1080,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = ZWU7FC7JMZ;
 				INFOPLIST_FILE = iget/supporting/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

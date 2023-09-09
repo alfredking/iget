@@ -57,6 +57,27 @@ class CoverViewController: UIViewController,UITableViewDataSource,UITableViewDel
         self.addCell(title: "scrollview滚动测试", classname: "testScrollView")
         self.addCell(title: "SET测试", classname: "testSetViewController")
         self.addCell(title: "通讯录测试", classname: "testContactsViewController")
+        self.addCell(title: "uistackview测试", classname: "testUIStackViewController")
+        self.addCell(title: "bool测试", classname: "testBoolViewController")
+        self.addCell(title: "tableview资源池测试", classname: "TestTableViewController")
+        self.addCell(title: "collectionview测试", classname: "TestCollectionViewController")
+        self.addCell(title: "layout测试", classname: "TestLayoutViewController")
+        self.addCell(title: "手势测试", classname: "TestGestureViewController")
+        self.addCell(title: "KVO测试", classname: "testKVOViewController")
+        self.addCell(title: "多线程区别", classname: "TestMultiThreadViewController")
+        self.addCell(title: "Category测试", classname: "TestCategoryViewController")
+        self.addCell(title: "监控测试", classname: "TestMonitorViewController")
+        self.addCell(title: "H5测试", classname: "TestHtml5ViewController")
+        self.addCell(title: "HOOK测试", classname: "TestTimeProfilerViewController")
+        self.addCell(title: "present测试", classname: "TestPresentCanceledViewController")
+        self.addCell(title: "离屏测试", classname: "TestOffScreenViewController")
+        self.addCell(title: "网络请求缓存测试", classname: "TestHttpCacheViewController")
+        self.addCell(title: "edgeInsets测试", classname: "TestEdgeInsetsViewController")
+        self.addCell(title: "layer position测试", classname: "TestLayerPositionVC")
+        self.addCell(title: "多次push测试", classname: "TestPushViewController")
+        self.addCell(title: "crash测试", classname: "TestCrashViewController")
+        
+        
         
         tableView = UITableView(frame: CGRect(x: 0,y: 30,width: self.view.bounds.size.width,height: self.view.bounds.size.height),style: UITableView.Style.plain)
         tableView.delegate=self;

@@ -29,13 +29,13 @@
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {
-//    NSLog(@"%s",__func__);
+    NSLog(@"%s",__func__);
     return [super hitTest:point withEvent:event];
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
-//    NSLog(@"%s",__func__);
+    NSLog(@"%s",__func__);
     return [super pointInside:point withEvent:event];
 }
 

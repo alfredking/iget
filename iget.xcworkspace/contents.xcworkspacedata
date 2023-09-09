@@ -32,9 +32,6 @@
       location = "group:ASDK&#x4f7f;&#x7528;&#x65b9;&#x6cd5;/ASDK_Demo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:workForMove/eHome.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:/Users/cmcc/Desktop/iget/Masonry+FDTemplateLayoutCell/Demo/Masonry+FDTemplateLayoutCell.xcodeproj">
    </FileRef>
    <FileRef
