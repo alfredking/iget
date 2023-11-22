@@ -96,6 +96,9 @@
 		8AD01CC621D8777000950350 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD01CC521D8777000950350 /* Sorting.swift */; };
 		8AD01CC821D9E6B100950350 /* binSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD01CC721D9E6B100950350 /* binSearch.swift */; };
 		8AD65725277375C5000762AE /* TestGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD65724277375C5000762AE /* TestGestureViewController.m */; };
+		8AD896852AB04D4100866476 /* DDZombieMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD896842AB04D4100866476 /* DDZombieMonitor.framework */; };
+		8AD896872AB1DEC300866476 /* DDZombieMonitor.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AD896842AB04D4100866476 /* DDZombieMonitor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8ADE8BF72B0DFE9F004AF81D /* TestSDCycleScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE8BF62B0DFE9F004AF81D /* TestSDCycleScrollViewVC.m */; };
 		8AE07B2023045A8F00F8C510 /* SwiftProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE07B1F23045A8F00F8C510 /* SwiftProtocol.swift */; };
 		8AE07B222305BC7600F8C510 /* staticLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE07B212305BC7600F8C510 /* staticLanguage.swift */; };
 		8AEB889725B5773200FA5010 /* testThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB889625B5773200FA5010 /* testThreadViewController.m */; };
@@ -133,6 +136,19 @@
 			remoteInfo = iget;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8AD896862AB1DEB100866476 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8AD896872AB1DEC300866476 /* DDZombieMonitor.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3AF36681629F4F58B87ED1E4 /* Pods_iget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -278,6 +294,9 @@
 		8AD01CC721D9E6B100950350 /* binSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binSearch.swift; sourceTree = "<group>"; };
 		8AD65723277375C5000762AE /* TestGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGestureViewController.h; sourceTree = "<group>"; };
 		8AD65724277375C5000762AE /* TestGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGestureViewController.m; sourceTree = "<group>"; };
+		8AD896842AB04D4100866476 /* DDZombieMonitor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DDZombieMonitor.framework; path = iget/supporting/DDZombieMonitor.framework; sourceTree = "<group>"; };
+		8ADE8BF52B0DFE9F004AF81D /* TestSDCycleScrollViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSDCycleScrollViewVC.h; sourceTree = "<group>"; };
+		8ADE8BF62B0DFE9F004AF81D /* TestSDCycleScrollViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSDCycleScrollViewVC.m; sourceTree = "<group>"; };
 		8AE07B1F23045A8F00F8C510 /* SwiftProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProtocol.swift; sourceTree = "<group>"; };
 		8AE07B212305BC7600F8C510 /* staticLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staticLanguage.swift; sourceTree = "<group>"; };
 		8AEB889525B5773200FA5010 /* testThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testThreadViewController.h; sourceTree = "<group>"; };
@@ -318,6 +337,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AD896852AB04D4100866476 /* DDZombieMonitor.framework in Frameworks */,
 				09EDB78820433DE6276AC373 /* Pods_iget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +362,7 @@
 		73FAC51E2C6507701E07CBFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AD896842AB04D4100866476 /* DDZombieMonitor.framework */,
 				3AF36681629F4F58B87ED1E4 /* Pods_iget.framework */,
 			);
 			name = Frameworks;
@@ -503,6 +524,8 @@
 				8AA57EB52A9704FE001D15C5 /* NSObject+YHZombiesNSObject.m */,
 				8A110F9B2AA321E200FE297B /* YHMallcScrbble.h */,
 				8A110F9C2AA321E200FE297B /* YHMallcScrbble.m */,
+				8ADE8BF52B0DFE9F004AF81D /* TestSDCycleScrollViewVC.h */,
+				8ADE8BF62B0DFE9F004AF81D /* TestSDCycleScrollViewVC.m */,
 			);
 			path = successTest;
 			sourceTree = "<group>";
@@ -637,6 +660,7 @@
 				B4D68D0221AE85E000A5DDCB /* Frameworks */,
 				B4D68D0321AE85E000A5DDCB /* Resources */,
 				CBDA8AF9715546456B63A58C /* [CP] Embed Pods Frameworks */,
+				8AD896862AB1DEB100866476 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -811,6 +835,7 @@
 				8A8032AB27882B9F00C13F7C /* testKVOViewController.m in Sources */,
 				8A21F56A27B8D8CE005100AF /* TestCategoryClass.m in Sources */,
 				8A21F57327B8DF6F005100AF /* TestCategoryClass+Category2.m in Sources */,
+				8ADE8BF72B0DFE9F004AF81D /* TestSDCycleScrollViewVC.m in Sources */,
 				8A21F57027B8DF4F005100AF /* TestCategoryClass+Category1.m in Sources */,
 				8A8A2023266B8440002CE332 /* testTableviewScrollTableViewController.m in Sources */,
 				8A5E19312365F63F000B6C66 /* TestRaceCondition.swift in Sources */,
@@ -1009,6 +1034,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = executable_path/Frameworks;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1064,6 +1090,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = executable_path/Frameworks;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1082,6 +1109,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = ZWU7FC7JMZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iget/supporting",
+				);
 				INFOPLIST_FILE = iget/supporting/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1104,6 +1135,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZWU7FC7JMZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iget/supporting",
+				);
 				INFOPLIST_FILE = iget/supporting/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

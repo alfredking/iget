@@ -14,8 +14,8 @@
 - (id)forwardingTargetForSelector:(SEL)aSelector {
     NSLog(@"%p-[%@ %@]:%@",self ,[NSStringFromClass(self.class) componentsSeparatedByString:@"_YHZombie_"].lastObject, NSStringFromSelector(aSelector), @"向已经dealloc的对象发送了消息");
     // 结束当前线程
-//    abort();
-    return 0;
+    abort();
+//    return 0;
 }
 
 

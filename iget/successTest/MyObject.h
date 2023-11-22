@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(copy) NSString *name;
 
+//@property(strong) NSString *name;
+
 @end
 
 NS_ASSUME_NONNULL_END

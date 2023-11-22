@@ -1,0 +1,6 @@
+framework module DDZombieMonitor {
+  umbrella header "DDZombieMonitor.h"
+
+  export *
+  module * { export * }
+}

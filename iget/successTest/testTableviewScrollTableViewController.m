@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"self.tableView is %@",self.tableView);
-    
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 16, 0, 32);
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"testTableviewScroll"];
 //    [self.tableView reloadData];
     NSIndexPath *index = [NSIndexPath indexPathForRow:35 inSection:0];

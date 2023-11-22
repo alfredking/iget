@@ -21,24 +21,37 @@
         bView.backgroundColor = [UIColor redColor];
         [self.view.layer addSublayer:bView.layer];
      
-        UIView *aView = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+    UIView *aView = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
         aView.backgroundColor = [UIColor greenColor];
         [bView.layer addSublayer:aView.layer];
+    NSLog(@"初始化后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
         
-        
-//         场景一：修改 锚点 + 结构框架，即 layer.anchorPoint + layer.frame
-        NSLog(@"初始化后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
-        
-        aView.layer.anchorPoint = CGPointMake(1.5, 1.5);
-        NSLog(@"修改layer.anchorPoint后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
-//         修改frame的本质其实是修改layer.frame，所以修改layer.frame就是修改frame
-        aView.layer.frame = CGRectMake(50, 50, 100, 100);
-        NSLog(@"接着修改frame后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+//    aView.layer.anchorPoint = CGPointMake(0.5, 1);
+//    aView.layer.position = CGPointMake(50, 50);
+//    aView.frame = CGRectMake(0, 0, 50, 50);
+//        NSLog(@"修改layer.anchorPoint后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+    
+//        aView.layer.position = CGPointMake(50, 100);
+//    NSLog(@"修改layer.position后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+    
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//    aView.layer.transform = CATransform3DMakeRotation(M_PI/4.0, 0, 0, 1);
+//    });
+    
+    // 场景一：修改 锚点 + 结构框架，即 layer.anchorPoint + layer.frame
+//        NSLog(@"初始化后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+//
+//        aView.layer.anchorPoint = CGPointMake(1.5, 1.5);
+//        NSLog(@"修改layer.anchorPoint后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+//
+//         //修改frame的本质其实是修改layer.frame，所以修改layer.frame就是修改frame
+//        aView.layer.frame = CGRectMake(50, 50, 100, 100);
+//        NSLog(@"接着修改frame后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+//
+//        aView.layer.anchorPoint = CGPointMake(1.0, 1.0);
+//        NSLog(@"再次修改layer.anchorPoint后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
 
-        aView.layer.anchorPoint = CGPointMake(1.0, 1.0);
-        NSLog(@"再次修改layer.anchorPoint后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
-       
-        
+
         /**
          输出：
          2023-01-06 14:21:59.496431+0800 Demo[8398:1402935] 初始化后，aView.layer的frame值：{{50, 50}, {50, 50}}，aView.layer的anchorPoint值：{0.5, 0.5}，aView.layer的position值：{75, 75}，
@@ -60,19 +73,19 @@
          
          */
      
-        /**
-        // 场景二：修改 位置 + 结构框架，即 layer.position + layer.frame
-        NSLog(@"初始化后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
         
-        aView.layer.position = CGPointMake(25, 25);
-        NSLog(@"修改layer.position后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
-        // 修改frame的本质其实是修改layer.frame，所以修改layer.frame就是修改frame
-        aView.layer.frame = CGRectMake(50, 50, 100, 100);
-        NSLog(@"接着修改frame后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
-        
-        aView.layer.position = CGPointMake(0, 0);
-        NSLog(@"再次修改layer.position后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
-         */
+         //场景二：修改 位置 + 结构框架，即 layer.position + layer.frame
+//        NSLog(@"初始化后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+//
+//        aView.layer.position = CGPointMake(25, 25);
+//        NSLog(@"修改layer.position后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+//         //修改frame的本质其实是修改layer.frame，所以修改layer.frame就是修改frame
+//        aView.layer.frame = CGRectMake(50, 50, 100, 100);
+//        NSLog(@"接着修改frame后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+//
+//        aView.layer.position = CGPointMake(0, 0);
+//        NSLog(@"再次修改layer.position后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+         
         
         /**
          输出：
@@ -95,22 +108,22 @@
          */
         
         // 场景三：探究修改 锚点 + 结构框架，即 layer.position + layer.frame 后，对 layer.position的影响
-//        NSLog(@"初始化后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
-//
-//        aView.layer.anchorPoint = CGPointMake(1.5, 1.5);
-//        NSLog(@"修改layer.anchorPoint后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
-//
-//        // 修改frame的本质其实是修改layer.frame，所以修改layer.frame就是修改frame
-//        aView.layer.frame = CGRectMake(50, 50, 100, 100);
-//        NSLog(@"接着修改frame后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
-//
-//    //    aView.layer.position = CGPointMake(25, 25);
-//    //    NSLog(@"修改layer.position后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
-//
-//        UIView *cView = [[UIView alloc] initWithFrame:CGRectMake(150, 150, 100, 100)];
-//        cView.backgroundColor = [UIColor blueColor];
-//        [bView.layer addSublayer:cView.layer];
-//        NSLog(@"初始化后，cView.layer的frame值：%@，cView.layer的anchorPoint值：%@，cView.layer的position值：%@，", NSStringFromCGRect(cView.layer.frame), NSStringFromCGPoint(cView.layer.anchorPoint), NSStringFromCGPoint(cView.layer.position));
+        NSLog(@"初始化后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+
+        aView.layer.anchorPoint = CGPointMake(1.5, 1.5);
+        NSLog(@"修改layer.anchorPoint后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+
+        // 修改frame的本质其实是修改layer.frame，所以修改layer.frame就是修改frame
+        aView.layer.frame = CGRectMake(50, 50, 100, 100);
+        NSLog(@"接着修改frame后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+
+    //    aView.layer.position = CGPointMake(25, 25);
+    //    NSLog(@"修改layer.position后，aView.layer的frame值：%@，aView.layer的anchorPoint值：%@，aView.layer的position值：%@，", NSStringFromCGRect(aView.layer.frame), NSStringFromCGPoint(aView.layer.anchorPoint), NSStringFromCGPoint(aView.layer.position));
+
+        UIView *cView = [[UIView alloc] initWithFrame:CGRectMake(150, 150, 100, 100)];
+        cView.backgroundColor = [UIColor blueColor];
+        [bView.layer addSublayer:cView.layer];
+        NSLog(@"初始化后，cView.layer的frame值：%@，cView.layer的anchorPoint值：%@，cView.layer的position值：%@，", NSStringFromCGRect(cView.layer.frame), NSStringFromCGPoint(cView.layer.anchorPoint), NSStringFromCGPoint(cView.layer.position));
         
         /**
          输出：

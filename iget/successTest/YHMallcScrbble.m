@@ -30,7 +30,7 @@ void _YHFree_(void * p) {
 @implementation YHMallcScrbble
 
 + (void)load {
-    rebind_symbols((struct rebinding[2]){{"malloc", _YHMalloc_, (void *)&orig_malloc}, {"free", _YHFree_, (void *)&orig_free}}, 2);
+//    rebind_symbols((struct rebinding[2]){{"malloc", _YHMalloc_, (void *)&orig_malloc}, {"free", _YHFree_, (void *)&orig_free}}, 2);
 }
 
 @end

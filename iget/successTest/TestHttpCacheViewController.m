@@ -25,6 +25,20 @@
     // Do any additional setup after loading the view.
     [self startRequest];
     [self.view addSubview:self.myImage];
+    UIImageView *testImgView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 200, 100)];
+        
+        [testImgView setBackgroundColor:[UIColor yellowColor]];
+        
+        // 阴影颜色
+        testImgView.layer.shadowColor = [UIColor blackColor].CGColor;
+        // 阴影偏移，默认(0, -3)
+        testImgView.layer.shadowOffset = CGSizeMake(0,0);
+        // 阴影透明度，默认0
+        testImgView.layer.shadowOpacity = 0.5;
+        // 阴影半径，默认3
+        testImgView.layer.shadowRadius = 5;
+        
+        [self.view addSubview:testImgView];
 }
 
 

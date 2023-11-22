@@ -73,9 +73,10 @@ class CoverViewController: UIViewController,UITableViewDataSource,UITableViewDel
         self.addCell(title: "离屏测试", classname: "TestOffScreenViewController")
         self.addCell(title: "网络请求缓存测试", classname: "TestHttpCacheViewController")
         self.addCell(title: "edgeInsets测试", classname: "TestEdgeInsetsViewController")
-        self.addCell(title: "layer position测试", classname: "TestLayerPositionVC")
+        self.addCell(title: "CALayer属性研究", classname: "TestLayerPositionVC")
         self.addCell(title: "多次push测试", classname: "TestPushViewController")
         self.addCell(title: "crash测试", classname: "TestCrashViewController")
+        self.addCell(title: "SDCycleScrollView测试", classname: "TestSDCycleScrollViewVC")
         
         
         
